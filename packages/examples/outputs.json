@@ -1,0 +1,8390 @@
+{
+  "ai/chat-sessions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "got 2 of 2 messages, previous=none"
+      },
+      {
+        "level": "log",
+        "text": "got 1 of 4 messages, previous=resp_1"
+      },
+      {
+        "level": "log",
+        "text": "[ 'system', 'user', 'assistant', 'user', 'assistant' ]"
+      },
+      {
+        "level": "log",
+        "text": "got 6 of 6 messages, previous=none"
+      }
+    ]
+  },
+  "ai/decisions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "provider got { subject: 'Charged twice', body: 'Please fix this today.' } [ 'team', 'severity', 'urgent' ]"
+      },
+      {
+        "level": "log",
+        "text": "team: billing"
+      },
+      {
+        "level": "log",
+        "text": "severity: 1.6 (blocking)"
+      },
+      {
+        "level": "log",
+        "text": "urgent: 0.8"
+      },
+      {
+        "level": "log",
+        "text": "InvalidOutputError: Invalid output: Provider returned an unknown label for decision \"team\""
+      }
+    ]
+  },
+  "ai/embeddings": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "provider call with 3 input(s)"
+      },
+      {
+        "level": "log",
+        "text": "indexed 3 articles"
+      },
+      {
+        "level": "log",
+        "text": "input tokens: 21"
+      },
+      {
+        "level": "log",
+        "text": "provider call with 3 input(s)"
+      },
+      {
+        "level": "log",
+        "text": "I want my money back: [0, 1, 0]"
+      },
+      {
+        "level": "log",
+        "text": "I want my money back -> How do I get a refund for a return?"
+      },
+      {
+        "level": "log",
+        "text": "login trouble -> Reset your password to unlock your account"
+      },
+      {
+        "level": "log",
+        "text": "ship date? -> When will my delivery arrive?"
+      }
+    ]
+  },
+  "ai/handling-ai-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "provider answered 429"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 429"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 200"
+      },
+      {
+        "level": "log",
+        "text": "Hello!"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 401"
+      },
+      {
+        "level": "log",
+        "text": "fix your key: InvalidKey"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 500"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 500"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 500"
+      },
+      {
+        "level": "log",
+        "text": "provider answered 500"
+      },
+      {
+        "level": "log",
+        "text": "GreeterError: InternalProviderError"
+      }
+    ]
+  },
+  "ai/language-model": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Your order ships on Tuesday."
+      },
+      {
+        "level": "log",
+        "text": "finish reason: stop"
+      },
+      {
+        "level": "log",
+        "text": "output tokens: 6"
+      },
+      {
+        "level": "log",
+        "text": "answered by scripted/parcel-bot-1"
+      },
+      {
+        "level": "log",
+        "text": "chunk: \"Your order \""
+      },
+      {
+        "level": "log",
+        "text": "chunk: \"ships on \""
+      },
+      {
+        "level": "log",
+        "text": "chunk: \"Tuesday.\""
+      }
+    ]
+  },
+  "ai/mcp-server": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "server: shop 2025-06-18"
+      },
+      {
+        "level": "log",
+        "text": "GetOrderStatus {\n  type: 'object',\n  properties: { orderId: { type: 'string' } },\n  required: [ 'orderId' ],\n  additionalProperties: true\n} {\n  readOnlyHint: true,\n  destructiveHint: false,\n  idempotentHint: false,\n  openWorldHint: true\n}"
+      },
+      {
+        "level": "log",
+        "text": "[ { type: 'text', text: '{\"status\":\"order 1042 is in transit\"}' } ]"
+      },
+      {
+        "level": "log",
+        "text": "{ status: 'order 1042 is in transit' }"
+      },
+      {
+        "level": "log",
+        "text": "[\n  {\n    uri: 'shop://policies/returns',\n    text: 'Returns are accepted within 30 days.'\n  }\n]"
+      }
+    ]
+  },
+  "ai/prompts-and-tokens": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "user: Hi there"
+      },
+      {
+        "level": "log",
+        "text": "system: You are a shipping assistant.\nuser: Where is order 1042?\nassistant: It left the warehouse today.\nuser: When will it arrive?"
+      },
+      {
+        "level": "log",
+        "text": "tokens: 18"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'system: You are a shipping assistant.',\n  'user: When will it arrive?'\n]"
+      }
+    ]
+  },
+  "ai/provider-telemetry": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Shipped today."
+      },
+      {
+        "level": "log",
+        "text": "LanguageModel.generateText: 1 part(s)\n  gen_ai.output.type = text\n  effect.ai.tool_choice = auto\n  effect.ai.concurrency = unbounded\n  gen_ai.provider.name = scripted\n  gen_ai.request.model = parcel-bot-1\n  gen_ai.request.temperature = 0\n  gen_ai.response.id = resp_31f78c67\n  gen_ai.response.finish_reasons = stop\n  gen_ai.usage.input_tokens = 9\n  gen_ai.usage.output_tokens = 3"
+      }
+    ]
+  },
+  "ai/structured-output": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "openai quantity: {\"type\":\"integer\",\"minimum\":1,\"maximum\":10,\"description\":\"a value between 1 and 10\"}"
+      },
+      {
+        "level": "log",
+        "text": "anthropic quantity: {\"type\":\"integer\",\"description\":\"a value between 1 and 10\"}"
+      },
+      {
+        "level": "log",
+        "text": "required: [ 'sku', 'quantity', 'giftNote' ] [ 'sku', 'quantity', 'giftNote' ]"
+      },
+      {
+        "level": "log",
+        "text": "giftNote: {\"anyOf\":[{\"anyOf\":[{\"type\":\"string\"},{\"type\":\"null\"}]},{\"type\":\"null\"}]}"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG-7', quantity: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "StructuredOutputError: Structured output validation failed: Expected a value between 1 and 10\n  at [\"quantity\"]"
+      }
+    ]
+  },
+  "ai/tools-and-toolkits": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "call GetOrderStatus { orderId: '1042' }"
+      },
+      {
+        "level": "log",
+        "text": "result isFailure=false {\"status\":\"in transit\",\"eta\":\"Tuesday\"}"
+      },
+      {
+        "level": "log",
+        "text": "model read tool result: {\"status\":\"in transit\",\"eta\":\"Tuesday\"}"
+      },
+      {
+        "level": "log",
+        "text": "call GetOrderStatus { orderId: '77' }"
+      },
+      {
+        "level": "log",
+        "text": "result isFailure=true {\"_tag\":\"OrderNotFound\",\"orderId\":\"77\"}"
+      },
+      {
+        "level": "log",
+        "text": "model read tool result: {\"_tag\":\"OrderNotFound\",\"orderId\":\"77\"}"
+      }
+    ]
+  },
+  "basics/console": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Welcome back, Ada"
+      },
+      {
+        "level": "info",
+        "text": "3 items in your cart"
+      },
+      {
+        "level": "warn",
+        "text": "the lamp is almost sold out"
+      },
+      {
+        "level": "error",
+        "text": "coupon SPRING24 has expired"
+      },
+      {
+        "level": "error",
+        "text": "Assertion failed: low stock: 2"
+      },
+      {
+        "level": "log",
+        "text": "{ orderId: 'ord-1', items: [ 'mug', 'lamp' ] }"
+      },
+      {
+        "level": "log",
+        "text": "[audit] order placed"
+      },
+      {
+        "level": "log",
+        "text": "[audit] receipt sent"
+      },
+      {
+        "level": "log",
+        "text": "done"
+      }
+    ]
+  },
+  "basics/creating-effects": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "quantity: 1"
+      },
+      {
+        "level": "log",
+        "text": "items: 2"
+      },
+      {
+        "level": "log",
+        "text": "cart: { items: [ 'mug' ] }"
+      },
+      {
+        "level": "log",
+        "text": "mug stock: 12"
+      },
+      {
+        "level": "log",
+        "text": "tax rate: 0.2"
+      },
+      {
+        "level": "log",
+        "text": "InvalidJson {oops"
+      },
+      {
+        "level": "log",
+        "text": "InventoryUnavailable chair"
+      },
+      {
+        "level": "log",
+        "text": "InventoryUnavailable lamp"
+      }
+    ]
+  },
+  "basics/dual-apis-and-pipeable": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "20 20"
+      },
+      {
+        "level": "log",
+        "text": "{ cents: 2200, currency: 'EUR' }"
+      },
+      {
+        "level": "log",
+        "text": "{ cents: 2200, currency: 'EUR' }"
+      },
+      {
+        "level": "log",
+        "text": "{ cents: 3000, currency: 'EUR' }"
+      }
+    ]
+  },
+  "basics/effect-functions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "  validating inside: addToCart"
+      },
+      {
+        "level": "log",
+        "text": "added 2 x mug"
+      },
+      {
+        "level": "log",
+        "text": "  validating inside: addToCart"
+      },
+      {
+        "level": "log",
+        "text": "rejected quantity 0"
+      },
+      {
+        "level": "log",
+        "text": "  validating inside: no span"
+      },
+      {
+        "level": "log",
+        "text": "3"
+      }
+    ]
+  },
+  "basics/effects-are-values": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "charges before running: 0"
+      },
+      {
+        "level": "log",
+        "text": "charge #1"
+      },
+      {
+        "level": "log",
+        "text": "charge #2"
+      },
+      {
+        "level": "log",
+        "text": "charges after building threeMore: 2"
+      },
+      {
+        "level": "log",
+        "text": "charges after running threeMore: 5"
+      }
+    ]
+  },
+  "basics/generators": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "ord-1 total: 2400"
+      },
+      {
+        "level": "log",
+        "text": "ord-2 failed with EmptyOrder"
+      },
+      {
+        "level": "log",
+        "text": "ord-9 failed with OrderNotFound"
+      }
+    ]
+  },
+  "basics/pipe-and-flow": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "$40.99"
+      },
+      {
+        "level": "log",
+        "text": "$40.99"
+      },
+      {
+        "level": "log",
+        "text": "$27.49"
+      },
+      {
+        "level": "log",
+        "text": "$44.99"
+      },
+      {
+        "level": "log",
+        "text": "after discount: 3600"
+      },
+      {
+        "level": "log",
+        "text": "charged: $40.99"
+      }
+    ]
+  },
+  "basics/running-effects": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ orderId: 'ord-1', cents: 2400 }"
+      },
+      {
+        "level": "log",
+        "text": "AsyncFiberError: An asynchronous Effect was executed with Effect.runSync"
+      },
+      {
+        "level": "log",
+        "text": "charged ord-1"
+      },
+      {
+        "level": "log",
+        "text": "rejected: PaymentDeclined"
+      },
+      {
+        "level": "log",
+        "text": "exit is failure: true"
+      },
+      {
+        "level": "log",
+        "text": "fiber result: charged ord-3"
+      },
+      {
+        "level": "log",
+        "text": "charged ord-4"
+      }
+    ]
+  },
+  "batching/batch-windows": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "30ms  us: mug, tee, bag"
+      },
+      {
+        "level": "log",
+        "text": "70ms  eu: cap"
+      },
+      {
+        "level": "log",
+        "text": "90ms  us: pin"
+      },
+      {
+        "level": "log",
+        "text": "170ms  us: hat"
+      },
+      {
+        "level": "log",
+        "text": "[ 10, 10, 12, 10, 10, 10 ]"
+      }
+    ]
+  },
+  "batching/batching-requests": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "query: id in (1)"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (2)"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (3)"
+      },
+      {
+        "level": "log",
+        "text": "sequential: 3 queries"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (1, 2, 3)"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Ada', 'Grace', 'Alan' ] concurrent: 1 query"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (1, 99, 3)"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Ada', 'not found', 'Alan' ]"
+      }
+    ]
+  },
+  "batching/caching-requests": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "query: id in (1, 2, 1, 3, 2)"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (1, 2, 3)"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'Ada: Great post',\n  'Grace: Agreed',\n  'Ada: One more thing',\n  'Alan: Thanks!',\n  'Grace: See above'\n]"
+      },
+      {
+        "level": "log",
+        "text": "query: id in (4)"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Ada', 'unknown' ]"
+      },
+      {
+        "level": "log",
+        "text": "rendered again without a query"
+      }
+    ]
+  },
+  "cli/first-command": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "added \"Water the plants\" priority=high done=false estimate=2h"
+      },
+      {
+        "level": "log",
+        "text": "added \"Call the bank\" priority=normal done=true no estimate"
+      },
+      {
+        "level": "log",
+        "text": "added \"Read a book\" priority=low done=false no estimate"
+      },
+      {
+        "level": "log",
+        "text": "add v1.4.0"
+      },
+      {
+        "level": "log",
+        "text": "added \"Pay rent\" priority=normal done=false no estimate"
+      }
+    ]
+  },
+  "cli/global-flags": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "all services healthy in eu"
+      },
+      {
+        "level": "log",
+        "text": "all services healthy in us"
+      },
+      {
+        "level": "log",
+        "text": "releasing v42 to us"
+      },
+      {
+        "level": "log",
+        "text": "deploy 3.1.0: added the status subcommand"
+      },
+      {
+        "level": "log",
+        "text": "USAGE\n  deploy status [flags]\n\nGLOBAL FLAGS\n  --help, -h         Show help information\n  --version, -v      Show version information\n  --region choice    Data center to talk to (choices: eu, us)\n  --changelog        Print recent changes and exit"
+      },
+      {
+        "level": "log",
+        "text": "USAGE\n  deploy <subcommand> [flags]\n\nGLOBAL FLAGS\n  --help, -h         Show help information\n  --version, -v      Show version information\n  --region choice    Data center to talk to (choices: eu, us)\n  --changelog        Print recent changes and exit\n\nSUBCOMMANDS\n  status     \n  release    "
+      },
+      {
+        "level": "error",
+        "text": "\nERRORS\n  Unrecognized flag: --completions in command deploy\n  Unknown subcommand \"bash\" for \"deploy\""
+      },
+      {
+        "level": "log",
+        "text": "rejected: UnrecognizedOption, UnknownSubcommand"
+      }
+    ]
+  },
+  "cli/help-text": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "DESCRIPTION\n  Copy a database to the backup bucket\n\nUSAGE\n  backup [flags] <database>\n\nARGUMENTS\n  database string    Name of the database to back up\n\nFLAGS\n  --keep integer    How many old backups to keep\n  --compress, -z    Compress the backup with gzip\n\nGLOBAL FLAGS\n  --help, -h                                                          Show help information\n  --version, -v                                                       Show version information\n  --wizard                                                            Start wizard mode for a command\n  --completions <bash|zsh|fish|powershell|sh|pwsh>                    Print shell completion script (choices: bash, zsh, fish, powershell, sh, pwsh)\n  --log-level <all|trace|debug|info|warn|warning|error|fatal|none>    Sets the minimum log level (choices: all, trace, debug, info, warn, warning, error, fatal, none)\n\nEXAMPLES\n  # Monthly backup\n  backup orders --keep 30 -z"
+      },
+      {
+        "level": "log",
+        "text": "---"
+      },
+      {
+        "level": "log",
+        "text": "## backup [flags] <database>\n\nCopy a database to the backup bucket\n\n| Flag | Type | Description |\n| --- | --- | --- |\n| `--keep` | integer | How many old backups to keep |\n| `--compress` | boolean | Compress the backup with gzip |"
+      }
+    ]
+  },
+  "cli/parsing-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sent 25 EUR to alice"
+      },
+      {
+        "level": "log",
+        "text": "usage: transfer [flags] <account>"
+      },
+      {
+        "level": "log",
+        "text": "  UnrecognizedOption: Unrecognized flag: --ammount in command transfer\n\n  Did you mean this?\n    --amount"
+      },
+      {
+        "level": "log",
+        "text": "  UnrecognizedOption: Unrecognized flag: --curency in command transfer\n\n  Did you mean this?\n    --currency"
+      },
+      {
+        "level": "log",
+        "text": "usage: transfer [flags] <account>"
+      },
+      {
+        "level": "log",
+        "text": "  InvalidValue: Invalid value for flag --amount: \"ten\". Expected a string representing a finite number"
+      },
+      {
+        "level": "log",
+        "text": "usage: transfer [flags] <account>"
+      },
+      {
+        "level": "log",
+        "text": "  InvalidValue: Invalid value for flag --amount: \"0\". Expected: Schema validation failed: Expected a value greater than 0"
+      },
+      {
+        "level": "log",
+        "text": "usage: transfer [flags] <account>"
+      },
+      {
+        "level": "log",
+        "text": "  MissingArgument: Missing required argument: account"
+      },
+      {
+        "level": "log",
+        "text": "usage: transfer [flags] <account>"
+      },
+      {
+        "level": "log",
+        "text": "  UnexpectedArgument: Unexpected positional argument: \"bob\""
+      },
+      {
+        "level": "log",
+        "text": "  handler failed: frozen is locked"
+      },
+      {
+        "level": "log",
+        "text": "false true"
+      }
+    ]
+  },
+  "cli/prompts": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ name: 'Ada', plan: 'team', newsletter: true }"
+      },
+      {
+        "level": "log",
+        "text": "invited to Billing"
+      },
+      {
+        "level": "log",
+        "text": "invited to Design"
+      },
+      {
+        "level": "log",
+        "text": "? Your name › A\n› At least 2 letters"
+      },
+      {
+        "level": "log",
+        "text": "✔ Your name … Ada"
+      },
+      {
+        "level": "log",
+        "text": "✔ Plan …  Team"
+      },
+      {
+        "level": "log",
+        "text": "✔ Get the newsletter? … yes"
+      },
+      {
+        "level": "log",
+        "text": "✔ Team name … Design"
+      }
+    ]
+  },
+  "cli/shell-completions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "#compdef notes\n###-begin-notes-completions-###\n#\n# Static completion script for Zsh\n#\n# Installation:\n#   notes --completions zsh > ~/.zsh/completions/_notes\n#   then add ~/.zsh/completions to your fpath\n#\n\n_notes() {\n  local -a specs\n  specs=(\n    '(--format -f)--format[Output format]:value:(md txt)'\n    '(--format -f)-f[Output format]:value:(md txt)'\n    ':Note to open:_files'\n  )\n  _arguments \"${specs[@]}\"\n}\n\n# Handle both direct invocation and autoload\nif [[ \"${zsh_eval_context[-1]}\" == \"loadautofunc\" ]]; then\n  _notes \"$@\"\nelse\n  compdef _notes notes\nfi\n###-end-notes-completions-###"
+      },
+      {
+        "level": "log",
+        "text": "###-begin-notes-completions-###\n#\n# Static completion script for Fish\n#\n# Installation:\n#   notes --completions fish > ~/.config/fish/completions/notes.fish\n#\n\ncomplete -c notes -n 'begin; not __fish_contains_opt -s f format; or contains -- (commandline -poc)[-1] --format -f; end' -l format -s f -d 'Output format' -r -f -a 'md txt'\ncomplete -c notes -n 'not string match -q -- \"-*\" (commandline -ct); and not __fish_contains_opt -s f format' -f -a '--format' -d 'Output format'\ncomplete -c notes -r -F -d 'Note to open'\n\n###-end-notes-completions-###"
+      },
+      {
+        "level": "log",
+        "text": "bash: 138 lines"
+      },
+      {
+        "level": "log",
+        "text": "zsh: 27 lines"
+      },
+      {
+        "level": "log",
+        "text": "fish: 13 lines"
+      },
+      {
+        "level": "log",
+        "text": "powershell: 210 lines"
+      }
+    ]
+  },
+  "cli/subcommands": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "added \"Buy milk\" to inbox"
+      },
+      {
+        "level": "log",
+        "text": "added \"Send invoice\" to work"
+      },
+      {
+        "level": "log",
+        "text": "added \"Book flights\" to work"
+      },
+      {
+        "level": "log",
+        "text": "work: 2 items"
+      },
+      {
+        "level": "log",
+        "text": "  - work: Send invoice"
+      },
+      {
+        "level": "log",
+        "text": "  - work: Book flights"
+      },
+      {
+        "level": "log",
+        "text": "all lists: 3 items"
+      },
+      {
+        "level": "log",
+        "text": "  - inbox: Buy milk"
+      },
+      {
+        "level": "log",
+        "text": "  - work: Send invoice"
+      },
+      {
+        "level": "log",
+        "text": "  - work: Book flights"
+      }
+    ]
+  },
+  "cli/typed-values": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "8080"
+      },
+      {
+        "level": "log",
+        "text": "Expected an integer"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{\n  image: 'postgres',\n  port: 5432,\n  expose: [ 9187, 9090 ],\n  env: { POSTGRES_USER: 'app', TZ: 'UTC' },\n  memory: 1024\n}"
+      },
+      {
+        "level": "log",
+        "text": "(help omitted)"
+      },
+      {
+        "level": "log",
+        "text": "Invalid value for argument <port>: \"70000\". Expected: Schema validation failed: Expected a value between 1 and 65535"
+      },
+      {
+        "level": "log",
+        "text": "(help omitted)"
+      },
+      {
+        "level": "log",
+        "text": "Invalid value for flag --expose: \"0\". Expected: Schema validation failed: Expected a value between 1 and 65535"
+      }
+    ]
+  },
+  "cluster/cron-jobs": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "expiring sessions at 2026-01-05T09:00:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "expiring sessions at 2026-01-05T09:05:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "expiring sessions at 2026-01-05T09:10:00.000Z"
+      }
+    ]
+  },
+  "cluster/defining-an-entity": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "cart alice activated"
+      },
+      {
+        "level": "log",
+        "text": "cart bob activated"
+      },
+      {
+        "level": "log",
+        "text": "alice's cart: tea, cups"
+      },
+      {
+        "level": "log",
+        "text": "bob's cart: coffee"
+      }
+    ]
+  },
+  "cluster/deploying-on-kubernetes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "this runner: 10.0.1.5:34431"
+      },
+      {
+        "level": "log",
+        "text": "shards per group: 600"
+      },
+      {
+        "level": "log",
+        "text": "GET https://kubernetes.default.svc/api/v1/namespaces/shop/pods"
+      },
+      {
+        "level": "log",
+        "text": "  ?fieldSelector=status.phase=Running&labelSelector=app=orders"
+      },
+      {
+        "level": "log",
+        "text": "  authorization: Bearer service-account-token"
+      },
+      {
+        "level": "log",
+        "text": "10.0.1.5 alive: true"
+      },
+      {
+        "level": "log",
+        "text": "10.0.1.6 alive: false"
+      },
+      {
+        "level": "log",
+        "text": "10.0.1.7 alive: false"
+      },
+      {
+        "level": "log",
+        "text": "runner layer described: true"
+      }
+    ]
+  },
+  "cluster/durable-messages-with-sql": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "first run: reminder sent, shutting down"
+      },
+      {
+        "level": "log",
+        "text": "tables: cluster_locks, cluster_messages, cluster_migrations, cluster_replies, cluster_runner_migrations, cluster_runners"
+      },
+      {
+        "level": "log",
+        "text": "stored: Remind for user-1, processed=0"
+      },
+      {
+        "level": "log",
+        "text": "second run: delivered \"renew passport\""
+      },
+      {
+        "level": "log",
+        "text": "stored: Remind for user-1, processed=1"
+      }
+    ]
+  },
+  "cluster/entity-proxies": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "rpcs: Stock.Reserve, Stock.ReserveDiscard"
+      },
+      {
+        "level": "log",
+        "text": "over RPC: 3 left"
+      },
+      {
+        "level": "log",
+        "text": "over HTTP: 1 left"
+      },
+      {
+        "level": "log",
+        "text": "then: OutOfStock"
+      }
+    ]
+  },
+  "cluster/entity-resources": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "entity sb-1 activated"
+      },
+      {
+        "level": "log",
+        "text": "started sandbox-sb-1"
+      },
+      {
+        "level": "log",
+        "text": "sandbox-sb-1 ran npm install"
+      },
+      {
+        "level": "log",
+        "text": "entity sb-1 activated"
+      },
+      {
+        "level": "log",
+        "text": "crash message retried"
+      },
+      {
+        "level": "log",
+        "text": "reattached to sandbox-sb-1"
+      },
+      {
+        "level": "log",
+        "text": "sandbox-sb-1 ran npm test"
+      },
+      {
+        "level": "log",
+        "text": "removed sandbox-sb-1"
+      },
+      {
+        "level": "log",
+        "text": "containers left: 0"
+      }
+    ]
+  },
+  "cluster/envelopes-and-replies": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Request Greet to EntityAddress(Greeter, greeter-1, default:296)"
+      },
+      {
+        "level": "log",
+        "text": "reply: WithExit"
+      },
+      {
+        "level": "log",
+        "text": "answers our request: true"
+      },
+      {
+        "level": "log",
+        "text": "value: hello, Ada"
+      }
+    ]
+  },
+  "cluster/one-message-at-a-time": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "start deposit of 100"
+      },
+      {
+        "level": "log",
+        "text": "finish deposit of 100"
+      },
+      {
+        "level": "log",
+        "text": "start deposit of 200"
+      },
+      {
+        "level": "log",
+        "text": "finish deposit of 200"
+      },
+      {
+        "level": "log",
+        "text": "100: balance 100"
+      },
+      {
+        "level": "log",
+        "text": "200: balance 300"
+      },
+      {
+        "level": "log",
+        "text": "300: rejected, MailboxFull for wallet-1"
+      },
+      {
+        "level": "log",
+        "text": "400: rejected, MailboxFull for wallet-1"
+      }
+    ]
+  },
+  "cluster/persisted-messages": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "charged 500 cents for p-1"
+      },
+      {
+        "level": "log",
+        "text": "charged 500 cents for p-1"
+      },
+      {
+        "level": "log",
+        "text": "balance: 500"
+      },
+      {
+        "level": "log",
+        "text": "charges run: 1"
+      },
+      {
+        "level": "log",
+        "text": "stored Charge: charged 500 cents for p-1"
+      },
+      {
+        "level": "log",
+        "text": "stored Charge: charged 300 cents for p-2"
+      },
+      {
+        "level": "log",
+        "text": "charges run: 2"
+      }
+    ]
+  },
+  "cluster/runners-over-http": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "registered: runner-a groups=default weight=1"
+      },
+      {
+        "level": "log",
+        "text": "registered: runner-b groups=default weight=1"
+      },
+      {
+        "level": "log",
+        "text": "runner-a shards: 2 4 5 6 7 10"
+      },
+      {
+        "level": "log",
+        "text": "runner-b shards: 1 3 8 9 11 12"
+      },
+      {
+        "level": "log",
+        "text": "gateway shards: 0"
+      },
+      {
+        "level": "log",
+        "text": "order-1 handled by runner-a"
+      },
+      {
+        "level": "log",
+        "text": "order-2 handled by runner-b"
+      },
+      {
+        "level": "log",
+        "text": "order-3 handled by runner-b"
+      },
+      {
+        "level": "log",
+        "text": "order-4 handled by runner-a"
+      }
+    ]
+  },
+  "cluster/scheduled-delivery": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "after 100ms: drink water"
+      },
+      {
+        "level": "log",
+        "text": "later: drink water, stand up"
+      },
+      {
+        "level": "log",
+        "text": "waited at least 300ms: true"
+      }
+    ]
+  },
+  "cluster/shards-and-addresses": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "shards per group: 300"
+      },
+      {
+        "level": "log",
+        "text": "acct-1 -> shard 1 in group \"default\""
+      },
+      {
+        "level": "log",
+        "text": "acct-2 -> shard 150 in group \"default\""
+      },
+      {
+        "level": "log",
+        "text": "acct-3 -> shard 75 in group \"default\""
+      },
+      {
+        "level": "log",
+        "text": "EntityAddress(Account, acct-1, default:1)"
+      },
+      {
+        "level": "log",
+        "text": "handler agrees: true"
+      },
+      {
+        "level": "log",
+        "text": "shards owned by this runner: 300"
+      }
+    ]
+  },
+  "cluster/singletons": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "relay started"
+      },
+      {
+        "level": "log",
+        "text": "registered singleton OutboxRelay on shard default:44, as expected: true"
+      },
+      {
+        "level": "log",
+        "text": "shards owned: 300"
+      },
+      {
+        "level": "log",
+        "text": "relay stopped"
+      }
+    ]
+  },
+  "cluster/snowflake-ids": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "as a number: 132271570944028675"
+      },
+      {
+        "level": "log",
+        "text": "created at: 2026-01-01T00:00:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "machine: 7, sequence: 3"
+      },
+      {
+        "level": "log",
+        "text": "round trip: true"
+      },
+      {
+        "level": "log",
+        "text": "machines: 42"
+      },
+      {
+        "level": "log",
+        "text": "increasing: true"
+      }
+    ]
+  },
+  "cluster/workflows-on-the-cluster": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sent invoice inv-42"
+      },
+      {
+        "level": "log",
+        "text": "stored while suspended:"
+      },
+      {
+        "level": "log",
+        "text": "  Workflow/ChaseInvoice run"
+      },
+      {
+        "level": "log",
+        "text": "  Workflow/ChaseInvoice activity"
+      },
+      {
+        "level": "log",
+        "text": "  Workflow/-/DurableClock run, due in 60 minutes"
+      },
+      {
+        "level": "log",
+        "text": "sent reminder for inv-42"
+      },
+      {
+        "level": "log",
+        "text": "chased inv-42"
+      }
+    ]
+  },
+  "collections/array-helpers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'o-4 9900', 'o-1 4200', 'o-5 3100', 'o-3 900' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ ada: [ 'o-1', 'o-3' ], grace: [ 'o-2', 'o-5' ], alan: [ 'o-4' ] }"
+      },
+      {
+        "level": "log",
+        "text": "{ paid: [ 4200, 900, 9900, 3100 ], refunded: [ 'o-2' ] }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ada', 'grace', 'alan' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ ada: 5100, alan: 9900, grace: 3100 }"
+      }
+    ]
+  },
+  "collections/chunks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "0 1 2 3"
+      },
+      {
+        "level": "log",
+        "text": "[ 'o-1', 'o-2', 'o-3' ]"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: { type: 'shipped', orderId: 'o-1' }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "[ 'o-1', 'o-2', 'o-3', 'o-4', 'o-5' ]"
+      }
+    ]
+  },
+  "collections/consistent-hashing": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ 'cache-a': 373, 'cache-b': 325, 'cache-c': 302 }"
+      },
+      {
+        "level": "log",
+        "text": "modulo moved 751"
+      },
+      {
+        "level": "log",
+        "text": "ring moved 235"
+      },
+      {
+        "level": "log",
+        "text": "[ 'cache-d' ]"
+      },
+      {
+        "level": "log",
+        "text": "after removing cache-d: 0 differ"
+      }
+    ]
+  },
+  "collections/dependency-graph": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "5 4"
+      },
+      {
+        "level": "log",
+        "text": "[ 'install', 'codegen', 'compile', 'test', 'bundle' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'codegen', 'compile', 'test', 'bundle' ]"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "true false"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: 'install -> codegen -> compile -> test -> install'\n}"
+      },
+      {
+        "level": "log",
+        "text": "4 5"
+      }
+    ]
+  },
+  "collections/hash-map-and-set": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "undefined"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "lines: 2"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 3 }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "3"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 9, 9 ] ]"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "collections/lazy-iterables": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "inspected before reading: 0"
+      },
+      {
+        "level": "log",
+        "text": "[ '#1001', '#1002', '#1008' ]"
+      },
+      {
+        "level": "log",
+        "text": "inspected after reading: 9"
+      },
+      {
+        "level": "log",
+        "text": "inspected after reading twice: 18"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 17 }"
+      },
+      {
+        "level": "log",
+        "text": "next: pack"
+      },
+      {
+        "level": "log",
+        "text": "[ 'label', 'ship' ]"
+      }
+    ]
+  },
+  "collections/mutable-collections": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 3 }"
+      },
+      {
+        "level": "log",
+        "text": "pages: 3"
+      },
+      {
+        "level": "log",
+        "text": "unique visits: 4"
+      },
+      {
+        "level": "log",
+        "text": "running refund order"
+      },
+      {
+        "level": "log",
+        "text": "[ 'resize avatar', 'send receipt' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'rebuild index' ] 0"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      }
+    ]
+  },
+  "collections/non-empty-arrays": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "first 21.5, max 23"
+      },
+      {
+        "level": "log",
+        "text": "70.7"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "first 21.5, max 23"
+      },
+      {
+        "level": "log",
+        "text": "no readings yet"
+      },
+      {
+        "level": "log",
+        "text": "garage: offline"
+      },
+      {
+        "level": "log",
+        "text": "first 12.4, max 12.4"
+      }
+    ]
+  },
+  "collections/records-structs-tuples": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ apple: '12 left', plum: '7 left' }"
+      },
+      {
+        "level": "log",
+        "text": "0"
+      },
+      {
+        "level": "log",
+        "text": "{ apple: 12, pear: 20, plum: 7, kiwi: 5 }"
+      },
+      {
+        "level": "log",
+        "text": "{ id: 'u-1', name: 'ADA LOVELACE', email: 'ada@example.com' }"
+      },
+      {
+        "level": "log",
+        "text": "{ userId: 'u-1', name: 'ada lovelace' }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'APPLE', 6, 1.5 ]"
+      },
+      {
+        "level": "log",
+        "text": "1.5"
+      }
+    ]
+  },
+  "collections/trie-prefix-search": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "t [ 'tea', 'teacup', 'teapot', 'tent', 'torch' ]"
+      },
+      {
+        "level": "log",
+        "text": "te [ 'tea', 'teacup', 'teapot', 'tent' ]"
+      },
+      {
+        "level": "log",
+        "text": "tea [ 'tea', 'teacup', 'teapot' ]"
+      },
+      {
+        "level": "log",
+        "text": "teap [ 'teapot' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 'teacup', 'sku-103' ] ]"
+      },
+      {
+        "level": "log",
+        "text": "5 6"
+      },
+      {
+        "level": "log",
+        "text": "+442079460000: London (+4420)"
+      },
+      {
+        "level": "log",
+        "text": "+441614960000: United Kingdom (+44)"
+      },
+      {
+        "level": "log",
+        "text": "+15550100: North America (+1)"
+      },
+      {
+        "level": "log",
+        "text": "+33140000000: no route"
+      }
+    ]
+  },
+  "concurrency/background-fibers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "FiberHandle"
+      },
+      {
+        "level": "log",
+        "text": "  search \"c\": interrupted"
+      },
+      {
+        "level": "log",
+        "text": "  search \"ch\": interrupted"
+      },
+      {
+        "level": "log",
+        "text": "  search \"chair\": interrupted"
+      },
+      {
+        "level": "log",
+        "text": "FiberMap"
+      },
+      {
+        "level": "log",
+        "text": "  sync ada #1: interrupted"
+      },
+      {
+        "level": "log",
+        "text": "  running: 2"
+      },
+      {
+        "level": "log",
+        "text": "FiberSet"
+      },
+      {
+        "level": "log",
+        "text": "  emails sent, left in set: 0"
+      },
+      {
+        "level": "log",
+        "text": "closing scope"
+      },
+      {
+        "level": "log",
+        "text": "  newsletter: interrupted"
+      },
+      {
+        "level": "log",
+        "text": "  sync ada #2: interrupted"
+      },
+      {
+        "level": "log",
+        "text": "  sync grace: interrupted"
+      }
+    ]
+  },
+  "concurrency/concurrent-work": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sequential peak: 1"
+      },
+      {
+        "level": "log",
+        "text": "limited peak: 3"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'invoice-1.pdf',\n  'invoice-2.pdf',\n  'invoice-3.pdf',\n  'invoice-4.pdf',\n  'invoice-5.pdf',\n  'invoice-6.pdf'\n]"
+      },
+      {
+        "level": "log",
+        "text": "unbounded peak: 6"
+      },
+      {
+        "level": "log",
+        "text": "{ orders: 12, refunds: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "failed: invoice 4 is missing"
+      }
+    ]
+  },
+  "concurrency/deferred": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "signed in yet? false"
+      },
+      {
+        "level": "log",
+        "text": "first complete: true"
+      },
+      {
+        "level": "log",
+        "text": "[ 'GET /orders (tok_1)', 'GET /invoices (tok_1)' ]"
+      },
+      {
+        "level": "log",
+        "text": "second complete: false"
+      },
+      {
+        "level": "log",
+        "text": "GET /profile (tok_1)"
+      },
+      {
+        "level": "log",
+        "text": "sign-in failed: invalid password"
+      }
+    ]
+  },
+  "concurrency/forking-fibers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "report started, doing other work"
+      },
+      {
+        "level": "log",
+        "text": "report: { orders: 42 }"
+      },
+      {
+        "level": "log",
+        "text": "broken report failed: true"
+      },
+      {
+        "level": "log",
+        "text": "watcher: stopped"
+      },
+      {
+        "level": "log",
+        "text": "watcher interrupted"
+      },
+      {
+        "level": "log",
+        "text": "parent done"
+      },
+      {
+        "level": "log",
+        "text": "child: stopped"
+      },
+      {
+        "level": "log",
+        "text": "after parent"
+      }
+    ]
+  },
+  "concurrency/latches": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "shipped while closed: []"
+      },
+      {
+        "level": "log",
+        "text": "shipped after opening: [ 'A-1', 'A-2', 'A-3', 'B-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "shipped at night: []"
+      },
+      {
+        "level": "log",
+        "text": "after release: [ 'C-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "open now? false"
+      }
+    ]
+  },
+  "concurrency/mutable-ref": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "clicks: 3"
+      },
+      {
+        "level": "log",
+        "text": "eager: [ 1, 1, 1 ]"
+      },
+      {
+        "level": "log",
+        "text": "lazy: [ 2, 3, 4 ]"
+      },
+      {
+        "level": "log",
+        "text": "ref: [ 1, 2, 3 ]"
+      }
+    ]
+  },
+  "concurrency/pubsub": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "mailer:    [ 'placed o-1', 'paid o-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "analytics: [ 'placed o-1', 'paid o-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "audit:     [ 'paid o-1', 'shipped o-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "mailer:    [ 'shipped o-1' ]"
+      }
+    ]
+  },
+  "concurrency/queues": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "queued: 2 offered: 2"
+      },
+      {
+        "level": "log",
+        "text": "took a.png"
+      },
+      {
+        "level": "log",
+        "text": "queued: 2 offered: 3"
+      },
+      {
+        "level": "log",
+        "text": "rest: [ 'b.png', 'c.png', 'd.png', 'e.png' ]"
+      },
+      {
+        "level": "log",
+        "text": "sliding keeps: [ 3, 4 ]"
+      },
+      {
+        "level": "log",
+        "text": "dropping keeps: [ 1, 2 ]"
+      }
+    ]
+  },
+  "concurrency/racing-and-timeouts": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "  eu: cancelled"
+      },
+      {
+        "level": "log",
+        "text": "price from us"
+      },
+      {
+        "level": "log",
+        "text": "price from eu"
+      },
+      {
+        "level": "log",
+        "text": "  eu: cancelled"
+      },
+      {
+        "level": "log",
+        "text": "raceFirst failed: us errored"
+      },
+      {
+        "level": "log",
+        "text": "  eu: cancelled"
+      },
+      {
+        "level": "log",
+        "text": "timed out"
+      },
+      {
+        "level": "log",
+        "text": "  eu: cancelled"
+      },
+      {
+        "level": "log",
+        "text": "cached price"
+      }
+    ]
+  },
+  "concurrency/scheduler": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "default:    heartbeat ran after about 2000 of 10000 steps"
+      },
+      {
+        "level": "log",
+        "text": "budget 100: heartbeat ran after about 100 of 10000 steps"
+      },
+      {
+        "level": "log",
+        "text": "no yield:   heartbeat ran after about 10000 of 10000 steps"
+      },
+      {
+        "level": "log",
+        "text": "mode: async"
+      }
+    ]
+  },
+  "concurrency/semaphores": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "most emails at once: 2"
+      },
+      {
+        "level": "log",
+        "text": "newsletter sent"
+      },
+      {
+        "level": "log",
+        "text": "plain:       acme-1 acme-2 acme-3 acme-4 globex-1 globex-2"
+      },
+      {
+        "level": "log",
+        "text": "partitioned: acme-1 globex-1 acme-2 globex-2 acme-3 acme-4"
+      }
+    ]
+  },
+  "concurrency/shared-state": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "views with update: 100"
+      },
+      {
+        "level": "log",
+        "text": "views with get then set: 1"
+      },
+      {
+        "level": "log",
+        "text": "tickets: [ 'T-1', 'T-2', 'T-3' ]"
+      },
+      {
+        "level": "log",
+        "text": "balance: 200"
+      },
+      {
+        "level": "log",
+        "text": "updates running at once: 1"
+      }
+    ]
+  },
+  "concurrency/subscription-ref": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'v1 live', 'v2 rolling out', 'v2 live' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ version: 'v2', status: 'live' }"
+      }
+    ]
+  },
+  "data/brands-and-newtypes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "ord-1 costs 1250 cents"
+      },
+      {
+        "level": "log",
+        "text": "ok: 1250"
+      },
+      {
+        "level": "log",
+        "text": "rejected 12.5: expected whole cents, got 12.5"
+      },
+      {
+        "level": "log",
+        "text": "rejected -3: Expected a value greater than 0"
+      },
+      {
+        "level": "log",
+        "text": "rejected -2.5: expected whole cents, got -2.5; Expected a value greater than 0"
+      },
+      {
+        "level": "log",
+        "text": "is 0 a price? false"
+      },
+      {
+        "level": "log",
+        "text": "MUG-01 6"
+      },
+      {
+        "level": "log",
+        "text": "[ 'LAMP-07', 'MUG-01', 'RUG-02' ]"
+      }
+    ]
+  },
+  "data/byte-sizes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "25000000n 1048576n"
+      },
+      {
+        "level": "log",
+        "text": "23.84 MiB"
+      },
+      {
+        "level": "log",
+        "text": "25 MB"
+      },
+      {
+        "level": "log",
+        "text": "1.5 MB       { _id: 'Option', _tag: 'Some', value: 1500000n }"
+      },
+      {
+        "level": "log",
+        "text": "1.5 MiB      { _id: 'Option', _tag: 'Some', value: 1572864n }"
+      },
+      {
+        "level": "log",
+        "text": "2 megabytes  { _id: 'Option', _tag: 'Some', value: 2000000n }"
+      },
+      {
+        "level": "log",
+        "text": "0.5 B        { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "-1 kB        { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "10 parsecs   { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "total: 27 MB"
+      },
+      {
+        "level": "log",
+        "text": "over the limit: true"
+      },
+      {
+        "level": "log",
+        "text": "room left: { _id: 'Option', _tag: 'None' }"
+      }
+    ]
+  },
+  "data/combiners-and-reducers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "kettle"
+      },
+      {
+        "level": "log",
+        "text": "12000"
+      },
+      {
+        "level": "log",
+        "text": "6 0"
+      },
+      {
+        "level": "log",
+        "text": "79500"
+      },
+      {
+        "level": "log",
+        "text": "12000"
+      },
+      {
+        "level": "log",
+        "text": "undefined"
+      },
+      {
+        "level": "log",
+        "text": "{\n  orders: 19,\n  revenueCents: 79500,\n  largestOrderCents: 12000,\n  regions: [ 'NL', 'BE', 'DE' ]\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  orders: 0,\n  revenueCents: 0,\n  largestOrderCents: undefined,\n  regions: []\n}"
+      }
+    ]
+  },
+  "data/numbers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 12.5 } { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "average: { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "discount: 100"
+      },
+      {
+        "level": "log",
+        "text": "items: 7"
+      },
+      {
+        "level": "log",
+        "text": "float: 0.30000000000000004"
+      },
+      {
+        "level": "log",
+        "text": "BigDecimal: 0.3"
+      },
+      {
+        "level": "log",
+        "text": "subtotal: 59.97"
+      },
+      {
+        "level": "log",
+        "text": "exact VAT: 12.5937"
+      },
+      {
+        "level": "log",
+        "text": "VAT: 12.59"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "as a number: 9007199254740992"
+      },
+      {
+        "level": "log",
+        "text": "as a bigint: 9007199254740993n"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 1000 } { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 42n } true"
+      }
+    ]
+  },
+  "data/option": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: { name: 'Ada', referredBy: 'c-2' }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "Hello, Ada"
+      },
+      {
+        "level": "log",
+        "text": "Hello, guest"
+      },
+      {
+        "level": "log",
+        "text": "referrer of c-1: Grace"
+      },
+      {
+        "level": "log",
+        "text": "referrer of c-2: null"
+      },
+      {
+        "level": "log",
+        "text": "c-2 is Grace"
+      },
+      {
+        "level": "log",
+        "text": "c-9 is unknown"
+      },
+      {
+        "level": "log",
+        "text": "long name: { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "from an effect: { _id: 'Option', _tag: 'None' }"
+      }
+    ]
+  },
+  "data/order-and-equivalence": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "by price: mug, Lamp, Rug, Kettle"
+      },
+      {
+        "level": "log",
+        "text": "by category, priciest first: Lamp, Rug, Kettle, mug"
+      },
+      {
+        "level": "log",
+        "text": "cheaper of lamp and mug: mug"
+      },
+      {
+        "level": "log",
+        "text": "lamp vs rug: same price"
+      },
+      {
+        "level": "log",
+        "text": "kettle vs mug: pricier"
+      },
+      {
+        "level": "log",
+        "text": "reversed: cheaper"
+      },
+      {
+        "level": "log",
+        "text": "decisive: -1"
+      },
+      {
+        "level": "log",
+        "text": "deduped: Lamp, mug, Kettle, Rug"
+      },
+      {
+        "level": "log",
+        "text": "lamp and rug same listing: true"
+      }
+    ]
+  },
+  "data/pattern-matching": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "hold 2500 cents"
+      },
+      {
+        "level": "log",
+        "text": "took 2500 cents"
+      },
+      {
+        "level": "log",
+        "text": "returned 500 cents (damaged)"
+      },
+      {
+        "level": "log",
+        "text": "failed with card_expired"
+      },
+      {
+        "level": "log",
+        "text": "free"
+      },
+      {
+        "level": "log",
+        "text": "4.95"
+      },
+      {
+        "level": "log",
+        "text": "freight quote needed"
+      },
+      {
+        "level": "log",
+        "text": "international rate for DE"
+      },
+      {
+        "level": "log",
+        "text": "number 4.50 | text \"mug\" | flag true"
+      }
+    ]
+  },
+  "data/predicates": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "NL 12000: free shipping true, manual packing false"
+      },
+      {
+        "level": "log",
+        "text": "NL 4000: free shipping false, manual packing true"
+      },
+      {
+        "level": "log",
+        "text": "BE 15000: free shipping false, manual packing true"
+      },
+      {
+        "level": "log",
+        "text": "string: mug"
+      },
+      {
+        "level": "log",
+        "text": "number: 42"
+      },
+      {
+        "level": "log",
+        "text": "coupon"
+      },
+      {
+        "level": "log",
+        "text": "sku: lamp"
+      },
+      {
+        "level": "log",
+        "text": "symbol: internal"
+      },
+      {
+        "level": "log",
+        "text": "something else"
+      },
+      {
+        "level": "log",
+        "text": "some orders ship free"
+      },
+      {
+        "level": "log",
+        "text": "all ship free: false"
+      },
+      {
+        "level": "log",
+        "text": "one special handling: [ false, true, true ]"
+      }
+    ]
+  },
+  "data/primary-keys": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "miss quote:mug:NL"
+      },
+      {
+        "level": "log",
+        "text": "hit  quote:mug:NL"
+      },
+      {
+        "level": "log",
+        "text": "miss quote:mug:DE"
+      },
+      {
+        "level": "log",
+        "text": "quote:lamp:BE"
+      },
+      {
+        "level": "log",
+        "text": "no primary key"
+      }
+    ]
+  },
+  "data/redacted-secrets": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  endpoint: 'https://payments.example.com',\n  apiKey: '<redacted:PAYMENTS_API_KEY>'\n}"
+      },
+      {
+        "level": "log",
+        "text": "using key <redacted:PAYMENTS_API_KEY>"
+      },
+      {
+        "level": "log",
+        "text": "{\"endpoint\":\"https://payments.example.com\",\"apiKey\":\"<redacted:PAYMENTS_API_KEY>\"}"
+      },
+      {
+        "level": "log",
+        "text": "header length: 19"
+      },
+      {
+        "level": "log",
+        "text": "key unchanged: false"
+      },
+      {
+        "level": "log",
+        "text": "value is gone"
+      }
+    ]
+  },
+  "data/strings-and-regexps": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "blue-ceramic-mug"
+      },
+      {
+        "level": "log",
+        "text": "shippingAddress"
+      },
+      {
+        "level": "log",
+        "text": "customer_id"
+      },
+      {
+        "level": "log",
+        "text": "blue-ceramic-mug"
+      },
+      {
+        "level": "log",
+        "text": "MAX_RETRIES"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 'g' }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: [ '42' ] }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "A very long "
+      },
+      {
+        "level": "log",
+        "text": "has a note: false"
+      },
+      {
+        "level": "log",
+        "text": "C++ -> [ 'C++ in Practice' ]"
+      },
+      {
+        "level": "log",
+        "text": "C ( -> [ 'C (2nd edition)' ]"
+      },
+      {
+        "level": "log",
+        "text": "true false"
+      }
+    ]
+  },
+  "data/structural-equality": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "===: false"
+      },
+      {
+        "level": "log",
+        "text": "Equal.equals: true"
+      },
+      {
+        "level": "log",
+        "text": "same hash: true"
+      },
+      {
+        "level": "log",
+        "text": "events equal: true"
+      },
+      {
+        "level": "log",
+        "text": "plain objects: true"
+      },
+      {
+        "level": "log",
+        "text": "arrays: true"
+      },
+      {
+        "level": "log",
+        "text": "Set size: 2"
+      },
+      {
+        "level": "log",
+        "text": "HashSet size: 1"
+      },
+      {
+        "level": "log",
+        "text": "same customer: true"
+      }
+    ]
+  },
+  "encoding/base64-and-hex": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "YWRhOnMzY3JldD8+IQ=="
+      },
+      {
+        "level": "log",
+        "text": "YWRhOnMzY3JldD8-IQ"
+      },
+      {
+        "level": "log",
+        "text": "000fff"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Result', _tag: 'Success', value: 'ada:s3cret?>!' }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Result', _tag: 'Success', value: [ 0, 15, 255 ] }"
+      },
+      {
+        "level": "log",
+        "text": "{\n  module: 'Base64Url',\n  kind: 'Decode',\n  input: 'not*base64',\n  message: 'Invalid input'\n}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "rejected: Length must be a multiple of 2, but is 7"
+      }
+    ]
+  },
+  "encoding/binary-schemas": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "binary: 28 bytes"
+      },
+      {
+        "level": "log",
+        "text": "json: 45 bytes"
+      },
+      {
+        "level": "log",
+        "text": "{ ok: true, sensor: 'kitchen', celsius: 21.5 }"
+      },
+      {
+        "level": "log",
+        "text": "{ ok: true, sensor: 'kitchen', celsius: 21.5 }"
+      },
+      {
+        "level": "log",
+        "text": "{ ok: true, sensor: 'kitchen', celsius: 21.5 }"
+      },
+      {
+        "level": "log",
+        "text": "fingerprint: 23 bytes"
+      },
+      {
+        "level": "log",
+        "text": "None"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { ok: true, sensor: 'hall', celsius: 19 },\n  { ok: false, sensor: 'attic', celsius: 31 }\n]"
+      }
+    ]
+  },
+  "encoding/config-files": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  name: 'Corner Shop',\n  currencies: [ 'USD', 'EUR' ],\n  server: { port: 8080, tls: true }\n}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{\n  name: 'Corner Shop',\n  currencies: [ 'USD', 'EUR' ],\n  server: { port: '8080', tls: true }\n}"
+      },
+      {
+        "level": "log",
+        "text": "Expected number\n  at [\"server\"][\"port\"]"
+      },
+      {
+        "level": "log",
+        "text": "{\n  name: 'Corner Shop',\n  currencies: [ 'USD', 'EUR' ],\n  server: { port: 8080, tls: true }\n}"
+      },
+      {
+        "level": "log",
+        "text": "SyntaxError: Invalid value '=' at line 1, column 9"
+      }
+    ]
+  },
+  "encoding/diffing-values": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  { op: 'replace', path: '/nickname/_tag', value: 'Some' },\n  { op: 'add', path: '/nickname/value', value: 'Countess' },\n  { op: 'add', path: '/tags/1', value: 'beta' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "true Countess"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{ 'SKU-1': 2, 'SKU-3': 5, 'SKU-2': -4 }"
+      },
+      {
+        "level": "log",
+        "text": "{ 'SKU-1': 12, 'SKU-2': 0, 'SKU-3': 5 }"
+      }
+    ]
+  },
+  "encoding/json-patch": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  { op: 'remove', path: '/coupon' },\n  { op: 'replace', path: '/items/0/qty', value: 2 },\n  { op: 'add', path: '/items/1', value: { sku: 'SKU-9', qty: 1 } },\n  { op: 'replace', path: '/shipping/express~1overnight', value: true },\n  { op: 'replace', path: '/status', value: 'placed' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "express~1overnight"
+      },
+      {
+        "level": "log",
+        "text": "express/overnight"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "draft"
+      },
+      {
+        "level": "log",
+        "text": "{\n  status: 'placed',\n  items: [\n    { sku: 'SKU-1', qty: 2 },\n    { sku: 'SKU-9', qty: 1 },\n    { sku: 'GIFT', qty: 1 }\n  ],\n  shipping: { 'express/overnight': true }\n}"
+      },
+      {
+        "level": "log",
+        "text": "Error: Cannot remove at \"/payment/card\" (parent not found or not a container)."
+      },
+      {
+        "level": "log",
+        "text": "#/$defs/Order%20Line"
+      },
+      {
+        "level": "log",
+        "text": "[ '$defs', 'Order Line' ]"
+      }
+    ]
+  },
+  "encoding/ndjson-streams": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  { orderId: 'A1', status: 'placed' },\n  { orderId: 'A1', status: 'paid' },\n  { orderId: 'B7', status: 'shipped' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "{\"orderId\":\"A1\",\"status\":\"paid\"}\n{\"orderId\":\"B7\",\"status\":\"shipped\"}\n"
+      },
+      {
+        "level": "log",
+        "text": "[ { failed: 'Unpack' } ]"
+      },
+      {
+        "level": "log",
+        "text": "Expected \"placed\" | \"paid\" | \"shipped\"\n  at [0][\"status\"]"
+      }
+    ]
+  },
+  "encoding/server-sent-events": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "price #1: {\"sku\":\"SKU-1\",\"cents\":1999}\nprice #2: {\"sku\":\"SKU-2\",\n\"cents\":500}\nmessage #2: market closing soon\nretry in 3000ms after #2"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { id: '1', event: 'price', data: { sku: 'SKU-1', cents: 1999 } },\n  { id: '2', event: 'price', data: { sku: 'SKU-2', cents: 500 } }\n]"
+      },
+      {
+        "level": "log",
+        "text": "\"id: 3\\nevent: price\\ndata: {\\\"sku\\\":\\\"SKU-3\\\",\\\"cents\\\":250}\\n\\n\""
+      }
+    ]
+  },
+  "errors/catching-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "profile of u-1"
+      },
+      {
+        "level": "log",
+        "text": "guest profile (no u-404)"
+      },
+      {
+        "level": "log",
+        "text": "still failing with RateLimited"
+      },
+      {
+        "level": "log",
+        "text": "guest profile | HTTP 404"
+      },
+      {
+        "level": "log",
+        "text": "try again in 30s | HTTP 429"
+      },
+      {
+        "level": "log",
+        "text": "please sign in | HTTP 401"
+      }
+    ]
+  },
+  "errors/error-reporting": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "handled ProductNotFound"
+      },
+      {
+        "level": "log",
+        "text": "handled PaymentProviderDown"
+      },
+      {
+        "level": "log",
+        "text": "handled beta-pay outage"
+      },
+      {
+        "level": "log",
+        "text": "handled defect"
+      },
+      {
+        "level": "log",
+        "text": "served from database"
+      },
+      {
+        "level": "log",
+        "text": "reports:"
+      },
+      {
+        "level": "log",
+        "text": "[Error] acme-pay timed out {\"provider\":\"acme-pay\"}"
+      },
+      {
+        "level": "log",
+        "text": "[Info] negative total {}"
+      },
+      {
+        "level": "log",
+        "text": "[Info] cache miss storm {}"
+      }
+    ]
+  },
+  "errors/errors-as-values": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "10% off"
+      },
+      {
+        "level": "log",
+        "text": "InvalidCoupon: FREE"
+      },
+      {
+        "level": "log",
+        "text": "25% off"
+      },
+      {
+        "level": "log",
+        "text": "valid discounts: [ 10, 25 ]"
+      },
+      {
+        "level": "log",
+        "text": "3 mugs"
+      },
+      {
+        "level": "log",
+        "text": "skipped: \"three\" is not a quantity"
+      },
+      {
+        "level": "log",
+        "text": "as an effect error: \"zero\" is not a quantity"
+      }
+    ]
+  },
+  "errors/exit-and-cause": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "success: TRK-1 delivered"
+      },
+      {
+        "level": "log",
+        "text": "failure with reasons: Fail"
+      },
+      {
+        "level": "log",
+        "text": "failure with reasons: Fail, Die"
+      },
+      {
+        "level": "log",
+        "text": "first error: ShipmentLost"
+      },
+      {
+        "level": "log",
+        "text": "has defects: true"
+      },
+      {
+        "level": "log",
+        "text": "ShipmentLost: no scans for TRK-0"
+      },
+      {
+        "level": "log",
+        "text": "Error: label printer offline"
+      }
+    ]
+  },
+  "errors/expected-errors-and-defects": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "70"
+      },
+      {
+        "level": "log",
+        "text": "declined: 500 > 100"
+      },
+      {
+        "level": "log",
+        "text": "defect: Error: negative amount -5"
+      },
+      {
+        "level": "log",
+        "text": "defect: Error: ledger corrupted"
+      },
+      {
+        "level": "log",
+        "text": "defect: InsufficientFunds"
+      }
+    ]
+  },
+  "errors/filters": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Success"
+      },
+      {
+        "level": "log",
+        "text": "Failure"
+      },
+      {
+        "level": "log",
+        "text": "queued, gateway said 503"
+      },
+      {
+        "level": "log",
+        "text": "not caught: CardDeclined"
+      },
+      {
+        "level": "log",
+        "text": "tell the customer: card expired"
+      },
+      {
+        "level": "log",
+        "text": "bug report: totals do not add up"
+      },
+      {
+        "level": "log",
+        "text": "shown an error page"
+      },
+      {
+        "level": "log",
+        "text": "amounts: [ 1200, 350 ]"
+      }
+    ]
+  },
+  "errors/parallel-failures": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "interruptible: [ 'ord-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "uninterruptible: [ 'ord-1', 'ord-2', 'ord-3' ]"
+      },
+      {
+        "level": "log",
+        "text": "3 refunds need a manual retry"
+      },
+      {
+        "level": "log",
+        "text": "results: [ 'Failure', 'Failure', 'Failure' ]"
+      }
+    ]
+  },
+  "errors/retrying": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "  attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 2"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 3"
+      },
+      {
+        "level": "log",
+        "text": "shipping: 4.99"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 2"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 3"
+      },
+      {
+        "level": "log",
+        "text": "gave up with ServiceUnavailable"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "stopped at once with InvalidAddress"
+      }
+    ]
+  },
+  "eventlog/browser-journal": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'note-1: 3 stars', 'note-2: 5 stars' ]"
+      }
+    ]
+  },
+  "eventlog/challenge-expiry": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "challenge lifetime: 30000 ms"
+      },
+      {
+        "level": "log",
+        "text": "in time: accepted"
+      },
+      {
+        "level": "log",
+        "text": "replayed: Session auth challenge has expired"
+      },
+      {
+        "level": "log",
+        "text": "too late: Session auth challenge has expired"
+      }
+    ]
+  },
+  "eventlog/compacting-sync": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "todo-1: 3 in, 1 out"
+      },
+      {
+        "level": "log",
+        "text": "todo-2: 1 in, 1 out"
+      },
+      {
+        "level": "log",
+        "text": "added todo-1: Buy 2L oat milk"
+      },
+      {
+        "level": "log",
+        "text": "added todo-2: Call Sam"
+      },
+      {
+        "level": "log",
+        "text": "journal entries: 4, handler runs: 2"
+      }
+    ]
+  },
+  "eventlog/compacting-the-backlog": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "stored: [ '#1 Ada', '#2 Grace', '#3 Ada L.', '#4 Ada Lovelace' ]"
+      },
+      {
+        "level": "log",
+        "text": "compacted: [ '#1 Ada Lovelace', '#4 Grace' ]"
+      },
+      {
+        "level": "log",
+        "text": "replayed: [ '#1 Ada Lovelace', '#4 Grace' ]"
+      }
+    ]
+  },
+  "eventlog/connection-state": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Forbidden Unauthenticated request"
+      },
+      {
+        "level": "log",
+        "text": "signed in: { signedIn: 1, pendingBytes: [] }"
+      },
+      {
+        "level": "log",
+        "text": "mid-upload: { signedIn: 1, pendingBytes: [ 1024000 ] }"
+      },
+      {
+        "level": "log",
+        "text": "received one write of 1200000"
+      },
+      {
+        "level": "log",
+        "text": "after upload: { signedIn: 1, pendingBytes: [] }"
+      }
+    ]
+  },
+  "eventlog/custom-remote": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "TodoAdded [ 1, 2, 3 ]"
+      },
+      {
+        "level": "log",
+        "text": "write refused: NotFound, No store named notes"
+      }
+    ]
+  },
+  "eventlog/defining-events": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ '[x] Read about event logs', '[ ] Write an example' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'TodoAdded todo-1', 'TodoAdded todo-2', 'TodoCompleted todo-1' ]"
+      }
+    ]
+  },
+  "eventlog/encrypted-sync": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'laptop: door code is 4711', 'phone: door code is 4711' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'sequence', 'entryId', 'iv', 'encryptedEntry' ]"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      }
+    ]
+  },
+  "eventlog/encrypting-entries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "iv 12 bytes"
+      },
+      {
+        "level": "log",
+        "text": "overhead 16"
+      },
+      {
+        "level": "log",
+        "text": "note visible on the wire: false"
+      },
+      {
+        "level": "log",
+        "text": "1 true door code is 4711"
+      },
+      {
+        "level": "log",
+        "text": "stranger fails with a defect: true"
+      }
+    ]
+  },
+  "eventlog/entry-ids": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  '09:00 TodoAdded todo-1',\n  '09:10 TodoAdded todo-2',\n  '09:30 TodoCompleted todo-1',\n  '09:45 TodoRenamed todo-2'\n]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  '019ceb92-ea80-7',\n  '019ceb9c-1240-7',\n  '019cebae-61c0-7',\n  '019cebbc-1d60-7'\n]"
+      },
+      {
+        "level": "log",
+        "text": "matches the original: true"
+      },
+      {
+        "level": "log",
+        "text": "a UUID string is not an EntryId: SchemaError"
+      }
+    ]
+  },
+  "eventlog/event-definitions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "true ItemAdded"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ItemAdded' ] true"
+      },
+      {
+        "level": "log",
+        "text": "cart-7"
+      },
+      {
+        "level": "log",
+        "text": "true 26 40"
+      },
+      {
+        "level": "log",
+        "text": "{ cartId: 7, sku: 'MUG-01', quantity: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "groups found: 1 true false"
+      }
+    ]
+  },
+  "eventlog/handler-results": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "balance: 1000"
+      },
+      {
+        "level": "log",
+        "text": "balance: 700"
+      },
+      {
+        "level": "log",
+        "text": "rejected, balance is 700"
+      },
+      {
+        "level": "log",
+        "text": "entries: 2"
+      }
+    ]
+  },
+  "eventlog/journal-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "entries: 1"
+      },
+      {
+        "level": "log",
+        "text": "journal failed in entries"
+      },
+      {
+        "level": "log",
+        "text": "caused by a SqlError: true"
+      },
+      {
+        "level": "log",
+        "text": "entries after destroy: 0"
+      }
+    ]
+  },
+  "eventlog/live-queries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "list: []"
+      },
+      {
+        "level": "log",
+        "text": "open: 0"
+      },
+      {
+        "level": "log",
+        "text": "list: [todo-1]"
+      },
+      {
+        "level": "log",
+        "text": "open: 1"
+      },
+      {
+        "level": "log",
+        "text": "open: 0"
+      },
+      {
+        "level": "log",
+        "text": "list query ran 2 times"
+      }
+    ]
+  },
+  "eventlog/moving-server-storage": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "phone has 2 notes"
+      },
+      {
+        "level": "log",
+        "text": "rows: [ 'n1', 'n2' ]"
+      }
+    ]
+  },
+  "eventlog/persisting-identity": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "created and saved a new identity"
+      },
+      {
+        "level": "log",
+        "text": "loaded the saved identity"
+      },
+      {
+        "level": "log",
+        "text": "same identity: true"
+      },
+      {
+        "level": "log",
+        "text": "exported private key: string"
+      },
+      {
+        "level": "log",
+        "text": "private key: <redacted>"
+      },
+      {
+        "level": "log",
+        "text": "missing private key: SchemaError"
+      }
+    ]
+  },
+  "eventlog/rebuilding-state": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "live: { 'MUG-01': 3 }"
+      },
+      {
+        "level": "log",
+        "text": "cleared: {}"
+      },
+      {
+        "level": "log",
+        "text": "rebuilt: { 'MUG-01': 3 }"
+      }
+    ]
+  },
+  "eventlog/remote-entries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sent 2 entries"
+      },
+      {
+        "level": "log",
+        "text": "phone applies TodoAdded todo-1 (0 conflicts)"
+      },
+      {
+        "level": "log",
+        "text": "phone applies TodoAdded todo-2 (0 conflicts)"
+      },
+      {
+        "level": "log",
+        "text": "resume at: 2"
+      },
+      {
+        "level": "log",
+        "text": "second send: nothing new"
+      },
+      {
+        "level": "log",
+        "text": "redelivered: 2 duplicates"
+      },
+      {
+        "level": "log",
+        "text": "phone holds: 2 entries"
+      }
+    ]
+  },
+  "eventlog/server-authorization": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Forbidden: bob may not add tasks"
+      },
+      {
+        "level": "log",
+        "text": "bob still has 1 entry"
+      },
+      {
+        "level": "log",
+        "text": "server entry 1 task-2"
+      }
+    ]
+  },
+  "eventlog/server-writes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "server handler, written by effect-eventlog-server-write:default"
+      },
+      {
+        "level": "log",
+        "text": "phone: order-1 shipped with DHL"
+      },
+      {
+        "level": "log",
+        "text": "true PersistenceFailure Failed to encode event"
+      }
+    ]
+  },
+  "eventlog/serving-the-server": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "unencrypted server stored NoteWritten"
+      },
+      {
+        "level": "log",
+        "text": "encrypted server stored 111 bytes of ciphertext"
+      }
+    ]
+  },
+  "eventlog/session-auth": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Forbidden Unauthenticated request"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "eventlog-auth-v1"
+      },
+      {
+        "level": "log",
+        "text": "Forbidden Session auth signature verification failed"
+      },
+      {
+        "level": "log",
+        "text": "1 entry for store default, authenticated: true"
+      }
+    ]
+  },
+  "eventlog/signing-a-challenge": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "challenge bytes: 32"
+      },
+      {
+        "level": "log",
+        "text": "signature bytes: 64"
+      },
+      {
+        "level": "log",
+        "text": "valid request: true"
+      },
+      {
+        "level": "log",
+        "text": "bytes round trip: true"
+      },
+      {
+        "level": "log",
+        "text": "still valid: false"
+      },
+      {
+        "level": "log",
+        "text": "still valid: false"
+      },
+      {
+        "level": "log",
+        "text": "still valid: false"
+      },
+      {
+        "level": "log",
+        "text": "true InvalidAlgorithm"
+      }
+    ]
+  },
+  "eventlog/sql-journal": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'ExpenseRecorded exp-1', 'ExpenseRecorded exp-2' ]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { event: 'ExpenseRecorded', primary_key: 'exp-1', size: 20 },\n  { event: 'ExpenseRecorded', primary_key: 'exp-2', size: 20 }\n]"
+      }
+    ]
+  },
+  "eventlog/sql-sync-server": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ [ 'NoteWritten', 'note-1', true ] ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'effect_events_<hash>', 'effect_events_session_auth_bindings' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'sequence', 'iv', 'entry_id', 'encrypted_entry' ] false"
+      }
+    ]
+  },
+  "eventlog/store-mapping": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "alice sees: Design review"
+      },
+      {
+        "level": "log",
+        "text": "dave sees: Quarterly report"
+      },
+      {
+        "level": "log",
+        "text": "carol sees: Design review"
+      },
+      {
+        "level": "log",
+        "text": "team-acme holds task-1"
+      },
+      {
+        "level": "log",
+        "text": "team-globex holds task-2"
+      },
+      {
+        "level": "log",
+        "text": "has archive: false"
+      },
+      {
+        "level": "log",
+        "text": "EventLogServerStoreError NotFound no store \"archive\" for this user"
+      }
+    ]
+  },
+  "eventlog/syncing-devices": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'laptop: Buy milk', 'phone: Buy milk' ]"
+      }
+    ]
+  },
+  "eventlog/the-journal": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "committing ProfileUpdated for user-1"
+      },
+      {
+        "level": "log",
+        "text": "committing ProfileUpdated for user-2"
+      },
+      {
+        "level": "log",
+        "text": "committing ProfileUpdated for user-1"
+      },
+      {
+        "level": "log",
+        "text": "3 entries"
+      },
+      {
+        "level": "log",
+        "text": "[ 'user-1: 1', 'user-2: 2', 'user-1: 3' ]"
+      },
+      {
+        "level": "log",
+        "text": "id holds the time: true"
+      }
+    ]
+  },
+  "eventlog/watching-the-wire": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "-> EventLog.Hello"
+      },
+      {
+        "level": "log",
+        "text": "  <- HelloResponse, challenge of 32 bytes"
+      },
+      {
+        "level": "log",
+        "text": "small write"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.Authenticate Authenticate, Ed25519 signature"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.WriteSingle"
+      },
+      {
+        "level": "log",
+        "text": "large write"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.WriteChunked ChunkedMessage, part 1 of 3"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.WriteChunked ChunkedMessage, part 2 of 3"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.WriteChunked ChunkedMessage, part 3 of 3"
+      },
+      {
+        "level": "log",
+        "text": "read changes"
+      },
+      {
+        "level": "log",
+        "text": "-> EventLog.Changes"
+      },
+      {
+        "level": "log",
+        "text": "  <- ChunkedMessage, part 1 of 3"
+      },
+      {
+        "level": "log",
+        "text": "  <- ChunkedMessage, part 2 of 3"
+      },
+      {
+        "level": "log",
+        "text": "  <- ChunkedMessage, part 3 of 3"
+      },
+      {
+        "level": "log",
+        "text": "[ '#0: 10 bytes', '#1: 1100000 bytes' ]"
+      }
+    ]
+  },
+  "eventlog/wire-protocol": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "EventLog.Hello open"
+      },
+      {
+        "level": "log",
+        "text": "EventLog.Authenticate open"
+      },
+      {
+        "level": "log",
+        "text": "EventLog.WriteSingle needs a session"
+      },
+      {
+        "level": "log",
+        "text": "EventLog.WriteChunked needs a session"
+      },
+      {
+        "level": "log",
+        "text": "EventLog.Changes needs a session"
+      },
+      {
+        "level": "log",
+        "text": "write is 119 bytes"
+      },
+      {
+        "level": "log",
+        "text": "[ 'TodoAdded' ]"
+      },
+      {
+        "level": "log",
+        "text": "chunk size 512000"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 0, 3 ], [ 1, 3 ], [ 2, 3 ] ]"
+      },
+      {
+        "level": "log",
+        "text": "part 0: waiting"
+      },
+      {
+        "level": "log",
+        "text": "part 1: waiting"
+      },
+      {
+        "level": "log",
+        "text": "part 2: 1200000 bytes"
+      },
+      {
+        "level": "log",
+        "text": "Single"
+      },
+      {
+        "level": "log",
+        "text": "[ '#1 todo-1' ]"
+      }
+    ]
+  },
+  "graphql/batching-lookups": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "server: users(ids: u1, u2, u9, u3)"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Ada', 'Grace', '(no such user)', 'Alan', 'Ada' ]"
+      },
+      {
+        "level": "log",
+        "text": "server: users(ids: u2)"
+      },
+      {
+        "level": "log",
+        "text": "server: users(ids: u3)"
+      }
+    ]
+  },
+  "graphql/errors-and-partial-data": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "\"effect\": 42 stars"
+      },
+      {
+        "level": "log",
+        "text": "\"missing\": ResponseError, retryable: false"
+      },
+      {
+        "level": "log",
+        "text": "\"broken\": DecodeError, retryable: false"
+      },
+      {
+        "level": "log",
+        "text": "\"busy\": TransportError, retryable: true"
+      },
+      {
+        "level": "log",
+        "text": "\"\": EncodeError, retryable: false"
+      },
+      {
+        "level": "log",
+        "text": "busy, will retry"
+      },
+      {
+        "level": "log",
+        "text": "busy, will retry"
+      },
+      {
+        "level": "log",
+        "text": "busy, will retry"
+      },
+      {
+        "level": "log",
+        "text": "gave up: TransportError"
+      },
+      {
+        "level": "log",
+        "text": "{ repository: null } [ [ 'repository' ] ]"
+      }
+    ]
+  },
+  "graphql/middleware": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "POST https://api.github.com/graphql"
+      },
+      {
+        "level": "log",
+        "text": "rate limit left: 4999"
+      },
+      {
+        "level": "log",
+        "text": "server saw: Bearer dev-token"
+      }
+    ]
+  },
+  "graphql/paging-connections": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "server: page after start"
+      },
+      {
+        "level": "log",
+        "text": "server: page after 2"
+      },
+      {
+        "level": "log",
+        "text": "[ '#1 Typo', '#2 Crash', '#3 Slow' ]"
+      },
+      {
+        "level": "log",
+        "text": "server: page after start"
+      },
+      {
+        "level": "log",
+        "text": "server: page after 2"
+      },
+      {
+        "level": "log",
+        "text": "server: page after 4"
+      },
+      {
+        "level": "log",
+        "text": "pages: 3"
+      }
+    ]
+  },
+  "graphql/subscriptions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "server: subscribed with { orderId: 'order-7' }"
+      },
+      {
+        "level": "log",
+        "text": "order-7 is PACKED"
+      },
+      {
+        "level": "log",
+        "text": "order-7 is SHIPPED"
+      },
+      {
+        "level": "log",
+        "text": "order-7 is RETURNED"
+      }
+    ]
+  },
+  "graphql/testing-with-layer-test": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "handler got 2026-05-08"
+      },
+      {
+        "level": "log",
+        "text": "[ 'File taxes', 'Call mum' ]"
+      },
+      {
+        "level": "log",
+        "text": "UnimplementedError: GraphQLClient: Unimplemented operation \"CompleteTodo\""
+      }
+    ]
+  },
+  "graphql/typed-operations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "query TodosDue { before: '2026-05-01T00:00:00.000Z' }"
+      },
+      {
+        "level": "log",
+        "text": "File taxes 2026-04-15"
+      },
+      {
+        "level": "log",
+        "text": "mutation CompleteTodo { id: 't1' }"
+      },
+      {
+        "level": "log",
+        "text": "completed t1"
+      }
+    ]
+  },
+  "http-api/a-typed-client": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "-> POST /orders"
+      },
+      {
+        "level": "log",
+        "text": "{ id: 'order-42', item: 'Coffee beans', quantity: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "-> GET /orders/order-42"
+      },
+      {
+        "level": "log",
+        "text": "{ id: 'order-42', item: 'Coffee beans', quantity: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "http://shop.test/orders/order-7"
+      }
+    ]
+  },
+  "http-api/defining-an-api": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "created { id: 3, title: 'Water the plants', done: false }"
+      },
+      {
+        "level": "log",
+        "text": "open [ 'Walk the dog', 'Water the plants' ]"
+      },
+      {
+        "level": "log",
+        "text": "first { id: 1, title: 'Buy milk', done: true }"
+      }
+    ]
+  },
+  "http-api/docs-pages": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Weather API [ '/forecast/{city}' ]"
+      },
+      {
+        "level": "log",
+        "text": "/docs 200 text/html Weather API true true"
+      },
+      {
+        "level": "log",
+        "text": "/swagger 200 text/html Weather API Documentation true false"
+      },
+      {
+        "level": "log",
+        "text": "{ city: 'Oslo', celsius: 18 }"
+      }
+    ]
+  },
+  "http-api/errors-and-status-codes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "<- POST 201"
+      },
+      {
+        "level": "log",
+        "text": "{ id: 2, title: 'Read' }"
+      },
+      {
+        "level": "log",
+        "text": "<- GET 404"
+      },
+      {
+        "level": "log",
+        "text": "no todo with id 99"
+      },
+      {
+        "level": "log",
+        "text": "<- POST 409"
+      },
+      {
+        "level": "log",
+        "text": "that todo already exists"
+      },
+      {
+        "level": "log",
+        "text": "<- DELETE 204"
+      },
+      {
+        "level": "log",
+        "text": "<- GET 400"
+      },
+      {
+        "level": "log",
+        "text": "body: \"\""
+      }
+    ]
+  },
+  "http-api/openapi-document": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "3.1.0 { title: 'Library API', version: '1.2.0' }"
+      },
+      {
+        "level": "log",
+        "text": "[ { name: 'books', description: 'The catalogue' } ]"
+      },
+      {
+        "level": "log",
+        "text": "books.getBook Find a book"
+      },
+      {
+        "level": "log",
+        "text": "[ { bearer: [] } ]"
+      },
+      {
+        "level": "log",
+        "text": "[ '200', '404' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'BookNotFoundEncoded', 'Book' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ bearer: { type: 'http', scheme: 'Bearer' } }"
+      }
+    ]
+  },
+  "http-api/security-middleware": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "signed in as Ada"
+      },
+      {
+        "level": "log",
+        "text": "signed in as Grace"
+      },
+      {
+        "level": "log",
+        "text": "401: bad API key"
+      }
+    ]
+  },
+  "http-api/testing-handlers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ welcome: 'ada@example.com' }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ada@example.com: Welcome!' ]"
+      },
+      {
+        "level": "log",
+        "text": "defect: Error: Unhandled endpoint: stats"
+      }
+    ]
+  },
+  "http/a-client-service": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Todo { id: 1, title: 'Buy milk', done: false }"
+      },
+      {
+        "level": "log",
+        "text": "todo 2 not found"
+      }
+    ]
+  },
+  "http/building-requests": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "POST http://shop.test/orders"
+      },
+      {
+        "level": "log",
+        "text": "dryRun=true&tag=gift&tag=rush"
+      },
+      {
+        "level": "log",
+        "text": "{\n  authorization: '<redacted>',\n  'x-client': 'checkout',\n  'content-type': 'application/json',\n  'content-length': '30'\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  method: 'POST',\n  url: '/orders?dryRun=true&tag=gift&tag=rush',\n  authorization: 'Bearer secret-token',\n  body: { item: 'Coffee', quantity: 2 }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{ method: 'GET', url: '/orders?status=open', body: null }"
+      }
+    ]
+  },
+  "http/cookies": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "before login: 400 "
+      },
+      {
+        "level": "log",
+        "text": "[ 'session=sess-ada; Max-Age=3600; Path=/; HttpOnly; SameSite=Lax' ]"
+      },
+      {
+        "level": "log",
+        "text": "jar: { session: 'sess-ada' }"
+      },
+      {
+        "level": "log",
+        "text": "after login: 200 cart for sess-ada"
+      },
+      {
+        "level": "log",
+        "text": "[ 'session=; Max-Age=0; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT' ]"
+      },
+      {
+        "level": "log",
+        "text": "jar: { session: '' }"
+      },
+      {
+        "level": "log",
+        "text": "after logout: 400 "
+      }
+    ]
+  },
+  "http/html-templates": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "tea-01: 12 in stock, tags green/loose"
+      },
+      {
+        "level": "log",
+        "text": "[ '<ul>', '<li>Tea</li>', '<li>Mugs</li>', '</ul>' ]"
+      },
+      {
+        "level": "log",
+        "text": "text/html"
+      },
+      {
+        "level": "log",
+        "text": "<h1>Green tea</h1>\n<p>12 in stock</p>\n<blockquote>&lt;script&gt;alert(1)&lt;/script&gt; Lovely tea</blockquote>"
+      }
+    ]
+  },
+  "http/middleware": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "/me 200 \"hello Ada\" x-api=v2"
+      },
+      {
+        "level": "log",
+        "text": "/me 401 \"unknown api key\" x-api=v2"
+      },
+      {
+        "level": "log",
+        "text": "/missing 404 \"\" x-api=v2"
+      },
+      {
+        "level": "log",
+        "text": "https://app.shop.test 204 {\n  allowOrigin: 'https://app.shop.test',\n  allowMethods: 'GET, HEAD, PUT, PATCH, POST, DELETE'\n}"
+      },
+      {
+        "level": "log",
+        "text": "https://evil.test 204 {\n  allowOrigin: undefined,\n  allowMethods: 'GET, HEAD, PUT, PATCH, POST, DELETE'\n}"
+      }
+    ]
+  },
+  "http/multipart-uploads": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "200 [\n  'field title: Taxi to the airport',\n  'file receipt: receipt.txt, 16 bytes'\n]"
+      },
+      {
+        "level": "log",
+        "text": "413"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'field title=Taxi to the airport',\n  'chunk of receipt.txt',\n  'end of receipt.txt',\n  'done'\n]"
+      }
+    ]
+  },
+  "http/path-patterns": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "GET /products/42 -> one product {\"id\":\"42\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /products/featured -> featured products {}"
+      },
+      {
+        "level": "log",
+        "text": "GET /orders/1001 -> one order {\"id\":\"1001\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /orders/latest -> no match"
+      },
+      {
+        "level": "log",
+        "text": "GET /archive/2024 -> archive {\"year\":\"2024\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /archive/2024/05 -> archive {\"year\":\"2024\",\"month\":\"05\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /files/invoices/2024/may.pdf -> a file {\"*\":\"invoices/2024/may.pdf\"}"
+      },
+      {
+        "level": "log",
+        "text": "DELETE /cart -> no match"
+      },
+      {
+        "level": "log",
+        "text": "{\"id\":\"42\"} {\"color\":[\"red\",\"blue\"]}"
+      },
+      {
+        "level": "log",
+        "text": "/PRODUCTS/42: default true, strict false"
+      },
+      {
+        "level": "log",
+        "text": "/products/42/: default true, strict false"
+      }
+    ]
+  },
+  "http/routing": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "GET /orders/7 -> 200 {\"id\":7,\"item\":\"Coffee beans\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /orders/8 -> 404 {\"error\":\"order 8 does not exist\"}"
+      },
+      {
+        "level": "log",
+        "text": "GET /orders/seven -> 400 "
+      },
+      {
+        "level": "log",
+        "text": "GET /customers/1 -> 404 "
+      },
+      {
+        "level": "log",
+        "text": "POST /orders -> 400 {\"error\":\"RequestParseError\"}"
+      },
+      {
+        "level": "log",
+        "text": "POST /orders -> 201 {\"id\":8,\"item\":\"Tea\"}"
+      },
+      {
+        "level": "log",
+        "text": "POST /orders/7/refund -> 500 "
+      }
+    ]
+  },
+  "http/serving-files": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "200 text/html; charset=utf-8 max-age=60 true"
+      },
+      {
+        "level": "log",
+        "text": "304 \"\""
+      },
+      {
+        "level": "log",
+        "text": "200 text/csv attachment; filename=\"report.csv\""
+      },
+      {
+        "level": "log",
+        "text": "item,sold\ntea,12\n"
+      },
+      {
+        "level": "log",
+        "text": "W/\"menu-v3\" 200 304"
+      },
+      {
+        "level": "log",
+        "text": "node"
+      }
+    ]
+  },
+  "http/trace-context": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ incomingTrace: '4bf92f3577b34da6a3ce929d0e0e4736' }"
+      },
+      {
+        "level": "log",
+        "text": "internal checkout, parent: upstream, trace 4bf92f35"
+      },
+      {
+        "level": "log",
+        "text": "client GET, parent: checkout, trace 4bf92f35"
+      },
+      {
+        "level": "log",
+        "text": "server GET, parent: client span, via headers, trace 4bf92f35"
+      },
+      {
+        "level": "log",
+        "text": "{ incomingTrace: null }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'b3', 'traceparent' ] { _id: 'Option', _tag: 'Some', value: true }"
+      }
+    ]
+  },
+  "http/urls-and-params": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "true false"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Result', _tag: 'Success', value: 'https://shop.test/cart' }"
+      },
+      {
+        "level": "log",
+        "text": "https://shop.test/search?q=tea"
+      },
+      {
+        "level": "log",
+        "text": "https://shop.test/products?q=tea&page=2"
+      },
+      {
+        "level": "log",
+        "text": "tag=green&tag=loose-leaf&q=tea&tag=organic"
+      },
+      {
+        "level": "log",
+        "text": "[ 'green', 'loose-leaf', 'organic' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 'tea' } { _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "{ tag: [ 'green', 'loose-leaf', 'organic' ], q: 'tea' }"
+      },
+      {
+        "level": "log",
+        "text": "https://files.test/invoice.pdf?Signature=REDACTED&expires=600"
+      },
+      {
+        "level": "log",
+        "text": "[ 'application/pdf', 'image/webp', 'no match' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 'csv' }"
+      }
+    ]
+  },
+  "observability/custom-loggers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "info",
+        "text": "[info] order placed ord-7"
+      },
+      {
+        "level": "warn",
+        "text": "[warn] payment retried"
+      },
+      {
+        "level": "error",
+        "text": "[error] shipping label failed"
+      },
+      {
+        "level": "log",
+        "text": "captured 3 entries"
+      },
+      {
+        "level": "log",
+        "text": "{\n  message: [ 'order placed', 'ord-7' ],\n  level: 'INFO',\n  cause: undefined,\n  annotations: {}\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  message: 'payment retried',\n  level: 'WARN',\n  cause: undefined,\n  annotations: { attempt: 2 }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  message: 'shipping label failed',\n  level: 'ERROR',\n  cause: undefined,\n  annotations: {}\n}"
+      },
+      {
+        "level": "info",
+        "text": "[info] order shipped"
+      },
+      {
+        "level": "log",
+        "text": "[INFO] ORDER SHIPPED"
+      }
+    ]
+  },
+  "observability/devtools": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\"_tag\":\"Ping\"}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "span checkout Started"
+      },
+      {
+        "level": "log",
+        "text": "span chargeCard Started"
+      },
+      {
+        "level": "log",
+        "text": "span chargeCard Ended"
+      },
+      {
+        "level": "log",
+        "text": "span checkout Ended"
+      },
+      {
+        "level": "log",
+        "text": "metrics orders_placed"
+      }
+    ]
+  },
+  "observability/inspecting-and-redacting": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "some(42)"
+      },
+      {
+        "level": "log",
+        "text": "none()"
+      },
+      {
+        "level": "log",
+        "text": "{\"_tag\":\"Card\",\"last4\":\"5556\"}"
+      },
+      {
+        "level": "log",
+        "text": "{\"email\":\"***@example.com\",\"card\":{\"_tag\":\"Card\",\"last4\":\"4242\"},\"apiKey\":\"<redacted>\"}"
+      },
+      {
+        "level": "log",
+        "text": "{\"email\":\"ada@example.com\",\"card\":{\"_tag\":\"Card\",\"last4\":\"4242\"},\"apiKey\":\"<redacted>\"}"
+      }
+    ]
+  },
+  "observability/log-levels": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "All < Trace < Debug < Info < Warn < Error < Fatal < None"
+      },
+      {
+        "level": "log",
+        "text": "--- default minimum: Info"
+      },
+      {
+        "level": "log",
+        "text": "Info  inventory synced"
+      },
+      {
+        "level": "log",
+        "text": "Warn  3 SKUs have no price"
+      },
+      {
+        "level": "log",
+        "text": "Error warehouse B unreachable"
+      },
+      {
+        "level": "log",
+        "text": "PAGE  on-call: warehouse B unreachable"
+      },
+      {
+        "level": "log",
+        "text": "--- minimum: Debug"
+      },
+      {
+        "level": "log",
+        "text": "Debug fetched 120 rows"
+      },
+      {
+        "level": "log",
+        "text": "Info  inventory synced"
+      },
+      {
+        "level": "log",
+        "text": "Warn  3 SKUs have no price"
+      },
+      {
+        "level": "log",
+        "text": "Error warehouse B unreachable"
+      },
+      {
+        "level": "log",
+        "text": "PAGE  on-call: warehouse B unreachable"
+      },
+      {
+        "level": "log",
+        "text": "debug is off, skipping the dump"
+      },
+      {
+        "level": "log",
+        "text": "Debug full inventory dump"
+      }
+    ]
+  },
+  "observability/logging": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "INFO checkout started for ord-1001 orderId=ord-1001"
+      },
+      {
+        "level": "log",
+        "text": "WARN stock is low for SKU-42 orderId=ord-1001"
+      },
+      {
+        "level": "log",
+        "text": "INFO card charged orderId=ord-1001 provider=acme-pay amountCents=4999"
+      },
+      {
+        "level": "log",
+        "text": "ERROR payment failed cause=card declined"
+      }
+    ]
+  },
+  "observability/metrics": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "eu orders: 2"
+      },
+      {
+        "level": "log",
+        "text": "jobs waiting: 3"
+      },
+      {
+        "level": "log",
+        "text": "order values: { count: 3, min: 12, max: 240, sum: 332 }"
+      },
+      {
+        "level": "log",
+        "text": "buckets: [ [ 10, 0 ], [ 50, 1 ], [ 100, 2 ] ]"
+      },
+      {
+        "level": "log",
+        "text": "payment methods: { card: 2, invoice: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "Counter orders_placed { region: 'eu' }"
+      },
+      {
+        "level": "log",
+        "text": "Histogram order_value_dollars {}"
+      },
+      {
+        "level": "log",
+        "text": "Frequency payment_method {}"
+      },
+      {
+        "level": "log",
+        "text": "Counter orders_placed { region: 'us' }"
+      },
+      {
+        "level": "log",
+        "text": "Gauge jobs_waiting {}"
+      }
+    ]
+  },
+  "observability/otlp-all-signals": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sent while running: 0"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'https://collector.example.com/v1/logs',\n  'https://collector.example.com/v1/metrics',\n  'https://collector.example.com/v1/traces'\n]"
+      },
+      {
+        "level": "log",
+        "text": "log: Info { stringValue: 'order placed' } { attributes: [ 'orderId', 'effect.fiberId' ] }"
+      },
+      {
+        "level": "log",
+        "text": "span: placeOrder { logInSpan: true }"
+      },
+      {
+        "level": "log",
+        "text": "metric: orders_placed { isMonotonic: true, value: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "https://collector.example.com/v1/logs application/x-protobuf"
+      },
+      {
+        "level": "log",
+        "text": "https://collector.example.com/v1/metrics application/x-protobuf"
+      },
+      {
+        "level": "log",
+        "text": "https://collector.example.com/v1/traces application/x-protobuf"
+      }
+    ]
+  },
+  "observability/otlp-traces": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "resource attributes: [\n  'telemetry.sdk.name',\n  'telemetry.sdk.language',\n  'telemetry.sdk.version',\n  'service.name',\n  'service.version'\n]"
+      },
+      {
+        "level": "log",
+        "text": "requests before flush: 0"
+      },
+      {
+        "level": "log",
+        "text": "requests after flush: 1"
+      },
+      {
+        "level": "log",
+        "text": "POST https://collector.example.com/v1/traces application/json"
+      },
+      {
+        "level": "log",
+        "text": "{\n  name: 'chargeCard',\n  parent: 'checkout',\n  kind: 3,\n  status: 1,\n  attributes: []\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  name: 'checkout',\n  parent: 'none',\n  kind: 2,\n  status: 1,\n  attributes: [ { key: 'orderId', value: { stringValue: 'ord-1001' } } ]\n}"
+      }
+    ]
+  },
+  "observability/prometheus": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "# HELP shop_http_requests Handled HTTP requests\n# TYPE shop_http_requests counter\nshop_http_requests{route=\"/orders\",status=\"200\"} 2\nshop_http_requests{route=\"/orders\",status=\"500\"} 1\n# HELP shop_http_latency_ms Request latency in milliseconds\n# TYPE shop_http_latency_ms histogram\nshop_http_latency_ms_bucket{le=\"50\"} 1\nshop_http_latency_ms_bucket{le=\"200\"} 2\nshop_http_latency_ms_bucket{le=\"+Inf\"} 3\nshop_http_latency_ms_sum 1055\nshop_http_latency_ms_count 3"
+      },
+      {
+        "level": "log",
+        "text": "200 text/plain; version=0.0.4; charset=utf-8"
+      },
+      {
+        "level": "log",
+        "text": "same text as format"
+      }
+    ]
+  },
+  "observability/spans-and-tracers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "reserveStock (in checkout) ok"
+      },
+      {
+        "level": "log",
+        "text": "chargeCard (in checkout) ok"
+      },
+      {
+        "level": "log",
+        "text": "  attributes: { amountCents: 4999 }"
+      },
+      {
+        "level": "log",
+        "text": "  event: authorized"
+      },
+      {
+        "level": "log",
+        "text": "printLabel (in checkout) failed"
+      },
+      {
+        "level": "log",
+        "text": "checkout (root) ok"
+      },
+      {
+        "level": "log",
+        "text": "  attributes: { orderId: 'ord-1001' }"
+      }
+    ]
+  },
+  "persistence/key-value-store": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "hello"
+      },
+      {
+        "level": "log",
+        "text": "undefined"
+      },
+      {
+        "level": "log",
+        "text": "2"
+      },
+      {
+        "level": "log",
+        "text": "true true"
+      },
+      {
+        "level": "log",
+        "text": "3"
+      },
+      {
+        "level": "log",
+        "text": "{\"theme\":\"dark\",\"fontSize\":14}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: Settings { theme: 'dark', fontSize: 14 }\n}"
+      },
+      {
+        "level": "log",
+        "text": "SchemaError"
+      }
+    ]
+  },
+  "persistence/persisted-cache": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "calls after first process: 2"
+      },
+      {
+        "level": "log",
+        "text": "Weather { city: 'Lisbon', celsius: 21 } CityNotFound"
+      },
+      {
+        "level": "log",
+        "text": "calls after second process: 2"
+      },
+      {
+        "level": "log",
+        "text": "calls after invalidate: 3"
+      }
+    ]
+  },
+  "persistence/persisted-queue": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "attempt 1: sent \"Welcome\" to ada@example.com"
+      },
+      {
+        "level": "log",
+        "text": "attempt 1: grace@example.com failed"
+      },
+      {
+        "level": "log",
+        "text": "attempt 2: sent \"Welcome\" to grace@example.com"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      }
+    ]
+  },
+  "persistence/persisting-results": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Rate { from: 'EUR', to: 'USD', value: 1.08 }"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: { _tag: 'UnknownCurrency', code: 'XYZ' }\n}"
+      },
+      {
+        "level": "log",
+        "text": "undefined"
+      },
+      {
+        "level": "log",
+        "text": "{ _tag: 'Success', value: { from: 'EUR', to: 'USD', value: 1.08 } } number"
+      }
+    ]
+  },
+  "persistence/rate-limiter": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "ada: ok, 2 left"
+      },
+      {
+        "level": "log",
+        "text": "ada: ok, 1 left"
+      },
+      {
+        "level": "log",
+        "text": "ada: ok, 0 left"
+      },
+      {
+        "level": "log",
+        "text": "ada: limited, retry in 60s"
+      },
+      {
+        "level": "log",
+        "text": "grace: ok, 2 left"
+      },
+      {
+        "level": "log",
+        "text": "ada: ok, 2 left"
+      },
+      {
+        "level": "log",
+        "text": "[ 0, 0, 500, 1000 ]"
+      }
+    ]
+  },
+  "persistence/redis-scripts": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "5"
+      },
+      {
+        "level": "log",
+        "text": "7"
+      },
+      {
+        "level": "log",
+        "text": "8"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'SET greeting hello',\n  'SCRIPT LOAD return redis.call(\\'INCRBY\\', KEYS[1], ARGV[1])',\n  'EVALSHA sha-1 1 page-views 5',\n  'EVALSHA sha-1 1 page-views 2',\n  'EVALSHA sha-1 1 page-views 1',\n  'SCRIPT LOAD return redis.call(\\'INCRBY\\', KEYS[1], ARGV[1])',\n  'EVALSHA sha-1 1 page-views 1'\n]"
+      }
+    ]
+  },
+  "platform/child-processes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "echo [ 'hello', 'from a child process' ]"
+      },
+      {
+        "level": "log",
+        "text": "hello from a child process"
+      },
+      {
+        "level": "log",
+        "text": "[ 'apples', 'figs', 'pears' ]"
+      },
+      {
+        "level": "log",
+        "text": "QUIET WORDS"
+      },
+      {
+        "level": "log",
+        "text": "exit code 3"
+      },
+      {
+        "level": "log",
+        "text": "[ 'tick 1', 'tick 2' ]"
+      },
+      {
+        "level": "log",
+        "text": "PlatformError NotFound"
+      }
+    ]
+  },
+  "platform/crypto": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "0153492f923ab851c0f7b85ed4b6fe2f2a8ac5a6a14b7ef1b35920c99e33cd97"
+      },
+      {
+        "level": "log",
+        "text": "36 4"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "BadArgument"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'd9236751-bc19-419a-a4f7-effb45ff5466',\n  [ 'linus', 'grace', 'margaret', 'ada' ]\n]"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      }
+    ]
+  },
+  "platform/fake-file-system": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "AppConfig { port: 3000, logLevel: 'debug' }"
+      },
+      {
+        "level": "log",
+        "text": "AppConfig { port: 8080, logLevel: 'info' }"
+      },
+      {
+        "level": "log",
+        "text": "PermissionDenied PermissionDenied: FileSystem.readFileString (/srv/app/config/app.json)"
+      },
+      {
+        "level": "log",
+        "text": "NotFound false"
+      }
+    ]
+  },
+  "platform/files-and-paths": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'later.md', 'today.md' ]"
+      },
+      {
+        "level": "log",
+        "text": "# Today\n- learn Effect"
+      },
+      {
+        "level": "log",
+        "text": ".md today"
+      },
+      {
+        "level": "log",
+        "text": "NotFound: could not read missing.md"
+      }
+    ]
+  },
+  "platform/ip-addresses": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ _id: 'Result', _tag: 'Success', value: '192.168.1.20' }"
+      },
+      {
+        "level": "log",
+        "text": "octets must be at most 255"
+      },
+      {
+        "level": "log",
+        "text": "router private: true"
+      },
+      {
+        "level": "log",
+        "text": "localhost loopback: true"
+      },
+      {
+        "level": "log",
+        "text": "2001:db8::1 true"
+      },
+      {
+        "level": "log",
+        "text": "10.0.0.7"
+      },
+      {
+        "level": "log",
+        "text": "8443 https://[2001:db8::1]:8443"
+      },
+      {
+        "level": "log",
+        "text": "port must be an integer from 0 through 65535"
+      }
+    ]
+  },
+  "platform/networks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "10.1.0.0 10.1.255.255 65536n"
+      },
+      {
+        "level": "log",
+        "text": "true false"
+      },
+      {
+        "level": "log",
+        "text": "true true"
+      },
+      {
+        "level": "log",
+        "text": "address has non-zero host bits"
+      },
+      {
+        "level": "log",
+        "text": "10.1.2.3 16"
+      },
+      {
+        "level": "log",
+        "text": "10.1.0.0/16"
+      }
+    ]
+  },
+  "platform/resolving-hosts": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "mail.shop.example"
+      },
+      {
+        "level": "log",
+        "text": "api.shop.example 443"
+      },
+      {
+        "level": "log",
+        "text": "NetAddressError"
+      },
+      {
+        "level": "log",
+        "text": "[ '10.0.0.10', '10.0.0.11', '2001:db8::10' ] 2"
+      },
+      {
+        "level": "log",
+        "text": "[ 'MX 10 mail.shop.example' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'mail.shop.example' ]"
+      },
+      {
+        "level": "log",
+        "text": "NotFound NotFound: Dns.lookup (nope.shop.example)"
+      },
+      {
+        "level": "log",
+        "text": "[ '10.0.0.10:443', '10.0.0.11:443' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ '[2001:db8::1]:8080' ]"
+      }
+    ]
+  },
+  "platform/standard-io": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "error: disk full"
+      },
+      {
+        "level": "log",
+        "text": "[ 'TypeScript', 'OCaml' ] 3 prompts"
+      }
+    ]
+  },
+  "platform/streaming-files": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "wrote 11908 bytes"
+      },
+      {
+        "level": "log",
+        "text": "read in 3 chunks"
+      },
+      {
+        "level": "log",
+        "text": "total quantity: 4003"
+      },
+      {
+        "level": "log",
+        "text": "order,quantity"
+      }
+    ]
+  },
+  "platform/tcp-sockets": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "InetAddressV4 127.0.0.1"
+      },
+      {
+        "level": "log",
+        "text": "[ 'HELLO', 'EFFECT SOCKETS' ]"
+      },
+      {
+        "level": "log",
+        "text": "SocketError SocketOpenError"
+      }
+    ]
+  },
+  "platform/udp-datagrams": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "127.0.0.1"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ack: ping 1', 'ack: ping 2' ]"
+      }
+    ]
+  },
+  "platform/workers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ id: 1, brightness: 90 }"
+      },
+      {
+        "level": "log",
+        "text": "bytes left on the main thread: 0"
+      },
+      {
+        "level": "log",
+        "text": "true WorkerSendError"
+      }
+    ]
+  },
+  "reactivity/async-atoms": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "loading..."
+      },
+      {
+        "level": "log",
+        "text": "Ada Lovelace"
+      },
+      {
+        "level": "log",
+        "text": "Ada Lovelace (refreshing)"
+      },
+      {
+        "level": "log",
+        "text": "no profile for u-1, last known: Ada Lovelace"
+      }
+    ]
+  },
+  "reactivity/atom-refs": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  'done: true',\n  'form: {\"title\":\"Buy milk\",\"done\":true}',\n  'form: {\"title\":\"BUY MILK\",\"done\":true}'\n]"
+      },
+      {
+        "level": "log",
+        "text": "label is completed"
+      },
+      {
+        "level": "log",
+        "text": "notifications for an equal value: 0"
+      },
+      {
+        "level": "log",
+        "text": "collection changed 2 times"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { title: 'Write report', done: true },\n  { title: 'Call plumber', done: false },\n  { title: 'Water plants', done: false }\n]"
+      }
+    ]
+  },
+  "reactivity/atoms-and-registries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "total: 2248 cents"
+      },
+      {
+        "level": "log",
+        "text": "items: 2"
+      },
+      {
+        "level": "log",
+        "text": "computed 1 time(s)"
+      },
+      {
+        "level": "log",
+        "text": "computed 1 time(s)"
+      },
+      {
+        "level": "log",
+        "text": "total: 7148 cents"
+      },
+      {
+        "level": "log",
+        "text": "items: 3"
+      },
+      {
+        "level": "log",
+        "text": "computed 2 time(s)"
+      },
+      {
+        "level": "log",
+        "text": "other registry total: 2248 cents"
+      },
+      {
+        "level": "log",
+        "text": "other registry total: 0 cents"
+      }
+    ]
+  },
+  "reactivity/http-api-atoms": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "todos: []"
+      },
+      {
+        "level": "log",
+        "text": "created todo 1: Book flights"
+      },
+      {
+        "level": "log",
+        "text": "todos: [ 'Book flights' ]"
+      },
+      {
+        "level": "log",
+        "text": "list state: Success"
+      },
+      {
+        "level": "log",
+        "text": "[ Todo { id: 1, title: 'Book flights' } ]"
+      }
+    ]
+  },
+  "reactivity/hydration": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "product:tea-01 {\"_tag\":\"Success\",\"value\":{\"sku\":\"tea-01\",\"name\":\"Green tea\",\"cents\":899},\"waiting\":false}"
+      },
+      {
+        "level": "log",
+        "text": "quantity 3"
+      },
+      {
+        "level": "log",
+        "text": "Green tea x 3"
+      },
+      {
+        "level": "log",
+        "text": "product loads: 1"
+      },
+      {
+        "level": "log",
+        "text": "render count on the client: 0"
+      }
+    ]
+  },
+  "reactivity/invalidation-keys": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "orders: [ 'order-1' ]"
+      },
+      {
+        "level": "log",
+        "text": "customers: [ 'Ada' ]"
+      },
+      {
+        "level": "log",
+        "text": "orders: [ 'order-1', 'order-2' ]"
+      },
+      {
+        "level": "log",
+        "text": "customer results waiting: 0"
+      },
+      {
+        "level": "log",
+        "text": "order results waiting: 0"
+      },
+      {
+        "level": "log",
+        "text": "customers: [ 'Ada', 'Grace' ]"
+      }
+    ]
+  },
+  "reactivity/rpc-atoms": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "same atom: true"
+      },
+      {
+        "level": "log",
+        "text": "orders: []"
+      },
+      {
+        "level": "log",
+        "text": "placed order-1"
+      },
+      {
+        "level": "log",
+        "text": "orders: [ 'Teapot' ]"
+      },
+      {
+        "level": "log",
+        "text": "sold out: Gold kettle"
+      },
+      {
+        "level": "log",
+        "text": "list updates: 0"
+      }
+    ]
+  },
+  "reactivity/subscribing-to-changes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'Ada Lovelace', 'Grace Lovelace', 'Grace Hopper' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Alan Turing' ]"
+      },
+      {
+        "level": "log",
+        "text": "notifications after a no-op write: 0"
+      },
+      {
+        "level": "log",
+        "text": "KJ"
+      }
+    ]
+  },
+  "resources/acquire-release": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "open database"
+      },
+      {
+        "level": "log",
+        "text": "open orders.csv"
+      },
+      {
+        "level": "log",
+        "text": "copy rows from database to orders.csv"
+      },
+      {
+        "level": "log",
+        "text": "report export done"
+      },
+      {
+        "level": "log",
+        "text": "close orders.csv (ok)"
+      },
+      {
+        "level": "log",
+        "text": "close database (ok)"
+      },
+      {
+        "level": "log",
+        "text": "---"
+      },
+      {
+        "level": "log",
+        "text": "open database"
+      },
+      {
+        "level": "log",
+        "text": "open orders.csv"
+      },
+      {
+        "level": "log",
+        "text": "copy rows from database to orders.csv"
+      },
+      {
+        "level": "log",
+        "text": "close orders.csv (failed)"
+      },
+      {
+        "level": "log",
+        "text": "close database (failed)"
+      },
+      {
+        "level": "log",
+        "text": "export failed: disk full"
+      }
+    ]
+  },
+  "resources/caches": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "  lookup mug"
+      },
+      {
+        "level": "log",
+        "text": "mug x3: [ 300, 300, 300 ] lookups: 1"
+      },
+      {
+        "level": "log",
+        "text": "mug again: 300"
+      },
+      {
+        "level": "log",
+        "text": "  lookup mug"
+      },
+      {
+        "level": "log",
+        "text": "mug later: 300"
+      },
+      {
+        "level": "log",
+        "text": "  lookup teapot"
+      },
+      {
+        "level": "log",
+        "text": "  lookup kettle"
+      },
+      {
+        "level": "log",
+        "text": "size: 2"
+      },
+      {
+        "level": "log",
+        "text": "keys: [ 'teapot', 'kettle' ]"
+      },
+      {
+        "level": "log",
+        "text": "kettle cached: false"
+      },
+      {
+        "level": "log",
+        "text": "total lookups: 4"
+      }
+    ]
+  },
+  "resources/pools": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  'order 1 loaded',\n  'order 2 loaded',\n  'order 3 loaded',\n  'order 4 loaded',\n  'order 5 loaded',\n  'order 6 loaded'\n]"
+      },
+      {
+        "level": "log",
+        "text": "connections open: 2"
+      },
+      {
+        "level": "log",
+        "text": "most borrowed at once: 2"
+      },
+      {
+        "level": "log",
+        "text": "after the scope: 0"
+      }
+    ]
+  },
+  "resources/reference-counting": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "open price feed"
+      },
+      {
+        "level": "log",
+        "text": "dashboard reads price feed"
+      },
+      {
+        "level": "log",
+        "text": "alerts read price feed"
+      },
+      {
+        "level": "log",
+        "text": "alerts done, feed still open"
+      },
+      {
+        "level": "log",
+        "text": "close price feed"
+      },
+      {
+        "level": "log",
+        "text": "open price feed"
+      },
+      {
+        "level": "log",
+        "text": "close price feed"
+      },
+      {
+        "level": "log",
+        "text": "open room lobby"
+      },
+      {
+        "level": "log",
+        "text": "open room kitchen"
+      },
+      {
+        "level": "log",
+        "text": "open rooms: [ 'lobby', 'kitchen' ]"
+      },
+      {
+        "level": "log",
+        "text": "close room kitchen"
+      },
+      {
+        "level": "log",
+        "text": "close room lobby"
+      },
+      {
+        "level": "log",
+        "text": "open rooms: []"
+      }
+    ]
+  },
+  "resources/refreshable-resources": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "fetch #1"
+      },
+      {
+        "level": "log",
+        "text": "read { eurToUsd: 1.01 }"
+      },
+      {
+        "level": "log",
+        "text": "read { eurToUsd: 1.01 }"
+      },
+      {
+        "level": "log",
+        "text": "read { eurToUsd: 1.01 }"
+      },
+      {
+        "level": "log",
+        "text": "fetch #2"
+      },
+      {
+        "level": "log",
+        "text": "after refresh { eurToUsd: 1.02 }"
+      },
+      {
+        "level": "log",
+        "text": "refresh failed { eurToUsd: 1.02 }"
+      },
+      {
+        "level": "log",
+        "text": "fetch #3"
+      },
+      {
+        "level": "log",
+        "text": "created { eurToUsd: 1.03 }"
+      },
+      {
+        "level": "log",
+        "text": "fetch #4"
+      },
+      {
+        "level": "log",
+        "text": "fetch #5"
+      },
+      {
+        "level": "log",
+        "text": "an hour later { eurToUsd: 1.05 }"
+      }
+    ]
+  },
+  "resources/scoped-cache": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "connect eu-west"
+      },
+      {
+        "level": "log",
+        "text": "eu-west/orders"
+      },
+      {
+        "level": "log",
+        "text": "connect us-east"
+      },
+      {
+        "level": "log",
+        "text": "disconnect eu-west"
+      },
+      {
+        "level": "log",
+        "text": "connect ap-south"
+      },
+      {
+        "level": "log",
+        "text": "cached: [ 'us-east', 'ap-south' ]"
+      },
+      {
+        "level": "log",
+        "text": "disconnect us-east"
+      },
+      {
+        "level": "log",
+        "text": "cached: [ 'ap-south' ]"
+      },
+      {
+        "level": "log",
+        "text": "shutting down"
+      },
+      {
+        "level": "log",
+        "text": "disconnect ap-south"
+      }
+    ]
+  },
+  "resources/scoped-ref": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "open app-1.log"
+      },
+      {
+        "level": "log",
+        "text": "  app-1.log <- order placed"
+      },
+      {
+        "level": "log",
+        "text": "open app-2.log"
+      },
+      {
+        "level": "log",
+        "text": "close app-1.log"
+      },
+      {
+        "level": "log",
+        "text": "  app-2.log <- order shipped"
+      },
+      {
+        "level": "log",
+        "text": "could not open app-3.log"
+      },
+      {
+        "level": "log",
+        "text": "  app-2.log <- order delivered"
+      },
+      {
+        "level": "log",
+        "text": "shutting down"
+      },
+      {
+        "level": "log",
+        "text": "close app-2.log"
+      }
+    ]
+  },
+  "resources/scopes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "connect cache"
+      },
+      {
+        "level": "log",
+        "text": "still using cache"
+      },
+      {
+        "level": "log",
+        "text": "connect search"
+      },
+      {
+        "level": "log",
+        "text": "flush request log"
+      },
+      {
+        "level": "log",
+        "text": "disconnect search"
+      },
+      {
+        "level": "log",
+        "text": "request done, session still open"
+      },
+      {
+        "level": "log",
+        "text": "connect metrics"
+      },
+      {
+        "level": "log",
+        "text": "disconnect metrics"
+      },
+      {
+        "level": "log",
+        "text": "disconnect cache"
+      },
+      {
+        "level": "log",
+        "text": "session closed"
+      },
+      {
+        "level": "log",
+        "text": "connect reports"
+      },
+      {
+        "level": "log",
+        "text": "disconnect reports"
+      }
+    ]
+  },
+  "rpc/custom-transport": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "-> {\"_tag\":\"Request\",\"id\":0,\"tag\":\"AddTodo\",\"payload\":{\"title\":\"Buy milk\"},\"headers\":[]}"
+      },
+      {
+        "level": "log",
+        "text": "<- {\"_tag\":\"Exit\",\"requestId\":0,\"exit\":{\"_tag\":\"Success\",\"value\":1}}"
+      },
+      {
+        "level": "log",
+        "text": "AddTodo returned 1"
+      },
+      {
+        "level": "log",
+        "text": "-> {\"_tag\":\"Request\",\"id\":1,\"tag\":\"Countdown\",\"payload\":null,\"headers\":[]}"
+      },
+      {
+        "level": "log",
+        "text": "<- {\"_tag\":\"Chunk\",\"requestId\":1,\"values\":[3,2,1]}"
+      },
+      {
+        "level": "log",
+        "text": "-> {\"_tag\":\"Ack\",\"requestId\":1}"
+      },
+      {
+        "level": "log",
+        "text": "<- {\"_tag\":\"Exit\",\"requestId\":1,\"exit\":{\"_tag\":\"Success\",\"value\":null}}"
+      },
+      {
+        "level": "log",
+        "text": "Countdown returned 3, 2, 1"
+      }
+    ]
+  },
+  "rpc/defining-rpcs": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Todo { id: 1, title: 'Buy milk', done: false }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Buy milk', 'Walk the dog' ]"
+      }
+    ]
+  },
+  "rpc/middleware": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "you are Ada"
+      },
+      {
+        "level": "log",
+        "text": "rejected: missing or wrong token"
+      }
+    ]
+  },
+  "rpc/over-http": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ id: 1, title: 'Buy milk' }"
+      },
+      {
+        "level": "log",
+        "text": "HttpError: StatusCodeError"
+      }
+    ]
+  },
+  "rpc/serialization-formats": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "json (application/json)"
+      },
+      {
+        "level": "log",
+        "text": "{\"_tag\":\"Request\",\"id\":\"1\",\"tag\":\"AddTodo\",\"payload\":{\"title\":\"Buy milk\"},\"headers\":[]}"
+      },
+      {
+        "level": "log",
+        "text": "{\"_tag\":\"Exit\",\"requestId\":\"1\",\"exit\":{\"_tag\":\"Success\",\"value\":{\"id\":1,\"title\":\"Buy milk\"}}}"
+      },
+      {
+        "level": "log",
+        "text": "jsonRpc (application/json)"
+      },
+      {
+        "level": "log",
+        "text": "{\"jsonrpc\":\"2.0\",\"method\":\"AddTodo\",\"params\":{\"title\":\"Buy milk\"},\"id\":\"1\"}"
+      },
+      {
+        "level": "log",
+        "text": "{\"jsonrpc\":\"2.0\",\"id\":\"1\",\"result\":{\"id\":1,\"title\":\"Buy milk\"}}"
+      },
+      {
+        "level": "log",
+        "text": "ndjson framing: true"
+      },
+      {
+        "level": "log",
+        "text": "[]"
+      },
+      {
+        "level": "log",
+        "text": "[ { _tag: 'Ping' }, { _tag: 'Eof' } ]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  {\n    _tag: 'Request',\n    id: '1',\n    tag: 'AddTodo',\n    payload: { title: 'Buy milk' },\n    headers: []\n  }\n]"
+      }
+    ]
+  },
+  "rpc/streaming": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "success schema is a stream: true"
+      },
+      {
+        "level": "log",
+        "text": "parcel-1: picked up"
+      },
+      {
+        "level": "log",
+        "text": "parcel-1: in transit"
+      },
+      {
+        "level": "log",
+        "text": "parcel-1: out for delivery"
+      },
+      {
+        "level": "log",
+        "text": "parcel-1: delivered"
+      },
+      {
+        "level": "log",
+        "text": "server: courier feed stopped"
+      },
+      {
+        "level": "log",
+        "text": "[ 'courier at stop 1', 'courier at stop 2' ]"
+      },
+      {
+        "level": "log",
+        "text": "parcel-lost: picked up"
+      },
+      {
+        "level": "log",
+        "text": "lost, last seen at the depot"
+      }
+    ]
+  },
+  "rpc/typed-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "cancelled order-1"
+      },
+      {
+        "level": "log",
+        "text": "too late, order-2 has shipped"
+      },
+      {
+        "level": "log",
+        "text": "no such order: order-404"
+      }
+    ]
+  },
+  "rpc/workers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ total: 'EUR 36.49', onMainThread: false }"
+      },
+      {
+        "level": "log",
+        "text": "{ total: 'EUR 0.00', onMainThread: false }"
+      }
+    ]
+  },
+  "schema-in-depth/compiling-schemas": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "// Generated by SchemaAOTCompiler. Regenerate after schema or Effect changes.\nimport { runtime } from \"effect/schema/SchemaCompiler/runtime\";\nfunction d0(ast,resolve,operation){const R=runtime;switch(operation){case \"is\":{return (function(C,R){\"use strict\";const {getCheckIssues:K,matchesTemplateLiteral:T,getCandidateIndex:U,getIndexSignatureKeys:G,defaultParseOptions:D,hasExcessProperties:E}=R;;;return function(i,o){if(typeof i!==\"object\"||i===null||Array.isArray(i))return false;if(o!==D&&o.onExcessProperty===\"error\"&&E(C[0],i,void 0))return false;const v0=i[\"sku\"];if(typeof v0!==\"string\")return false;const v1=i[\"qty\"];if(typeof v1!==\"number\")return false;const v2=v1;if(K(C[1],v2,0,o))return false;return true}})([ast,ast.propertySignatures[1].type],R)}}}\n/** @param {ReadonlyArray<import(\"effect/SchemaAST\").AST>} asts */\nexport function install(asts){\nconst a0=asts[0];\nruntime.setCompiler(a0,d0);\n}\n"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG', qty: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "Expected a value greater than 0\n  at [\"qty\"]"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "schema-in-depth/custom-getters": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ email: 'ada@example.com', role: 'member', credit: 1205 }"
+      },
+      {
+        "level": "log",
+        "text": "{ email: 'ada@example.com', credit: '$12.05' }"
+      },
+      {
+        "level": "log",
+        "text": "{ email: 'ada@example.com', role: 'admin', credit: '$12.05' }"
+      },
+      {
+        "level": "log",
+        "text": "\"12 dollars\" is not a price like $1.50\n  at [\"credit\"]"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 'summer-sale' }"
+      }
+    ]
+  },
+  "schema-in-depth/decoder-registry": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "true false"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'SKU-7', qty: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "Expected a SKU such as SKU-42\n  at [\"sku\"]"
+      }
+    ]
+  },
+  "schema-in-depth/formatting-issues": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Enter a valid email address\n  at [\"email\"]\nExpected a value greater than or equal to 13, got 9\n  at [\"age\"]\nMissing key\n  at [\"plan\"]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { path: [ 'email' ], message: 'Enter a valid email address' },\n  {\n    path: [ 'age' ],\n    message: 'Expected a value greater than or equal to 13, got 9'\n  },\n  { path: [ 'plan' ], message: 'Missing key' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'Enter a valid email address',\n  'You must be 13 or older',\n  'This field is required'\n]"
+      },
+      {
+        "level": "log",
+        "text": "{\"userId\":42n,\"roles\":Set([\"admin\"]),\"expires\":2025-01-01T00:00:00.000Z,\"token\":<redacted>,\"referrer\":none(),\"self\":[Circular]}"
+      },
+      {
+        "level": "log",
+        "text": "{\"userId\":\"42n\",\"roles\":{},\"expires\":\"2025-01-01T00:00:00.000Z\",\"token\":\"<redacted>\",\"referrer\":{\"_id\":\"Option\",\"_tag\":\"None\"}}"
+      }
+    ]
+  },
+  "schema-in-depth/models": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "select     id, email, passwordHash, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "insert     email, passwordHash, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "update     id, email, passwordHash, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "json       id, email, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "jsonCreate email, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "jsonUpdate email, nickname, isAdmin"
+      },
+      {
+        "level": "log",
+        "text": "true { _id: 'Option', _tag: 'None' } true"
+      },
+      {
+        "level": "log",
+        "text": "{ id: 1, email: 'ada@example.com', isAdmin: true }"
+      },
+      {
+        "level": "log",
+        "text": "{\n  email: 'grace@example.com',\n  nickname: { _id: 'Option', _tag: 'Some', value: 'Amazing Grace' },\n  isAdmin: false\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  email: 'grace@example.com',\n  passwordHash: '$argon2id$...',\n  nickname: 'Grace',\n  isAdmin: 0\n}"
+      }
+    ]
+  },
+  "schema-in-depth/optics": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "London"
+      },
+      {
+        "level": "log",
+        "text": "{ name: 'Ada', address: { city: 'Paris' } } London"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Result', _tag: 'Success', value: '4242' }"
+      },
+      {
+        "level": "log",
+        "text": "Expected \"Card\" tag"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "[ 1 ]"
+      },
+      {
+        "level": "log",
+        "text": "[ { sku: 'MUG', qty: 2 }, { sku: 'TEE', qty: 0 } ]"
+      },
+      {
+        "level": "log",
+        "text": "true Ada (gold)"
+      }
+    ]
+  },
+  "schema-in-depth/parser-and-issues": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Composite true"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { field: 'email', problem: 'a string matching the RegExp @' },\n  { field: 'age', problem: 'an integer' },\n  { field: 'age', problem: 'a value greater than or equal to 13' },\n  { field: 'plan', problem: 'MissingKey' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "Failure"
+      },
+      {
+        "level": "log",
+        "text": "[ { field: 'email', problem: 'a string matching the RegExp @' } ]"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: { email: 'ada@example.com', age: 36, plan: 'pro' }\n}"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "schema-in-depth/representations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "1228 characters of JSON"
+      },
+      {
+        "level": "log",
+        "text": "[\n  '\"representation\":{\"id\":\"effect/schema/isMinLength\",\"payload\":{\"minLength\":3}}',\n  '\"representation\":{\"id\":\"effect/schema/isGreaterThan\",\"payload\":{\"exclusiveMinimum\":0}}'\n]"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG', price: 12, status: 'active' }"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "Error: Missing reviver for effect/schema/isMinLength"
+      },
+      {
+        "level": "log",
+        "text": "export const Product = Schema.Struct({ \"sku\": Schema.String.check(Schema.isMinLength(3).annotate({ \"expected\": \"a value with a length of at least 3\" })), \"price\": Schema.Number.check(Schema.isGreaterThan(0).annotate({ \"expected\": \"a value greater than 0\" })), \"status\": Schema.Literals([\"active\", \"archived\"]), \"note\": Schema.optionalKey(Schema.String) }).annotate({ \"identifier\": \"Product\" })"
+      },
+      {
+        "level": "log",
+        "text": "export type Product = { readonly \"sku\": string, readonly \"price\": number, readonly \"status\": \"active\" | \"archived\", readonly \"note\"?: string }"
+      }
+    ]
+  },
+  "schema-in-depth/standard-schema": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "effect 1"
+      },
+      {
+        "level": "log",
+        "text": "{ ok: true, value: { email: 'ada@example.com', age: 36 } }"
+      },
+      {
+        "level": "log",
+        "text": "{\n  ok: false,\n  errors: { email: 'Enter an email', age: 'Expected an integer' }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{\n  type: 'object',\n  properties: { email: { type: 'string' }, age: { type: 'string' } },\n  required: [ 'email', 'age' ],\n  additionalProperties: true\n}"
+      }
+    ]
+  },
+  "schema-in-depth/variant-schemas": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "internal sku, priceCents, costCents, wholesaleCents, stock"
+      },
+      {
+        "level": "log",
+        "text": "partner  sku, priceCents, wholesaleCents, stock"
+      },
+      {
+        "level": "log",
+        "text": "public   sku, priceCents"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG', priceCents: 1200 }"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG', priceCents: 1200, wholesaleCents: 700, stock: 'low' }"
+      },
+      {
+        "level": "log",
+        "text": "{ sku: 'MUG', priceCents: 1100 }"
+      }
+    ]
+  },
+  "schema-in-depth/walking-the-ast": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Order"
+      },
+      {
+        "level": "log",
+        "text": "{ id: string; quantity: number; status: \"pending\" | \"shipped\"; giftNote?: string; tags: Array<string> }"
+      },
+      {
+        "level": "log",
+        "text": "{ id: string; quantity: string; status: \"pending\" | \"shipped\"; giftNote?: string; tags: Array<string> }"
+      },
+      {
+        "level": "log",
+        "text": "id {\n  description: 'Public order number',\n  rules: [ 'a value with a length of at least 3' ]\n}"
+      },
+      {
+        "level": "log",
+        "text": "quantity { description: '', rules: [] }"
+      },
+      {
+        "level": "log",
+        "text": "status { description: '', rules: [] }"
+      },
+      {
+        "level": "log",
+        "text": "giftNote { description: '', rules: [] }"
+      },
+      {
+        "level": "log",
+        "text": "tags { description: '', rules: [] }"
+      }
+    ]
+  },
+  "schema/branded-types": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Hello, usr_123"
+      },
+      {
+        "level": "log",
+        "text": "ord_9"
+      },
+      {
+        "level": "log",
+        "text": "string"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      }
+    ]
+  },
+  "schema/checks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "ok"
+      },
+      {
+        "level": "log",
+        "text": "Expected a string matching the RegExp ^[a-z0-9_]+$"
+      },
+      {
+        "level": "log",
+        "text": "Expected an integer"
+      },
+      {
+        "level": "log",
+        "text": "expected an even number, got 7"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      }
+    ]
+  },
+  "schema/classes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "21.45 USD"
+      },
+      {
+        "level": "log",
+        "text": "true 5.00 EUR"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "rejected a negative amount"
+      }
+    ]
+  },
+  "schema/collections": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 90, 85, 77 ]"
+      },
+      {
+        "level": "log",
+        "text": "first: ada@example.com"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "[ 40.7, -74 ]"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "{ apples: 3, pears: 0 }"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "schema/decoding-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ name: 'Ada', age: 36 }"
+      },
+      {
+        "level": "log",
+        "text": "Expected number\n  at [\"age\"]"
+      },
+      {
+        "level": "log",
+        "text": "Expected string\n  at [\"name\"]\nExpected number\n  at [\"age\"]"
+      }
+    ]
+  },
+  "schema/defaults": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ host: 'localhost', port: 8080, logLevel: 'info' }"
+      },
+      {
+        "level": "log",
+        "text": "{ host: 'example.com', port: 443, logLevel: 'error' }"
+      },
+      {
+        "level": "log",
+        "text": "{ title: 'Hello', tags: [] }"
+      },
+      {
+        "level": "log",
+        "text": "{ title: 'Tagged', tags: [ 'effect' ] }"
+      }
+    ]
+  },
+  "schema/defining-a-schema": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ name: 'Ada', age: 36 }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "schema/json-schema": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"email\": {\n      \"type\": \"string\",\n      \"description\": \"Where we send the confirmation link\"\n    },\n    \"plan\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"free\",\n        \"pro\"\n      ]\n    },\n    \"referralCode\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"email\",\n    \"plan\"\n  ],\n  \"additionalProperties\": true,\n  \"title\": \"Signup\"\n}"
+      },
+      {
+        "level": "log",
+        "text": "draft-2020-12 -> draft-07"
+      }
+    ]
+  },
+  "schema/json-strings": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ theme: 'dark', fontSize: 14 }"
+      },
+      {
+        "level": "log",
+        "text": "{\"theme\":\"dark\",\"fontSize\":16}"
+      },
+      {
+        "level": "log",
+        "text": "Expected a valid JSON string\n\nExpected \"light\" | \"dark\"\n  at [\"theme\"]"
+      }
+    ]
+  },
+  "schema/optional-and-nullable": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ username: 'ada', avatarUrl: null }"
+      },
+      {
+        "level": "log",
+        "text": "{\n  username: 'grace',\n  bio: 'Wrote the first compiler',\n  website: 'https://example.com',\n  avatarUrl: 'https://example.com/grace.png'\n}"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "schema/primitives-and-literals": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  id: 'sku-42',\n  title: 'Effect T-shirt',\n  price: 25,\n  currency: 'USD',\n  size: 'medium',\n  inStock: true\n}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "[ 'small', 'medium', 'large' ]"
+      }
+    ]
+  },
+  "schema/tagged-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'Ada Lovelace', 'no user bob', 'retry in 30s' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ _tag: 'UserNotFound', userId: 'bob' }"
+      },
+      {
+        "level": "log",
+        "text": "true bob"
+      }
+    ]
+  },
+  "schema/tagged-unions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'Circle: 3.14', 'Rectangle: 6.00', 'Triangle: 10.00' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ _tag: 'Circle', radius: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "[ { _tag: 'Rectangle', width: 2, height: 3 } ]"
+      }
+    ]
+  },
+  "schema/transformations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "43"
+      },
+      {
+        "level": "log",
+        "text": "{ page: 2, query: 'effect' }"
+      },
+      {
+        "level": "log",
+        "text": "{ page: '3', query: 'ts' }"
+      },
+      {
+        "level": "log",
+        "text": "[ 'effect', 'schema', 'typescript' ]"
+      },
+      {
+        "level": "log",
+        "text": "effect,schema,typescript"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: NaN }"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      }
+    ]
+  },
+  "services/composing-layers": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "database: connecting"
+      },
+      {
+        "level": "log",
+        "text": "users: 26"
+      },
+      {
+        "level": "log",
+        "text": "orders: 27"
+      },
+      {
+        "level": "log",
+        "text": "database: connecting"
+      },
+      {
+        "level": "log",
+        "text": "users: 26"
+      },
+      {
+        "level": "log",
+        "text": "raw query: 8"
+      }
+    ]
+  },
+  "services/config": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "listening on localhost:8080"
+      },
+      {
+        "level": "log",
+        "text": "debug: false"
+      },
+      {
+        "level": "log",
+        "text": "api key: <redacted>"
+      },
+      {
+        "level": "log",
+        "text": "key length: 11"
+      },
+      {
+        "level": "log",
+        "text": "SchemaError(Expected a string representing a finite number\n  at [\"PORT\"])"
+      },
+      {
+        "level": "log",
+        "text": "{ url: 'postgres://db/orders', poolSize: 4 }"
+      }
+    ]
+  },
+  "services/defining-a-service": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "building Users"
+      },
+      {
+        "level": "log",
+        "text": "Hello, Ada"
+      },
+      {
+        "level": "log",
+        "text": "Grace"
+      },
+      {
+        "level": "log",
+        "text": "no user u9"
+      }
+    ]
+  },
+  "services/layer-map": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "open pool for acme"
+      },
+      {
+        "level": "log",
+        "text": "acme ran SELECT * FROM orders"
+      },
+      {
+        "level": "log",
+        "text": "acme ran SELECT * FROM orders"
+      },
+      {
+        "level": "log",
+        "text": "open pool for globex"
+      },
+      {
+        "level": "log",
+        "text": "globex ran SELECT * FROM orders"
+      },
+      {
+        "level": "log",
+        "text": "close pool for acme"
+      },
+      {
+        "level": "log",
+        "text": "open pool for acme"
+      },
+      {
+        "level": "log",
+        "text": "acme ran SELECT * FROM orders"
+      },
+      {
+        "level": "log",
+        "text": "shutting down"
+      },
+      {
+        "level": "log",
+        "text": "close pool for globex"
+      },
+      {
+        "level": "log",
+        "text": "close pool for acme"
+      }
+    ]
+  },
+  "services/layer-ref": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "sign in, got token-1"
+      },
+      {
+        "level": "log",
+        "text": "GET /me with token-1"
+      },
+      {
+        "level": "log",
+        "text": "GET /me with token-1"
+      },
+      {
+        "level": "log",
+        "text": "sign out token-1"
+      },
+      {
+        "level": "log",
+        "text": "sign in, got token-2"
+      },
+      {
+        "level": "log",
+        "text": "GET /me with token-2"
+      },
+      {
+        "level": "log",
+        "text": "borrowed: GET /orders with token-2"
+      },
+      {
+        "level": "log",
+        "text": "sign out token-2"
+      },
+      {
+        "level": "log",
+        "text": "sign in, got token-3"
+      },
+      {
+        "level": "log",
+        "text": "GET /me with token-3"
+      },
+      {
+        "level": "log",
+        "text": "sign out token-3"
+      }
+    ]
+  },
+  "services/layers-from-config": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[console] ada@example.com: Welcome!"
+      },
+      {
+        "level": "log",
+        "text": "[smtp mail.example.com] ada@example.com: Welcome!"
+      },
+      {
+        "level": "log",
+        "text": "SchemaError(Expected string\n  at [\"SMTP_HOST\"])"
+      }
+    ]
+  },
+  "services/managed-runtime": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "store opened"
+      },
+      {
+        "level": "log",
+        "text": "200 o-1 shipped"
+      },
+      {
+        "level": "log",
+        "text": "404 o-2"
+      },
+      {
+        "level": "log",
+        "text": "store closed"
+      }
+    ]
+  },
+  "services/references": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Add to cart"
+      },
+      {
+        "level": "log",
+        "text": "Buy now"
+      },
+      {
+        "level": "log",
+        "text": "minimum log level: Info"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Info: order placed', 'Debug: loading cart', 'Info: order placed' ]"
+      }
+    ]
+  },
+  "services/runtime": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "success: 0"
+      },
+      {
+        "level": "log",
+        "text": "failure: 1"
+      },
+      {
+        "level": "log",
+        "text": "migration failed: 3"
+      },
+      {
+        "level": "log",
+        "text": "interrupted: 130"
+      },
+      {
+        "level": "log",
+        "text": "interrupted worker: 0"
+      }
+    ]
+  },
+  "services/test-implementations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "ada paid 1550 cents (ch_1)"
+      },
+      {
+        "level": "log",
+        "text": "recorded charges: [ 'ada:1550' ]"
+      },
+      {
+        "level": "log",
+        "text": "grace paid 500 cents (ch_mock)"
+      },
+      {
+        "level": "log",
+        "text": "refund is not implemented"
+      }
+    ]
+  },
+  "sql/batched-lookups": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "query for ids 1, 2, 3"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'A Wizard of Earthsea by Ursula K. Le Guin',\n  'Kindred by Octavia E. Butler',\n  'The Dispossessed by Ursula K. Le Guin',\n  'Mort by Terry Pratchett'\n]"
+      },
+      {
+        "level": "log",
+        "text": "query for ids 3, 42"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Terry Pratchett', 'no author 42' ]"
+      }
+    ]
+  },
+  "sql/decoding-rows": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ [ 'Teapot', false ], [ 'Mug', true ] ]"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{\n  _id: 'Option',\n  _tag: 'Some',\n  value: Product { id: 3, name: 'Mug', priceCents: 900, inStock: true }\n}"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'None' }"
+      },
+      {
+        "level": "log",
+        "text": "SchemaError"
+      },
+      {
+        "level": "log",
+        "text": "Expected number\n  at [3][\"priceCents\"]"
+      }
+    ]
+  },
+  "sql/driver-cursors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 1, 2, 3, 4, 5 ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'paused after row 3', 'resumed' ]"
+      }
+    ]
+  },
+  "sql/handling-sql-errors": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "true UniqueViolation"
+      },
+      {
+        "level": "log",
+        "text": "users.email"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "registered"
+      },
+      {
+        "level": "log",
+        "text": "taken: ada@example.com"
+      },
+      {
+        "level": "log",
+        "text": "invalid age: 9"
+      },
+      {
+        "level": "log",
+        "text": "UnknownError Failed to prepare statement"
+      }
+    ]
+  },
+  "sql/migrations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ [ 1, 'create_customers' ], [ 2, 'add_email' ] ]"
+      },
+      {
+        "level": "log",
+        "text": "[]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { migration_id: 1, name: 'create_customers' },\n  { migration_id: 2, name: 'add_email' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 3, 'add_signup_source' ] ]"
+      },
+      {
+        "level": "log",
+        "text": "Failed: Migration \"5_typo\" failed"
+      },
+      {
+        "level": "log",
+        "text": "[ 'id', 'name', 'email', 'source' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ { latest: 3 } ]"
+      }
+    ]
+  },
+  "sql/models-and-repositories": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'id', 'title', 'done' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'title', 'done' ]"
+      },
+      {
+        "level": "log",
+        "text": "Todo { id: 1, title: 'Buy milk', done: false }"
+      },
+      {
+        "level": "log",
+        "text": "Buy oat milk true"
+      },
+      {
+        "level": "log",
+        "text": "NoSuchElementError"
+      },
+      {
+        "level": "log",
+        "text": "SchemaError"
+      },
+      {
+        "level": "log",
+        "text": "[ 'Call mum', 'Plan trip' ]"
+      }
+    ]
+  },
+  "sql/queries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  'SELECT id, name FROM users WHERE name = ?',\n  [ 'Ada\\' OR \\'1\\'=\\'1' ]\n]"
+      },
+      {
+        "level": "log",
+        "text": "[]"
+      },
+      {
+        "level": "log",
+        "text": "[ { id: 2, name: 'Grace' }, { id: 3, name: 'Linus' } ]"
+      },
+      {
+        "level": "log",
+        "text": "[ { name: 'Linus' }, { name: 'Ada' } ]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'SELECT name FROM users WHERE (role = ? AND name LIKE ?) ORDER BY id',\n  [ 'member', 'G%' ]\n]"
+      },
+      {
+        "level": "log",
+        "text": "[ { name: 'Grace' } ]"
+      },
+      {
+        "level": "log",
+        "text": "SELECT name FROM users WHERE 1=1 ORDER BY id"
+      }
+    ]
+  },
+  "sql/streaming-rows": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "fetching orders after id 0"
+      },
+      {
+        "level": "log",
+        "text": "[ 1, 2, 3 ]"
+      },
+      {
+        "level": "log",
+        "text": "fetching orders after id 0"
+      },
+      {
+        "level": "log",
+        "text": "fetching orders after id 4"
+      },
+      {
+        "level": "log",
+        "text": "fetching orders after id 8"
+      },
+      {
+        "level": "log",
+        "text": "total: 275"
+      },
+      {
+        "level": "log",
+        "text": "not supported by this driver"
+      }
+    ]
+  },
+  "sql/transactions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'alice=70', 'bob=50' ]"
+      },
+      {
+        "level": "log",
+        "text": "InsufficientFunds: bob"
+      },
+      {
+        "level": "log",
+        "text": "[ 'alice=70', 'bob=50' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'alice=60', 'bob=60' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 'alice' ], [ 'bob' ] ]"
+      }
+    ]
+  },
+  "streams/channel-schema": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ { orderId: 'o1', cents: 1200 }, { orderId: 'o2', cents: 450 } ]"
+      },
+      {
+        "level": "log",
+        "text": "  accepted o3"
+      },
+      {
+        "level": "log",
+        "text": "rejected: Expected a finite number\n  at [1][\"cents\"]"
+      },
+      {
+        "level": "log",
+        "text": "[ { orderId: 'o6', cents: '3000' } ]"
+      }
+    ]
+  },
+  "streams/channels": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'ada', 'grace' ]"
+      },
+      {
+        "level": "log",
+        "text": "{ imported: 2 }"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 'ada', 'grace' ], [ 'alan' ] ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'order,ada', 'order,grace', 'order,alan' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ADA', 'GRACE', 'ALAN' ]"
+      }
+    ]
+  },
+  "streams/consuming-with-sinks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "count: 5"
+      },
+      {
+        "level": "log",
+        "text": "total: 9300"
+      },
+      {
+        "level": "log",
+        "text": "charging ada 1200"
+      },
+      {
+        "level": "log",
+        "text": "charging grace 300"
+      },
+      {
+        "level": "log",
+        "text": "revenue: $93.00"
+      },
+      {
+        "level": "log",
+        "text": "  checked ada"
+      },
+      {
+        "level": "log",
+        "text": "  checked grace"
+      },
+      {
+        "level": "log",
+        "text": "all large: false"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 'ada', 'grace' ], [ 'ada', 'alan' ], [ 'grace' ] ]"
+      }
+    ]
+  },
+  "streams/creating-streams": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'keyboard', 'mouse', 'monitor' ]"
+      },
+      {
+        "level": "log",
+        "text": "first three users:"
+      },
+      {
+        "level": "log",
+        "text": "  GET /users?page=0"
+      },
+      {
+        "level": "log",
+        "text": "  GET /users?page=1"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ada', 'grace', 'alan' ]"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'health check at 0ms',\n  'health check at 30000ms',\n  'health check at 60000ms'\n]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'clicked save', 'clicked preview', 'clicked publish' ]"
+      }
+    ]
+  },
+  "streams/errors-and-resources": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "take two:"
+      },
+      {
+        "level": "log",
+        "text": "  open connection"
+      },
+      {
+        "level": "log",
+        "text": "  close connection"
+      },
+      {
+        "level": "log",
+        "text": "[ 'ACME line 1', 'ACME line 2' ]"
+      },
+      {
+        "level": "log",
+        "text": "fail at line 3, then fall back:"
+      },
+      {
+        "level": "log",
+        "text": "  open connection"
+      },
+      {
+        "level": "log",
+        "text": "  close connection"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'ACME line 1',\n  'ACME line 2',\n  'feed broke at line 3, using cached price'\n]"
+      },
+      {
+        "level": "log",
+        "text": "retry a flaky feed:"
+      },
+      {
+        "level": "log",
+        "text": "  open connection"
+      },
+      {
+        "level": "log",
+        "text": "  close connection"
+      },
+      {
+        "level": "log",
+        "text": "  open connection"
+      },
+      {
+        "level": "log",
+        "text": "  close connection"
+      },
+      {
+        "level": "log",
+        "text": "[\n  'ACME line 1',\n  'ACME line 1',\n  'ACME line 2',\n  'ACME line 3',\n  'ACME line 4'\n]"
+      },
+      {
+        "level": "log",
+        "text": "attempts: 2"
+      }
+    ]
+  },
+  "streams/pull-and-take": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'T-1', 'T-2' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'T-3' ]"
+      },
+      {
+        "level": "log",
+        "text": "stream ended"
+      },
+      {
+        "level": "log",
+        "text": "values: T-1, T-2"
+      },
+      {
+        "level": "log",
+        "text": "values: T-3"
+      },
+      {
+        "level": "log",
+        "text": "exit: Success"
+      },
+      {
+        "level": "log",
+        "text": "[ 'T-1', 'T-2', 'T-3' ]"
+      },
+      {
+        "level": "log",
+        "text": "done, nothing more to read"
+      },
+      {
+        "level": "log",
+        "text": "failure: printer jammed"
+      }
+    ]
+  },
+  "streams/transforming-streams": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'o1', 'o3', 'o4', 'o5', 'o6' ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 'receipt-o1', 'receipt-o3', 'receipt-o4', 'receipt-o5', 'receipt-o6' ]"
+      },
+      {
+        "level": "log",
+        "text": "peak lookups in flight: 3"
+      },
+      {
+        "level": "log",
+        "text": "[ [ 'o1', 'o2', 'o3', 'o4' ], [ 'o5', 'o6' ] ]"
+      },
+      {
+        "level": "log",
+        "text": "[ 0, 1200, 1650, 4650, 5640, 7740 ]"
+      }
+    ]
+  },
+  "streams/what-is-a-stream": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "stream defined, nothing loaded yet"
+      },
+      {
+        "level": "log",
+        "text": "first run:"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1001"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1002"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1003"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1004"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1005"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1006"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1007"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1008"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1009"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1010"
+      },
+      {
+        "level": "log",
+        "text": "collected 10 orders"
+      },
+      {
+        "level": "log",
+        "text": "second run, first three only:"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1001"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1002"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1003"
+      },
+      {
+        "level": "log",
+        "text": "[ 'order-1001', 'order-1002', 'order-1003' ]"
+      },
+      {
+        "level": "log",
+        "text": "third run, first one only:"
+      },
+      {
+        "level": "log",
+        "text": "  loading order 1001"
+      },
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: 'order-1001' }"
+      }
+    ]
+  },
+  "testing/generating-test-data": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[\n  { id: 'ord_om51', quantity: 8, status: 'pending' },\n  { id: 'ord_qqlr', quantity: 10, status: 'paid', giftNote: ' ' },\n  { id: 'ord_bzth', quantity: 6, status: 'paid', giftNote: '' }\n]"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "[\n  { items: 3, units: 11 },\n  { items: 4, units: 24 },\n  { items: 4, units: 25 },\n  { items: 3, units: 6 }\n]"
+      }
+    ]
+  },
+  "testing/property-checks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ _tag: 'Passed', runs: 200, discards: 0 }"
+      },
+      {
+        "level": "log",
+        "text": "first failure: { items: [], couponCents: 9 }"
+      },
+      {
+        "level": "log",
+        "text": "shrunk to: { items: [], couponCents: 1 }"
+      },
+      {
+        "level": "log",
+        "text": "replayed: Falsified"
+      },
+      {
+        "level": "log",
+        "text": "Property falsified after 1 run(s) and 4 shrink(s)\nShrunk input: {\n  \"items\": [],\n  \"couponCents\": 1\n}\nFailure: returned false\nReplay: [0,\"2025\",0,0,[1,0,0,0],\"ReturnedFalse\"]"
+      }
+    ]
+  },
+  "testing/schema-assertions": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "decodes a row: ok"
+      },
+      {
+        "level": "log",
+        "text": "rejects a bad sku: ok"
+      },
+      {
+        "level": "log",
+        "text": "encodes a product: ok"
+      },
+      {
+        "level": "log",
+        "text": "round trip: FAILED\nAssertionError [ERR_ASSERTION]: Property falsified after 3 run(s) and 5 shrink(s)\nShrunk input: {\n  \"sku\": \"SKU-0\",\n  \"price\": 5e-324\n}\nFailure: returned false\nReplay: [0,\"1\",2,0,[0,1,0,0,0],\"ReturnedFalse\"]"
+      }
+    ]
+  },
+  "testing/test-clock": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "start: 0 min"
+      },
+      {
+        "level": "log",
+        "text": "30 min []"
+      },
+      {
+        "level": "log",
+        "text": "60 min [ 'Your order ships tomorrow' ]"
+      },
+      {
+        "level": "log",
+        "text": "now: 2025-01-01T00:00:00.000Z"
+      }
+    ]
+  },
+  "testing/test-console": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  log: [ 'Coffee beans: $14.50', 'Filter papers: $3.99', 'Total: $18.49' ],\n  error: []\n}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{ log: [], error: [ 'cannot print a receipt for an empty cart' ] }"
+      }
+    ]
+  },
+  "testing/test-crypto": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{\n  id: 'eaba1042-ae2f-4356-af8c-49b6d233adb6',\n  code: '2da88f',\n  gift: 'tote bag'\n}"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{\n  id: 'e5df6cce-f36e-4274-adfe-8452e0a3b2ed',\n  code: '59277e',\n  gift: 'tote bag'\n}"
+      },
+      {
+        "level": "log",
+        "text": "00000000009Q0SYHNSQFC25YYR"
+      },
+      {
+        "level": "log",
+        "text": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "testing/timeouts-and-retries": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "attempt 1 at 0ms"
+      },
+      {
+        "level": "log",
+        "text": "attempt 2 at 100ms"
+      },
+      {
+        "level": "log",
+        "text": "attempt 3 at 300ms"
+      },
+      {
+        "level": "log",
+        "text": "charged"
+      },
+      {
+        "level": "log",
+        "text": "timed out"
+      }
+    ]
+  },
+  "time/clock-and-random": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "1748779200000"
+      },
+      {
+        "level": "log",
+        "text": "{ code: 589547, expires: '2025-06-01T12:15:00.000Z' }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{ code: 301618, expires: '2025-06-01T12:35:00.000Z' }"
+      },
+      {
+        "level": "log",
+        "text": "reminder sent at 2025-06-01T13:20:00.000Z"
+      }
+    ]
+  },
+  "time/cron-schedules": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "2025-03-28T09:00:00.000+00:00[Europe/London]"
+      },
+      {
+        "level": "log",
+        "text": "2025-03-28T09:00:00.000+00:00[Europe/London]"
+      },
+      {
+        "level": "log",
+        "text": "2025-03-31T09:00:00.000+01:00[Europe/London]"
+      },
+      {
+        "level": "log",
+        "text": "2025-04-01T09:00:00.000+01:00[Europe/London]"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      },
+      {
+        "level": "log",
+        "text": "Expected a value between 0 and 23"
+      },
+      {
+        "level": "log",
+        "text": "job ran at 2025-03-27T10:00:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "job ran at 2025-03-27T10:00:15.000Z"
+      },
+      {
+        "level": "log",
+        "text": "job ran at 2025-03-27T10:00:30.000Z"
+      },
+      {
+        "level": "log",
+        "text": "job ran at 2025-03-27T10:00:45.000Z"
+      }
+    ]
+  },
+  "time/date-time": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "{ _id: 'Option', _tag: 'Some', value: '2025-01-31T09:30:00.000Z' }"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "2025-02-28"
+      },
+      {
+        "level": "log",
+        "text": "2025-02-01T21:30:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "2025-02-28T23:59:59.999Z"
+      },
+      {
+        "level": "log",
+        "text": "13d 14h 30m"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "{ year: 2025, month: 2, day: 28, weekDay: 5 }"
+      },
+      {
+        "level": "log",
+        "text": "Friday, 28 February 2025 at 09:30"
+      }
+    ]
+  },
+  "time/durations": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "2s 100ms"
+      },
+      {
+        "level": "log",
+        "text": "3s 850ms"
+      },
+      {
+        "level": "log",
+        "text": "true"
+      },
+      {
+        "level": "log",
+        "text": "850"
+      },
+      {
+        "level": "log",
+        "text": "30s"
+      },
+      {
+        "level": "log",
+        "text": "2s 100ms"
+      },
+      {
+        "level": "log",
+        "text": "{ days: 1, hours: 1, minutes: 1, seconds: 1, millis: 0, nanos: 0 }"
+      },
+      {
+        "level": "log",
+        "text": "false"
+      }
+    ]
+  },
+  "time/execution-plans": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "valid number"
+      },
+      {
+        "level": "log",
+        "text": "  step 0, attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "  step 0, attempt 2"
+      },
+      {
+        "level": "log",
+        "text": "  step 1, attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "backup sent \"Your code is 4821\""
+      },
+      {
+        "level": "log",
+        "text": "invalid number"
+      },
+      {
+        "level": "log",
+        "text": "  step 0, attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "  step 0, attempt 2"
+      },
+      {
+        "level": "log",
+        "text": "InvalidNumber"
+      }
+    ]
+  },
+  "time/repeat-and-poll": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "spaced 2s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 0s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 3s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 6s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 9s"
+      },
+      {
+        "level": "log",
+        "text": "fixed 2s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 0s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 3s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 5s"
+      },
+      {
+        "level": "log",
+        "text": "  sync started at 7s"
+      },
+      {
+        "level": "log",
+        "text": "polling"
+      },
+      {
+        "level": "log",
+        "text": "  0s: 20%"
+      },
+      {
+        "level": "log",
+        "text": "  1s: 40%"
+      },
+      {
+        "level": "log",
+        "text": "  2s: 60%"
+      },
+      {
+        "level": "log",
+        "text": "  3s: 80%"
+      },
+      {
+        "level": "log",
+        "text": "  8s: 100%"
+      },
+      {
+        "level": "log",
+        "text": "  done at 100%"
+      }
+    ]
+  },
+  "time/retry-with-backoff": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "flaky gateway"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 1 at 0ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 2 at 88ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 3 at 263ms: 200"
+      },
+      {
+        "level": "log",
+        "text": "  result: charged"
+      },
+      {
+        "level": "log",
+        "text": "gateway down"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 1 at 0ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 2 at 99ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 3 at 316ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 4 at 688ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 5 at 1407ms: 503"
+      },
+      {
+        "level": "log",
+        "text": "  result: gave up with 503"
+      },
+      {
+        "level": "log",
+        "text": "card declined"
+      },
+      {
+        "level": "log",
+        "text": "  attempt 1 at 0ms: 402"
+      },
+      {
+        "level": "log",
+        "text": "  result: gave up with 402"
+      }
+    ]
+  },
+  "time/time-zones": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "2025-03-07T09:00:00.000-05:00[America/New_York]"
+      },
+      {
+        "level": "log",
+        "text": "Europe/London 2025-03-07T14:00:00.000+00:00"
+      },
+      {
+        "level": "log",
+        "text": "Asia/Tokyo 2025-03-07T23:00:00.000+09:00"
+      },
+      {
+        "level": "log",
+        "text": "2025-03-07T14:00:00.000Z"
+      },
+      {
+        "level": "log",
+        "text": "2025-03-08T09:00:00.000-05:00"
+      },
+      {
+        "level": "log",
+        "text": "2025-03-09T09:00:00.000-04:00"
+      },
+      {
+        "level": "log",
+        "text": "23h"
+      },
+      {
+        "level": "log",
+        "text": "15:00 MEZ"
+      }
+    ]
+  },
+  "transactions/bank-transfer": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "alice=70 bob=80 total=150"
+      },
+      {
+        "level": "log",
+        "text": "InsufficientFunds: bob has 80"
+      },
+      {
+        "level": "log",
+        "text": "alice=70 bob=80 total=150"
+      },
+      {
+        "level": "log",
+        "text": "alice=50 bob=100 total=150"
+      }
+    ]
+  },
+  "transactions/broadcasting-changes": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "email: [ 'order is paid', 'order is shipped' ]"
+      },
+      {
+        "level": "log",
+        "text": "analytics: [ 'order is paid', 'order is shipped' ]"
+      },
+      {
+        "level": "log",
+        "text": "status feed: [ 'cart', 'paid', 'shipped' ]"
+      },
+      {
+        "level": "log",
+        "text": "final status: shipped"
+      }
+    ]
+  },
+  "transactions/limiting-with-txsemaphore": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "available: 0"
+      },
+      {
+        "level": "log",
+        "text": "try now: false"
+      },
+      {
+        "level": "log",
+        "text": "uploaded: a.png, b.png, c.png"
+      },
+      {
+        "level": "log",
+        "text": "most at once: 2"
+      },
+      {
+        "level": "log",
+        "text": "batch holds 2 permits, batches queued: 1"
+      },
+      {
+        "level": "log",
+        "text": "available again: 2"
+      }
+    ]
+  },
+  "transactions/one-time-signals": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "before launch: true"
+      },
+      {
+        "level": "log",
+        "text": "first: true"
+      },
+      {
+        "level": "log",
+        "text": "second: false"
+      },
+      {
+        "level": "log",
+        "text": "ana: bought at $25"
+      },
+      {
+        "level": "log",
+        "text": "ben: bought at $25"
+      },
+      {
+        "level": "log",
+        "text": "cleo: sold out"
+      },
+      {
+        "level": "log",
+        "text": "recall: recalled by the supplier"
+      }
+    ]
+  },
+  "transactions/read-write-locks": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "read locks held: 2"
+      },
+      {
+        "level": "log",
+        "text": "writer finished while readers hold: false"
+      },
+      {
+        "level": "log",
+        "text": "price while readers hold: 3"
+      },
+      {
+        "level": "log",
+        "text": "till-1 read coffee=3"
+      },
+      {
+        "level": "log",
+        "text": "till-2 read coffee=3"
+      },
+      {
+        "level": "log",
+        "text": "price raised"
+      },
+      {
+        "level": "log",
+        "text": "price now: 4"
+      },
+      {
+        "level": "log",
+        "text": "nested: 2 write locks, 1 read lock"
+      },
+      {
+        "level": "log",
+        "text": "locked afterwards: false"
+      }
+    ]
+  },
+  "transactions/transactional-collections": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "order-1 reserved"
+      },
+      {
+        "level": "log",
+        "text": "  stock: mug=2 shirt=0 reserved=1"
+      },
+      {
+        "level": "log",
+        "text": "order-2 no shirt"
+      },
+      {
+        "level": "log",
+        "text": "  stock: mug=2 shirt=0 reserved=1"
+      },
+      {
+        "level": "log",
+        "text": "order-1 already reserved"
+      },
+      {
+        "level": "log",
+        "text": "[ 'order-1: mug, shirt' ]"
+      }
+    ]
+  },
+  "transactions/transactional-queues": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "assigned T-2 (sev 1)"
+      },
+      {
+        "level": "log",
+        "text": "assigned T-3 (sev 2)"
+      },
+      {
+        "level": "log",
+        "text": "assigned T-1 (sev 3)"
+      },
+      {
+        "level": "log",
+        "text": "incoming left: 0"
+      }
+    ]
+  },
+  "transactions/waiting-with-retry": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "attempt 1 (first run): balance 20"
+      },
+      {
+        "level": "log",
+        "text": "attempt 2 (retry): balance 50"
+      },
+      {
+        "level": "log",
+        "text": "attempt 3 (retry): balance 120"
+      },
+      {
+        "level": "log",
+        "text": "withdrew 100, 20 left"
+      }
+    ]
+  },
+  "workflow/activities": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "charging card, attempt 1"
+      },
+      {
+        "level": "log",
+        "text": "charging card, attempt 2"
+      },
+      {
+        "level": "log",
+        "text": "charging card, attempt 3"
+      },
+      {
+        "level": "log",
+        "text": "receipt for 2500 cents"
+      }
+    ]
+  },
+  "workflow/compensation": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "booked flight LH-401"
+      },
+      {
+        "level": "log",
+        "text": "booked hotel room 12"
+      },
+      {
+        "level": "log",
+        "text": "cancelled hotel room 12"
+      },
+      {
+        "level": "log",
+        "text": "cancelled flight LH-401"
+      },
+      {
+        "level": "log",
+        "text": "trip not booked: no cars available"
+      }
+    ]
+  },
+  "workflow/defining-a-workflow": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "Welcome email sent to ada"
+      },
+      {
+        "level": "log",
+        "text": "Welcome email sent to ada"
+      },
+      {
+        "level": "log",
+        "text": "Welcome email sent to grace"
+      },
+      {
+        "level": "log",
+        "text": "emails sent: 2"
+      }
+    ]
+  },
+  "workflow/durable-queues": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "worker: resize beach to 200px"
+      },
+      {
+        "level": "log",
+        "text": "worker: resize beach to 800px"
+      },
+      {
+        "level": "log",
+        "text": "[ 'beach-200.jpg', 'beach-800.jpg' ]"
+      }
+    ]
+  },
+  "workflow/polling-and-interrupting": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "before starting: unknown"
+      },
+      {
+        "level": "log",
+        "text": "after starting: suspended"
+      },
+      {
+        "level": "log",
+        "text": "after interrupting: stopped"
+      }
+    ]
+  },
+  "workflow/signals-and-replay": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "workflow body runs for exp-7"
+      },
+      {
+        "level": "log",
+        "text": "state: Suspended"
+      },
+      {
+        "level": "log",
+        "text": "workflow body runs for exp-7"
+      },
+      {
+        "level": "log",
+        "text": "paid 4200 cents"
+      },
+      {
+        "level": "log",
+        "text": "emails sent: 1"
+      }
+    ]
+  },
+  "workflow/workflows-over-http": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "POST /workflows/sendinvoice"
+      },
+      {
+        "level": "log",
+        "text": "POST /workflows/sendinvoice/discard"
+      },
+      {
+        "level": "log",
+        "text": "POST /workflows/sendinvoice/resume"
+      },
+      {
+        "level": "log",
+        "text": "invoice inv-1 sent to ada@example.com"
+      },
+      {
+        "level": "log",
+        "text": "InvalidAddress: not-an-email"
+      }
+    ]
+  },
+  "workflow/workflows-over-rpc": {
+    "outcome": "succeeded",
+    "lines": [
+      {
+        "level": "log",
+        "text": "[ 'SendInvoice', 'SendInvoiceDiscard', 'SendInvoiceResume' ]"
+      },
+      {
+        "level": "log",
+        "text": "invoice inv-1 sent to ada@example.com"
+      },
+      {
+        "level": "log",
+        "text": "InvalidAddress: not-an-email"
+      },
+      {
+        "level": "log",
+        "text": "same execution: true"
+      }
+    ]
+  }
+}

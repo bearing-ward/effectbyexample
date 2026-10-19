@@ -1,0 +1,96 @@
+{
+  "name": "effectbyexample",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "verify:fast": "bun run scripts/verify.ts fast",
+    "verify:integration": "bun run scripts/verify.ts integration",
+    "verify:template": "bun run scripts/verify.ts template",
+    "verify:production": "bun run scripts/verify.ts production",
+    "verify": "bun run scripts/verify.ts all",
+    "verify:all": "bun run scripts/verify.ts all",
+    "typecheck": "bun run scripts/verify.ts types",
+    "dev": "bun run scripts/dev.ts",
+    "build": "bun run --cwd apps/web build",
+    "build:pages": "PAGES_BASE=${PAGES_BASE:-/effectbyexample/} bun run --cwd apps/web build",
+    "verify:pages": "bun run scripts/pages.ts",
+    "foldkit:mcp": "foldkit-devtools-mcp",
+    "foldkit:source": "bun run scripts/foldkit-source.ts",
+    "browser:install": "playwright install chromium",
+    "deploy": "bun run --cwd apps/deploy deploy",
+    "format": "oxfmt --write .",
+    "dev:direct": "PORTLESS=0 bun run scripts/dev.ts",
+    "content:status": "bun run scripts/content.ts status",
+    "content:log": "bun run scripts/content.ts log",
+    "content:review": "bun run scripts/content.ts review",
+    "examples:outputs": "UPDATE_OUTPUTS=1 bun x --no-install vitest run --project packages packages/examples/src/examples.test.ts",
+    "examples:run": "bun run scripts/run-example.ts"
+  },
+  "dependencies": {
+    "effect": "4.0.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261013.1",
+    "@effect/tsgo": "0.48.0",
+    "@foldkit/devtools-mcp": "0.24.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "@playwright/test": "1.63.0",
+    "@types/bun": "1.4.3",
+    "miniflare": "4.20260730.0",
+    "oxfmt": "0.71.0",
+    "oxlint": "1.86.0",
+    "portless": "0.15.7",
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "vitest": "5.0.4"
+  },
+  "resolutions": {
+    "@effect/platform-browser": "4.0.5"
+  },
+  "overrides": {
+    "@effect/platform-browser": "4.0.5",
+    "@effect/platform-bun": "4.0.5",
+    "@effect/platform-node": "4.0.5",
+    "@effect/platform-node-shared": "4.0.5",
+    "@effect/sql-d1": "4.0.5",
+    "@effect/sql-sqlite-do": "4.0.5",
+    "@effect/sql-sqlite-node": "4.0.5",
+    "@effect/sql-sqlite-wasm": "4.0.5",
+    "@foldkit/ui": "0.165.0",
+    "effect": "4.0.5",
+    "foldkit": "0.165.0"
+  },
+  "engines": {
+    "bun": ">=1.4.3",
+    "node": ">=24"
+  },
+  "hvs": {
+    "project": {
+      "localName": "effectbyexample"
+    },
+    "lineage": [
+      {
+        "repository": "https://github.com/binarytide/hvs-template",
+        "revision": "925d4dd7516aab04f53d9abee8528af2ac9ea951"
+      }
+    ],
+    "checks": {
+      "projects": [
+        {
+          "config": "tsconfig.json",
+          "environment": "tool"
+        }
+      ]
+    },
+    "starter": {
+      "preset": "cloudflare-app"
+    }
+  },
+  "patchedDependencies": {
+    "@foldkit/vite-plugin@0.26.0": "patches/@foldkit%2Fvite-plugin@0.26.0.patch"
+  }
+}

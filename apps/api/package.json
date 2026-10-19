@@ -1,0 +1,25 @@
+{
+  "name": "@ebe/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./worker": "./src/worker.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ebe/examples": "workspace:*",
+    "effect": "4.0.5"
+  },
+  "hvs": {
+    "checks": {
+      "projects": [
+        {
+          "config": "tsconfig.json",
+          "environment": "server"
+        }
+      ]
+    }
+  }
+}

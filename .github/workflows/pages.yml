@@ -1,0 +1,48 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+# Enable it once under Settings -> Pages -> Build and deployment -> Source:
+# "GitHub Actions".
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.3
+      - run: bun install --frozen-lockfile
+      # `base_path` is `/<repository>`, or empty for a user site or custom
+      # domain. The site's links and assets are built below it.
+      - id: pages
+        uses: actions/configure-pages@v5
+      - run: bun run build:pages
+        env:
+          PAGES_BASE: ${{ steps.pages.outputs.base_path }}/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: apps/web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

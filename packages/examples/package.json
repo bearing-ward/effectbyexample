@@ -1,0 +1,37 @@
+{
+  "name": "@ebe/examples",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.test.json"
+  },
+  "dependencies": {
+    "@effect/platform-browser": "4.0.5",
+    "@effect/platform-node": "4.0.5",
+    "@effect/sql-sqlite-node": "4.0.5",
+    "@effect/sql-sqlite-wasm": "4.0.5",
+    "@effect/wa-sqlite": "0.1.2",
+    "effect": "4.0.5"
+  },
+  "hvs": {
+    "checks": {
+      "projects": [
+        {
+          "config": "tsconfig.json",
+          "environment": "neutral"
+        },
+        {
+          "config": "tsconfig.server.json",
+          "environment": "tool"
+        },
+        {
+          "config": "tsconfig.test.json",
+          "environment": "tool"
+        }
+      ]
+    }
+  }
+}

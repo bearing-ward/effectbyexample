@@ -1,0 +1,5 @@
+[mcp_servers.foldkit-devtools]
+command = "bun"
+args = ["run", "foldkit:mcp"]
+[mcp_servers.foldkit-devtools.env]
+FOLDKIT_PROJECT_ROOT = "apps/web"

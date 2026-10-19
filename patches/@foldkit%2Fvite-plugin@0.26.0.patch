@@ -1,0 +1,93 @@
+diff --git a/dist/devToolsOverlay.js b/dist/devToolsOverlay.js
+index 94045f2828ff1399bd97365c81ab96e3a7d7b507..56a6e8666fe4a3d4a3fa0b3e53b42b7eba810c8e 100644
+--- a/dist/devToolsOverlay.js
++++ b/dist/devToolsOverlay.js
+@@ -11,15 +11,13 @@ const DEV_TOOLS_HOST_IMPORT_SPECIFIER = 'foldkit/devtools-host';
+ // NOTE: Vite's dependency scan cannot discover this virtual module's imports.
+ // Declaring registry-installed imports before the first request avoids a
+ // mid-session reoptimization and page reload.
++// Keep foldkit/devtools-host external with the rest of foldkit. Prebundling it
++// duplicates overlay registration state away from the live application runtime.
+ const DEV_TOOLS_OVERLAY_IMPORTS = [
+     {
+         specifier: DEV_TOOLS_VITE_IMPORT_SPECIFIER,
+         packageName: DEV_TOOLS_PACKAGE_NAME,
+     },
+-    {
+-        specifier: DEV_TOOLS_HOST_IMPORT_SPECIFIER,
+-        packageName: FOLDKIT_PACKAGE_NAME,
+-    },
+ ];
+ const DEV_TOOLS_OVERLAY_MODULE_SOURCE = `
+ import { overlay } from '${DEV_TOOLS_VITE_IMPORT_SPECIFIER}'
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index 458daed91083a3798607a6bad7a8edb92182e5bb..4bf232711888434ca0e2df2016baf0421417a50b 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -8,9 +8,9 @@ export { type ViewIdentityTransformResult, foldkitViewIdentity, transformViewIde
+ /** Options for the `foldkit` Vite plugin. */
+ export type FoldkitPluginOptions = Readonly<{
+     /**
+-     * By default, the dev server hosts the DevTools MCP relay and publishes its
+-     * address for the MCP server to find. Middleware and HTTPS servers use a
+-     * separate loopback listener. Published addresses carry an access token.
++     * By default, a separate loopback listener hosts the DevTools MCP relay and
++     * publishes its address for the MCP server to find. Published addresses
++     * carry an access token.
+      *
+      * A number starts an unauthenticated listener on that port on every
+      * interface; set `FOLDKIT_DEVTOOLS_MCP_PORT` in the MCP server to match.
+diff --git a/dist/index.js b/dist/index.js
+index 69ebcccc40766ccd1e8c6ff9a72601d380f8b8d8..73e28adebd6cab95a3fb022c9278ab1ea016deb6 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -238,7 +238,8 @@ class RelayBindFailed extends Data.TaggedError('RelayBindFailed') {
+ const isPortInUse = (error) => Predicate.hasProperty(error, 'code') && error.code === 'EADDRINUSE';
+ const relayId = Effect.gen(function* () {
+     const crypto = yield* Crypto.Crypto;
+-    return yield* crypto.randomUUIDv4.pipe(Effect.orDie);
++    // NOTE: effect 4.0.5 made Crypto.randomUUIDv4 a method; 0.26.0 targets 4.0.0.
++    return yield* crypto.randomUUIDv4().pipe(Effect.orDie);
+ });
+ const attachRelayHandlers = (wss, enqueue) => {
+     wss.on('connection', client => {
+@@ -282,15 +283,6 @@ const refuseUpgrade = (socket) => {
+     socket.write('HTTP/1.1 401 Unauthorized\r\nConnection: close\r\n\r\n');
+     socket.destroy();
+ };
+-// NOTE: Vite resolves `server.resolvedUrls` in a listener it prepends to
+-// `listening`, so they are set by the time the relay's own listener runs.
+-const hostedRelayUrl = (server, token) => (httpServer) => {
+-    const maybeResolvedUrl = pipe(Option.fromNullishOr(server.resolvedUrls), Option.flatMap(resolvedUrls => Option.orElse(Array.head(resolvedUrls.local), () => Array.head(resolvedUrls.network))));
+-    const url = new URL(pipe(maybeResolvedUrl, Option.orElse(() => Option.map(boundPort(httpServer.address()), port => `http://${RELAY_LOOPBACK_HOST}:${port}/`)), Option.getOrThrowWith(relayHasNoBoundPort)));
+-    url.protocol = 'ws:';
+-    url.pathname = RELAY_PATH;
+-    return withRelayToken(url, token);
+-};
+ const loopbackRelayUrl = (token) => (httpServer) => {
+     const port = Option.getOrThrowWith(boundPort(httpServer.address()), relayHasNoBoundPort);
+     const url = new URL(`ws://${RELAY_LOOPBACK_HOST}:${port}${RELAY_PATH}`);
+@@ -415,9 +407,8 @@ const publishRelay = (root, relay) => Effect.gen(function* () {
+ }).pipe(Effect.catchTag('RelayRegistryDirectoryRefused', ({ directory, reason }) => Console.error(unpublishedRelayMessage(`the registry directory ${directory} ${reason}`))), Effect.catch(error => Console.error(unpublishedRelayMessage('the registry could not be written'), error)));
+ const startMcpRelay = (server, devToolsMcpPort, enqueue) => {
+     const root = server.config.root;
+-    // NOTE: The MCP server cannot verify a development HTTPS certificate, so
+-    // HTTPS uses a separate loopback listener.
+-    const maybeHttpServer = Option.filter(Option.fromNullishOr(server.httpServer), () => server.config.server.https === undefined);
++    // NOTE: Alchemy's HTTP fallback can write HTML after a relay upgrade on
++    // Vite's listener. Automatic discovery needs its own authenticated listener.
+     // NOTE: A configured port keeps the previous unauthenticated behavior.
+     // An assigned port binds only to loopback and is found through the registry.
+     const acquire = Effect.gen(function* () {
+@@ -426,10 +417,7 @@ const startMcpRelay = (server, devToolsMcpPort, enqueue) => {
+             return yield* bindStandaloneRelay(devToolsMcpPort, id, enqueue);
+         }
+         const token = yield* relayToken;
+-        return yield* Option.match(maybeHttpServer, {
+-            onNone: () => bindLoopbackRelay(id, token, enqueue),
+-            onSome: httpServer => hostRelayOnServer(httpServer, id, token, hostedRelayUrl(server, token), enqueue),
+-        });
++        return yield* bindLoopbackRelay(id, token, enqueue);
+     });
+     return Effect.acquireRelease(acquire.pipe(Effect.tap(relay => Console.log(`[foldkit:devTools] MCP relay listening at ${relayUrlForLog(relay.url)}`)), Effect.tap(relay => publishRelay(root, relay))), relay => Effect.gen(function* () {
+         relay.detach();

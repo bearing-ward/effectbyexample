@@ -1,0 +1,39 @@
+{
+  "name": "@ebe/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.tool.json"
+  },
+  "dependencies": {
+    "@ebe/examples": "workspace:*",
+    "@foldkit/ui": "0.165.0",
+    "@foldworks/code-editor": "0.1.0",
+    "@foldworks/ui": "0.2.0",
+    "@stylexjs/stylex": "0.19.0",
+    "effect": "4.0.5",
+    "foldkit": "0.165.0",
+    "vite": "8.3.2"
+  },
+  "devDependencies": {
+    "@foldkit/devtools": "0.165.0",
+    "@foldkit/vite-plugin": "0.26.0",
+    "@stylexjs/unplugin": "0.19.0"
+  },
+  "hvs": {
+    "checks": {
+      "projects": [
+        {
+          "config": "tsconfig.json",
+          "environment": "browser"
+        },
+        {
+          "config": "tsconfig.tool.json",
+          "environment": "tool"
+        }
+      ]
+    }
+  }
+}

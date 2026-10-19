@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "foldkit-devtools": {
+      "command": "bun",
+      "args": ["run", "foldkit:mcp"],
+      "env": {
+        "FOLDKIT_PROJECT_ROOT": "apps/web"
+      }
+    }
+  }
+}

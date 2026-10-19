@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "source": {
+    "kind": "maintained-working-source",
+    "repository": "local:openlayerssandbox",
+    "preset": "cloudflare-app"
+  },
+  "lineage": [
+    {
+      "repository": "https://github.com/binarytide/hvs-template",
+      "revision": "925d4dd7516aab04f53d9abee8528af2ac9ea951"
+    }
+  ]
+}

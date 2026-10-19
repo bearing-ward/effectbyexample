@@ -1,0 +1,28 @@
+{
+  "name": "@ebe/deploy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "alchemy dev",
+    "plan": "alchemy plan",
+    "deploy": "alchemy deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ebe/api": "workspace:*",
+    "@ebe/web": "workspace:*",
+    "@effect/platform-bun": "4.0.5",
+    "alchemy": "2.0.0-beta.83",
+    "effect": "4.0.5"
+  },
+  "hvs": {
+    "checks": {
+      "projects": [
+        {
+          "config": "tsconfig.json",
+          "environment": "tool"
+        }
+      ]
+    }
+  }
+}

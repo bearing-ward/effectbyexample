@@ -1,0 +1,2452 @@
+{
+  "entries": [
+    {
+      "date": "2026-10-17",
+      "key": "schema/branded-types",
+      "kind": "added",
+      "hash": "b4d1c004610f7fc532c0607cb7958dd06981f93b9069cff49293743266f85cad",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/checks",
+      "kind": "added",
+      "hash": "649b0783c5442802571b0b90b4d2dd632174e6129ae2f04f600a2c71791ea578",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/classes",
+      "kind": "added",
+      "hash": "3d15aa62179d7e6d997997a563bc3076124e67f8dc5adf45ee7d7d079f594fa2",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/collections",
+      "kind": "added",
+      "hash": "a76cc8601ae512300f7788618c891a7c9c531bd39a87823094253ad4f499b3e2",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/decoding-errors",
+      "kind": "added",
+      "hash": "5d659f3b7731a06b4cb5675354578d79af3cbc09ce0b7edbeb268b1900b95d2f",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/defaults",
+      "kind": "added",
+      "hash": "ac2b2a5daaadc08599aa05657c030ea1ea2e358e2e6928904f8b6c9ea76fefad",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/defining-a-schema",
+      "kind": "added",
+      "hash": "0e344d8f1fdc042a0388462012d8f11c49856d56aa347adea3225b42d372006e",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/json-schema",
+      "kind": "added",
+      "hash": "bb85ccfc8fa0134a811350b04d89823eb9d04f1a959fa42459c69c50e86e2482",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/json-strings",
+      "kind": "added",
+      "hash": "f19983d8752e74fc6deed2118cb7ffe8f4b73b82a109af4fe4236f52f68454b1",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/optional-and-nullable",
+      "kind": "added",
+      "hash": "47b3d63484aeddbe35aa7ae51c0dba64daf773dfb9ca917fc896067a2380595d",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/primitives-and-literals",
+      "kind": "added",
+      "hash": "5a56d8722698e84f10c396b9901952978029c20e0ffb7dc046b2f98d282ed838",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/tagged-errors",
+      "kind": "added",
+      "hash": "2f8d93532a937caeb97802e7559e8bdf0f50d100ac8d135255b17b56990b4b1d",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/tagged-unions",
+      "kind": "added",
+      "hash": "394b5f1629ee27f9a8db0e4b486497dd71a86af67605373b4c4c27951b9d2e51",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/transformations",
+      "kind": "added",
+      "hash": "7b97844c2fb8d65f5963f174c3f98474d6ce1db8f5d6ff2fadeae275b7507b97",
+      "effect": "4.0.0",
+      "note": "First Schema examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/branded-types",
+      "kind": "reviewed",
+      "hash": "b4d1c004610f7fc532c0607cb7958dd06981f93b9069cff49293743266f85cad",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/checks",
+      "kind": "reviewed",
+      "hash": "649b0783c5442802571b0b90b4d2dd632174e6129ae2f04f600a2c71791ea578",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/classes",
+      "kind": "reviewed",
+      "hash": "3d15aa62179d7e6d997997a563bc3076124e67f8dc5adf45ee7d7d079f594fa2",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/collections",
+      "kind": "reviewed",
+      "hash": "a76cc8601ae512300f7788618c891a7c9c531bd39a87823094253ad4f499b3e2",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/decoding-errors",
+      "kind": "reviewed",
+      "hash": "5d659f3b7731a06b4cb5675354578d79af3cbc09ce0b7edbeb268b1900b95d2f",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/defaults",
+      "kind": "reviewed",
+      "hash": "ac2b2a5daaadc08599aa05657c030ea1ea2e358e2e6928904f8b6c9ea76fefad",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/defining-a-schema",
+      "kind": "reviewed",
+      "hash": "0e344d8f1fdc042a0388462012d8f11c49856d56aa347adea3225b42d372006e",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/json-schema",
+      "kind": "reviewed",
+      "hash": "bb85ccfc8fa0134a811350b04d89823eb9d04f1a959fa42459c69c50e86e2482",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/json-strings",
+      "kind": "reviewed",
+      "hash": "f19983d8752e74fc6deed2118cb7ffe8f4b73b82a109af4fe4236f52f68454b1",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/optional-and-nullable",
+      "kind": "reviewed",
+      "hash": "47b3d63484aeddbe35aa7ae51c0dba64daf773dfb9ca917fc896067a2380595d",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/primitives-and-literals",
+      "kind": "reviewed",
+      "hash": "5a56d8722698e84f10c396b9901952978029c20e0ffb7dc046b2f98d282ed838",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/tagged-errors",
+      "kind": "reviewed",
+      "hash": "2f8d93532a937caeb97802e7559e8bdf0f50d100ac8d135255b17b56990b4b1d",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/tagged-unions",
+      "kind": "reviewed",
+      "hash": "394b5f1629ee27f9a8db0e4b486497dd71a86af67605373b4c4c27951b9d2e51",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/transformations",
+      "kind": "reviewed",
+      "hash": "7b97844c2fb8d65f5963f174c3f98474d6ce1db8f5d6ff2fadeae275b7507b97",
+      "effect": "4.0.5",
+      "note": "effect 4.0.5 upgrade: all 49 APIs used have unchanged declarations; outputs identical"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/defining-events",
+      "kind": "added",
+      "hash": "e10eee1ecc8034e3a262ab5d3d77f3f807fef9c507d35101407b8c7e72b812ea",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/handler-results",
+      "kind": "added",
+      "hash": "e5a93dc6e8252000d980e6f540a67fd35e29c3eb7fd02d64586ea4a31234ff1e",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/syncing-devices",
+      "kind": "added",
+      "hash": "cf6c88d3748c5fe3dec8a100d59206374cb94e406f4b2333403b21ff7406b117",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/the-journal",
+      "kind": "added",
+      "hash": "49f9264bd72f84fb3535c18024327066982d8e7366d778ff614dce3d48710643",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/activities",
+      "kind": "added",
+      "hash": "2af596ca0ee62bdb5228e9e4001bdab7c2c4c6530aa4064b1622e872976dba4e",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/compensation",
+      "kind": "added",
+      "hash": "cdec5898d3153241ed0f58aa1094e5d3588a5c02ac702fb19fb94326b609056e",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/defining-a-workflow",
+      "kind": "added",
+      "hash": "fb8952062ab48c1624e697fdd672df20d59217250e0f0d324d2e441672652741",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/polling-and-interrupting",
+      "kind": "added",
+      "hash": "973ea64f32020ca00cc4cf7298effd5b07e8ea1b9864c4b0a6dcd36e99c7742c",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/signals-and-replay",
+      "kind": "added",
+      "hash": "b991929038eaa74df6dd20d4525651e8f9aea57a26efc5c11ebdb0caf933e361",
+      "effect": "4.0.5",
+      "note": "Workflow and event log examples"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/signals-and-replay",
+      "kind": "modified",
+      "hash": "7974c1d7fa38a20a6f04123c266a6d09b28f589dd3ec5c4a5164ad841b8c20a3",
+      "effect": "4.0.5",
+      "note": "Workflow signals: accurate suspension wording"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/files-and-paths",
+      "kind": "added",
+      "hash": "d9711ca81017eda56d306983dfc7c99b3ae16812928e1d0a9ef5c34736a24acd",
+      "effect": "4.0.5",
+      "note": "Platform: files and paths (first server example)"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/chat-sessions",
+      "kind": "added",
+      "hash": "ee8e341cd499c30376d3686449e4677ce1c20fe6c438051890d465830786d2b4",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/decisions",
+      "kind": "added",
+      "hash": "c4341aa57c5af6b5b9e1604ab52852a5070c8744b49d007a226e7aee76ffd667",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/embeddings",
+      "kind": "added",
+      "hash": "256d9232b8be4a6445e71c094c909a911ab24bde8e797c94f471fe7de4300b8f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/handling-ai-errors",
+      "kind": "added",
+      "hash": "6d6f799b87c4c67c452e6b305b6f5a3a49e6d7bd0adb7f65f38f7ee4c74df4bb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/language-model",
+      "kind": "added",
+      "hash": "671c2dbab4272591038bef5debd7844459a4074160cdb9a4611fed5a73d90c19",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/mcp-server",
+      "kind": "added",
+      "hash": "a8197d32b31ef67a58beec96b0e067d14e67f620a6d13a44dcc2ca1cae415c86",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/prompts-and-tokens",
+      "kind": "added",
+      "hash": "85994a3fc9fd93169b9a30a35946286bbdae6618613546bf54f9b9946efaa8e7",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/provider-telemetry",
+      "kind": "added",
+      "hash": "b2317ba9011958d13cb8611f9067396b24b1a5232868f7aaaf9003e6741e0d74",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/structured-output",
+      "kind": "added",
+      "hash": "691fc3fa4c82ad74af7dcfce25336140a380eaf00c12cc7516f94e0628af848e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "ai/tools-and-toolkits",
+      "kind": "added",
+      "hash": "12791f02dd5ac37a8425244e399519d0fd72f2faf03c77951500ac3261a0d829",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/console",
+      "kind": "added",
+      "hash": "c5678b920f65c716007aa140e8744f136ae8862fe1afc8188a6fd994bb8b4d62",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/creating-effects",
+      "kind": "added",
+      "hash": "703312a0d32071db9ce810f821ad630b8916962ff197fe07aa5bfe4be2e8ef26",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/dual-apis-and-pipeable",
+      "kind": "added",
+      "hash": "2d29d3970c3adb748c66fd27ecb106db2a0ffb71459ee5c89c4594cbcf7ba241",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/effect-functions",
+      "kind": "added",
+      "hash": "99b58f10b9ba95b9e0d213e15a1d4bc2edc40ff75020003002eede071e05db7c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/effects-are-values",
+      "kind": "added",
+      "hash": "567d191009b9e50512c3a0e549e1862d875c6a0b099415995666a920a8619060",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/generators",
+      "kind": "added",
+      "hash": "0159a244ef161dfe4edce0bd17782912b41368501cbb2db18c7094bf038b1d88",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/pipe-and-flow",
+      "kind": "added",
+      "hash": "9afb0e87e657666e686517efe87bbb561aa36bf47b08ddba9b200df911e4eb7b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "basics/running-effects",
+      "kind": "added",
+      "hash": "37ab3fa57393139cd8797108056109f87d8e486fafa4e8f0463f4cd02b9d9538",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "batching/batch-windows",
+      "kind": "added",
+      "hash": "46d39a80b3daa65f5a95b05fba16c43153e15da1a5860d9b248b9172aa0e3daf",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "batching/batching-requests",
+      "kind": "added",
+      "hash": "4f817c609355169d7cb99e62e40d2e3bb221c6943e32ac11ecb2f23499299593",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "batching/caching-requests",
+      "kind": "added",
+      "hash": "5f4c0c44df0f31176c9f927095838a7990789e4ab65ba5e4f3df17287cb4d4b9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/first-command",
+      "kind": "added",
+      "hash": "63f325e284726a2690adc0d888c51ed635184004ff1fcbfa9e0e341fa33a07f0",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/global-flags",
+      "kind": "added",
+      "hash": "dfd1fc7bab72985d4b9ff723a06971da0b254f29af3c19ba00ebf2ae54746be4",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/help-text",
+      "kind": "added",
+      "hash": "0f2fe658004155181928a2b228373b22fc0958e52c00466b259426cbc02b6d61",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/parsing-errors",
+      "kind": "added",
+      "hash": "2283aaabcc5e36a25f525c5d7544ed4e1bf40c8330ebf24f38d2a0fa1c938a44",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/prompts",
+      "kind": "added",
+      "hash": "f62b0e9c4873f9716d33fd3406447887cc22f2f65488c09d53026a178e89796f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/shell-completions",
+      "kind": "added",
+      "hash": "e437a6b4aabf655a75558af6fc7f90322e3f4cd03fe368b0197cf8de74470b8c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/subcommands",
+      "kind": "added",
+      "hash": "ec97d1487175fcd27b1689e73079aa26353c45302f0585d5ca18c66937b32cc9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cli/typed-values",
+      "kind": "added",
+      "hash": "30d38ae3c6e79e4c7a1bfb296b88d4ed01ce29a4b8a072e7716695f5aaf386fb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/cron-jobs",
+      "kind": "added",
+      "hash": "db28bf9a4243242538223cd3154f51ba0dd67befa67ba4240c44e5c5852fb069",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/defining-an-entity",
+      "kind": "added",
+      "hash": "37975ff67babf2d4f47d915f8fbca6f6d21f9bc43a81717ab7ef464b0eda7d46",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/deploying-on-kubernetes",
+      "kind": "added",
+      "hash": "56c3596bdbad1f139ad8037ca18ceec30eba7e425529eb93d783cefc50540c53",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/durable-messages-with-sql",
+      "kind": "added",
+      "hash": "11e5b046d7e0fc5e90227d8bf4503f5bb37f375fa1e70404e3894d1e41c03045",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/entity-proxies",
+      "kind": "added",
+      "hash": "30d61ce7cc8897f3d1b8ca8a54f67d0700a8b58e6e9dd4006dc806a384073735",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/entity-resources",
+      "kind": "added",
+      "hash": "fe7cfa1bdf280b23dd056c75a0eea331cf66662a023fa1a27a9665751c699340",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/envelopes-and-replies",
+      "kind": "added",
+      "hash": "4e8f95a7229d8e4a7315719e72b0f5afc31b577bf817b1b27d491f3f0d97f966",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/one-message-at-a-time",
+      "kind": "added",
+      "hash": "37735efe3ba61df1567d1d2b7c502e26779a447cef2d952e7326a869eff62b3a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/persisted-messages",
+      "kind": "added",
+      "hash": "99915d393b9b5c70601603c6d73994b847d25a744be9719a1e6af4319b6acb9a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/runners-over-http",
+      "kind": "added",
+      "hash": "1e37e59d26bc764849c3c0220df1494b30fed08ed3c7f0d731ddff113feb6398",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/scheduled-delivery",
+      "kind": "added",
+      "hash": "0e2c1aba5a4529a95732796c55c4d3cd40fde0a0131d53c474a71f125d455160",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/shards-and-addresses",
+      "kind": "added",
+      "hash": "0769e738a795d29ea9fdff2c5c77127dda55bc48cb7018ac003b42d810ab7fb1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/singletons",
+      "kind": "added",
+      "hash": "10c50e826199b8911e6eb2b774ed75da03564f9725a30db2d2b317de5541d597",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/snowflake-ids",
+      "kind": "added",
+      "hash": "a98b760b664ba66fcb76a54a6d03583f1d7496250124e04e99550cfaaba8488e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cluster/workflows-on-the-cluster",
+      "kind": "added",
+      "hash": "0e1267a9d05bbb7d6fea3efa6b9555fe5af54f8980cf739df884935901786a39",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/array-helpers",
+      "kind": "added",
+      "hash": "ffdd9a4fa357aedcf50e8004457ff9052d5274d4908a12014b173bfbf706d5d8",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/chunks",
+      "kind": "added",
+      "hash": "4a6c8f7c942983757e2aca73d6526a5f0c6b89c39fa36f2bad4635321ace6698",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/consistent-hashing",
+      "kind": "added",
+      "hash": "49a15f2e4bf835c39bcf3d35100ea1eeade511c8677c13dd48239a1ca859e75c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/dependency-graph",
+      "kind": "added",
+      "hash": "ff5114cce20dce2f574499418630fe74b2cad1f23c39ad87cafc2c92998a4555",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/hash-map-and-set",
+      "kind": "added",
+      "hash": "d9dc990eb691e02db5abb935ba66ec195d36b46a9f7cffc3449a20e8ab2088b3",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/lazy-iterables",
+      "kind": "added",
+      "hash": "f7afb4ab30faac34e6a3604bc9c0244bb946b446fffa06f8eaf71011179b0740",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/mutable-collections",
+      "kind": "added",
+      "hash": "28faaf2dad45bb085403deb33d79de59e3c2ab216c131bd04859199684ad0b28",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/non-empty-arrays",
+      "kind": "added",
+      "hash": "36e1f5c03d4d39daa25410c17ff9a4ac4c169424f7fa5f7ff422b19a943f8f8a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/records-structs-tuples",
+      "kind": "added",
+      "hash": "1d9be5620e4cecf4310bce76cd999efb5964457b9e92d75d91a3242091e3f360",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "collections/trie-prefix-search",
+      "kind": "added",
+      "hash": "d856fd4a501e04943c3dbc54ad000331b640447aa1735d3c3c64409d47d7ebf6",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/background-fibers",
+      "kind": "added",
+      "hash": "4ba4e3b588bb847282e66511e05cbc44724aa9ad83883bc89c42d36abbcd22ea",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/concurrent-work",
+      "kind": "added",
+      "hash": "d2c03cf45a901d95f1efeef0c442d4b556de2802b9bb38809c6ff7a53c1b5643",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/deferred",
+      "kind": "added",
+      "hash": "b92020e83c00544d5c6e983238dabdc6e0a6d8070b5c993b19e470b2e4b2dd3d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/forking-fibers",
+      "kind": "added",
+      "hash": "f332d7a37d05b6755c4b94fb4fac38a70e0819a6d08388f91248f5a4ce3d8683",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/latches",
+      "kind": "added",
+      "hash": "3fdcdc203b967c7e72be489b30b8acd317ac7a664d8e6cc0ce28ad8795d20e17",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/mutable-ref",
+      "kind": "added",
+      "hash": "b114715ce92cd5e076cfd4fec66dfe983967bc84988c0c35e1a62e2f31ac3cb6",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/pubsub",
+      "kind": "added",
+      "hash": "d4b6d7db9af6d6b9b0127511e519fd706e6ecf4c078695801efd370fe6c8fe47",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/queues",
+      "kind": "added",
+      "hash": "448c10ec234a4ddda7badd12c01ba750a14f34eb7efacd64a1caf4c26773c0e1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/racing-and-timeouts",
+      "kind": "added",
+      "hash": "df38510a01b3b56a15e61f9bba7a00bb2f70dd6b84ba5da25f63d03f0b3ce291",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/scheduler",
+      "kind": "added",
+      "hash": "9299e6d0c5dfa0295841b31986c75e80895d9e4795ab2f5af03444ecad3f1a66",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/semaphores",
+      "kind": "added",
+      "hash": "36ef2c1c3c9ffe24082fdbd3b37e9f1161fc562e8db61bec6f2cb22dca78433e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/shared-state",
+      "kind": "added",
+      "hash": "baf8d9eafab8bcb86a2cafe0d5e4c75ecf2812a8e1707706b77e92e6c2ba3b79",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "concurrency/subscription-ref",
+      "kind": "added",
+      "hash": "44bf0fb0580e6afd10ae5b2ac4e29a4610d642a7422d1a18468cf1a272a51eeb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/brands-and-newtypes",
+      "kind": "added",
+      "hash": "5cb208b8ecfc47cdd011cdcf8033dace92e98d8135a8c807e92d77540ba6d2a5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/byte-sizes",
+      "kind": "added",
+      "hash": "36f9bb2e1bfb9fe65acbcb5cc4155fd71f4e8fe7c35d95a7966f761af28494c1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/combiners-and-reducers",
+      "kind": "added",
+      "hash": "d836d0502e6a9fc40969248c66d099d9be64ef60a8bc02dcb5e34a3f8551a2b9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/numbers",
+      "kind": "added",
+      "hash": "a1efe9e219be086e9fed37d5759836ab14aa6859a4b4798bfc2747677765a21b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/option",
+      "kind": "added",
+      "hash": "7e386a4533b96367bf94274a0bf5564b7d84bab3951b5166383a58ef1a71fd1e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/order-and-equivalence",
+      "kind": "added",
+      "hash": "2727f61365cd3389f38bc6aac60e54c3c1975f700909bfbdd94d5e5544436b05",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/pattern-matching",
+      "kind": "added",
+      "hash": "4d2ee2cbda08b1eea333e49c12d7383057e9d142d8d58a1e196e92774bb7f2dc",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/predicates",
+      "kind": "added",
+      "hash": "0791c6dd28cccd38a3214d29fec89e19c349efc7b7b76be54ac5fe69dee7119d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/primary-keys",
+      "kind": "added",
+      "hash": "209382c1258c1cb8568b457eb1bc817bf7c679fb62691dd7411a3ab78801ee9f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/redacted-secrets",
+      "kind": "added",
+      "hash": "34dabdf5aa4623f0a71bfbe202866ccc42a08a8f0eeaaf6dce519fd343ebde1b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/strings-and-regexps",
+      "kind": "added",
+      "hash": "9f9edabfa715a63acc96bb18d7a8cdf14aaef78b65f201c6e1ec875ddf7a3d33",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "data/structural-equality",
+      "kind": "added",
+      "hash": "f012a46fe138839e60b973d2c59c850ac015fb8da11f0e775701297a6b0f15fc",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/base64-and-hex",
+      "kind": "added",
+      "hash": "8f53eff82e9a4bda4ceaae9b042155e87b0cf477856059816bfc0c86b67d12fe",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/binary-schemas",
+      "kind": "added",
+      "hash": "5ab1347a2a85e1644cc8c53352bb657fa7e7c279407618806f517c4b0fea8584",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/config-files",
+      "kind": "added",
+      "hash": "4886aac40783d616c3f714da27d51e6f62c338425a7c6cc9238ddf069275af51",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/diffing-values",
+      "kind": "added",
+      "hash": "84695abef380f2862be3ab5455f1192514436ddd67a88d9d2f6cd15d8c132b60",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/json-patch",
+      "kind": "added",
+      "hash": "23b0869c0e9c49febcd74b05f17a940b3dcf0ff921583c95f1a9ce351cfc30b1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/ndjson-streams",
+      "kind": "added",
+      "hash": "d36d443760e668c7159ebb9a4bfdd9c45dbc64729006d5a19652c536a31b256a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "encoding/server-sent-events",
+      "kind": "added",
+      "hash": "275acd8a8c0d871d858d3203697602df5ae8de56e90768ce87a549375da31b64",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/catching-errors",
+      "kind": "added",
+      "hash": "25ac039f8761a650896af5fc39aea3e3010e77cfeb458867e560edbf4fd296e3",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/error-reporting",
+      "kind": "added",
+      "hash": "be378af495863d772dab3960d7a2083d132fd1e7502c5679a7f456bae23d6521",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/errors-as-values",
+      "kind": "added",
+      "hash": "e933d785fe997b90dc3084ef705644bb4ac28b5810b0594497ad70a6b79dea39",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/exit-and-cause",
+      "kind": "added",
+      "hash": "2d8a4bf46c5a4a7621685fb6c4f944b2213ac51ab32b100673d5d3ef6cca013a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/expected-errors-and-defects",
+      "kind": "added",
+      "hash": "98915f9d28086536134e7376f9a6ae1c77bed86c79fd2bbea6187361b01d0911",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/filters",
+      "kind": "added",
+      "hash": "3ba54e2cb51e3bb0b0d8dcf5503df95987bb0051ab152ed4a37c7f5493825c97",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/parallel-failures",
+      "kind": "added",
+      "hash": "510d95c45fc2f1a6f4e3adc8e453bfed2f627acc906010940738808452236b44",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/retrying",
+      "kind": "added",
+      "hash": "0ae2d4fd0e0dc942442154d6c01960d4154bbbd8cda265c8aa018887ad06617b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/encrypted-sync",
+      "kind": "added",
+      "hash": "77ef514d8eb1af845e5cfb2e5d8157e307427b079d7ab731748d8bcf6f836753",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/event-definitions",
+      "kind": "added",
+      "hash": "a72631f8da75845327e7975b99a158e4e7a8a7578901868f04b2260c0eb7a5d5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/session-auth",
+      "kind": "added",
+      "hash": "81ee823749bc21e60c588bdca97ca6b5cc0c0ebdded49bd34e91c800009fc38f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/sql-journal",
+      "kind": "added",
+      "hash": "c37d4dcc1ab70745d5235b7c590545dbe6aad503b8f4cb0ae58781e34beb8a03",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "eventlog/sql-sync-server",
+      "kind": "added",
+      "hash": "9f51d3d2f5daf03c6ec1910de0ca001e20549c1aa2475e8fb09106c82a744ba5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/batching-lookups",
+      "kind": "added",
+      "hash": "2424a6894679564fa6ab0623d41f968600d0fdd87d1542dffd94b51d769d1d1f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/errors-and-partial-data",
+      "kind": "added",
+      "hash": "cb278a55f5cb4423f24b60ea9b09dc5d42d038ba7b1f12232ed0441912634a2c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/middleware",
+      "kind": "added",
+      "hash": "9f86921df3b1773922bb04102d1c7f51278658d41905f6da98dcfda590654657",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/paging-connections",
+      "kind": "added",
+      "hash": "ccc13203f487f1338e6258dcc8df95027487b54c109daf8457a922b093b86b29",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/subscriptions",
+      "kind": "added",
+      "hash": "7920c883002ba40972892a96222cd23e3b9bc6ff1a2f868625475e7d5a7c92b3",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/testing-with-layer-test",
+      "kind": "added",
+      "hash": "4bb25df6d4c9a6e281b48cc50c9b2eeeccce1724f413a24f4d49a02bea885b72",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/typed-operations",
+      "kind": "added",
+      "hash": "6db0f658f3d8e1b36bc2ab73d8435ec2c404d911d8dce2086d18ab73c82686ff",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/a-typed-client",
+      "kind": "added",
+      "hash": "144efdcd329de4c22c811968735ab6cdd7c3bfd6276cd8355812d6b233959490",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/defining-an-api",
+      "kind": "added",
+      "hash": "75789451b8ef9cc7ecda56a97f7faeafb1dc03c010d49745b6a904e8d07729f5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/docs-pages",
+      "kind": "added",
+      "hash": "e872715cc62f8e0bae28a5503014295f23a2f30f7ee7b700cc430e0670769f7a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/errors-and-status-codes",
+      "kind": "added",
+      "hash": "c1100e109232a6ab357f4a370df65525196eadc98eb28e3a2ac728903001d102",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/openapi-document",
+      "kind": "added",
+      "hash": "a76e824e104b555284b1c359413829610decdf82a6ac2d381121438a448e1302",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/security-middleware",
+      "kind": "added",
+      "hash": "ec6ac252a776606a7204fe93906f9b9d90d0f81f2f92a97fad119c498ead6e21",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http-api/testing-handlers",
+      "kind": "added",
+      "hash": "7ea7714223697f40737e4e446b53700b65a59cef6b75c223c33f7c04af97ee84",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/a-client-service",
+      "kind": "added",
+      "hash": "d4d962197ce4b077adeebfeae3f02130ed1c637ee161b9f00566dfee931000af",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/building-requests",
+      "kind": "added",
+      "hash": "5be4161e7b947cb07bb32a8562f956cb2c379de6abea5cf117019ffd24ca17df",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/cookies",
+      "kind": "added",
+      "hash": "a813d04e54303e8b888104e5a09548114e99967af493ed930304b6fbe9a61ac9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/html-templates",
+      "kind": "added",
+      "hash": "33033766fbafcef9afd865fa8eb6d021e7c4b65029ba45f80da347616094901d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/middleware",
+      "kind": "added",
+      "hash": "ba83f9c66378c5af4912c674c72344b187373695bf93994e155d7f97cc16df27",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/multipart-uploads",
+      "kind": "added",
+      "hash": "671f7b7beed2da98f5fca691515fabd2cccee082906e53d589e2b50279c2d15c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/path-patterns",
+      "kind": "added",
+      "hash": "0ff08a71d139b1db4e48b189a319f63a71d30354e1b6ca783ff39c2fc79bf8ec",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/routing",
+      "kind": "added",
+      "hash": "01e7fc5615c62fc24632ee00fc5485f31541344cbefb213af925cd885af28bac",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/serving-files",
+      "kind": "added",
+      "hash": "d5be19ad1be53352b06473793dc91f97c6ff3a96902f5002b3526188cc23a3e5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/trace-context",
+      "kind": "added",
+      "hash": "6c5b325d88e601f87ddf4e3f7cf9382acfceb829651392445ec80be30d590b34",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "http/urls-and-params",
+      "kind": "added",
+      "hash": "7789a2895a9f8b075be499702075c0400993ab3a7fe1f8527c764251a9960116",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/custom-loggers",
+      "kind": "added",
+      "hash": "8a89e7695648f019ecbd10230f03c63ba516e3170d75fa4d6061f29879b99041",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/devtools",
+      "kind": "added",
+      "hash": "d886267eaa6897e7e462048adfd0247b9e098050d6986803e99e95b270de7808",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/inspecting-and-redacting",
+      "kind": "added",
+      "hash": "4763b4a7d418fa41c9e978b117ceb78a72341b0c3e95dfea64574ce30b87b714",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/log-levels",
+      "kind": "added",
+      "hash": "94356ad7e028f2b3be45109614ed5b250a44fd9631445ef4b05b3acffa451e15",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/logging",
+      "kind": "added",
+      "hash": "e5fdf85db89015a5f2e54713d2491dcf1c63126392d300ff7aed301c324693ee",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/metrics",
+      "kind": "added",
+      "hash": "0c3f018491212438ab3669997686c557b3f92a59940b91303977c4d4df859041",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/otlp-all-signals",
+      "kind": "added",
+      "hash": "c52fc7489bc91654b49e71f2d82d6e082854fead982ab605f20657262e11ee7f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/otlp-traces",
+      "kind": "added",
+      "hash": "77e576d8be56a774e75fc0a32e498aef43836e014d1679c33076c5375aa8f5ad",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/prometheus",
+      "kind": "added",
+      "hash": "732a9003f7ad38fe5cb1bb4ae7ca4f3c968553c8d253a3bda782665ef608ccea",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "observability/spans-and-tracers",
+      "kind": "added",
+      "hash": "8d533617a9f6fc09d98a54e9abe6694784321e36732cfe43f5ae0a09a54eb2c6",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/key-value-store",
+      "kind": "added",
+      "hash": "7885f733ca23e899ea07a6c95c8bd639a886915d1b20685f06372942b9305a5a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/persisted-cache",
+      "kind": "added",
+      "hash": "822218098b842c058846cebae7139f01b3d775bc21dcca2f02e6d326d78ce23b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/persisted-queue",
+      "kind": "added",
+      "hash": "c3790d7e54d9401575a80b86079947555b0728f670d679779584fef22b34b3c2",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/persisting-results",
+      "kind": "added",
+      "hash": "9013b977986a66e892f3c3434b7c7cbee012df7b4b15d5ce5d19b581339569b7",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/rate-limiter",
+      "kind": "added",
+      "hash": "e014ac367a3e4893727fdfcca37127b78cb957ff1adcc34e39984c6d17c36581",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "persistence/redis-scripts",
+      "kind": "added",
+      "hash": "1bda11f82cd89397b75dc401323f1b0ac3251ae441fa54093e2444977d03c967",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/child-processes",
+      "kind": "added",
+      "hash": "751d07c22c100d13ff24d52880af527618708beff933558d9130a25aa236a0f3",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/crypto",
+      "kind": "added",
+      "hash": "b58e6b77bb45e0f556c4da80ab430e8a9a86f0e8d81ac688e99fa1d7471275ea",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/fake-file-system",
+      "kind": "added",
+      "hash": "0ee8d3719ea0251b7365dac9b39fa83a82d9e564c946bf8cc767900e1cee43c5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/ip-addresses",
+      "kind": "added",
+      "hash": "31fc74d81c604396e5121d68a76f539fadf83bc706992702cbd7791845d514ef",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/networks",
+      "kind": "added",
+      "hash": "7f8533062793f1a12637ed594dbee2e01bf0b2d827c88e1c9ca177b8fe54d4d3",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/resolving-hosts",
+      "kind": "added",
+      "hash": "230adeda84ddb107573790e836e83d0c3a64056d76007591932e01aeddf2babb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/standard-io",
+      "kind": "added",
+      "hash": "4311c132d7db0fe59f82b47d7f85385a8c155e0b61b6bb106e628f01c5014565",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/streaming-files",
+      "kind": "added",
+      "hash": "67ef4d0b64d08de41aa2c81f8a48118100d1fc2c1fdf0516b6d84e884cdb3b36",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/tcp-sockets",
+      "kind": "added",
+      "hash": "b05c2cf6085c589b5fbd8bfb06e7c437795315fcec170f53dab619917d7e4ac4",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/udp-datagrams",
+      "kind": "added",
+      "hash": "6ae210b8b4610d4a15863b9fc156a2d4acc2dc761403bfe1ba4e2317862e032b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "platform/workers",
+      "kind": "added",
+      "hash": "b79c446caf1a35ec2b0d8d36bb3cbcd1046cfa27f153a111b1e4ec5d4ef8a451",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/async-atoms",
+      "kind": "added",
+      "hash": "dddfcfb0f9ecf0fe1e5516caf9f07d983e92506a4ba349482aecdd6bfcf1288d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/atom-refs",
+      "kind": "added",
+      "hash": "f62b3c94b77324a673bc30e3f6128970511c8c2a9a165164b49e6b7681562541",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/atoms-and-registries",
+      "kind": "added",
+      "hash": "5b8e07da73b1c15712d3a0114bf0a704b4d56496bcbe9de4c1011172699bb813",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/http-api-atoms",
+      "kind": "added",
+      "hash": "01c2487a34a04f90b1d7829b5092dc509d035e25700b0408be02073eb8e218b9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/hydration",
+      "kind": "added",
+      "hash": "6f2fddf45190adbf4919c09d388a648c157c5668eeb1c9bcbf50a8816f39f416",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/invalidation-keys",
+      "kind": "added",
+      "hash": "92f38db8a183e0e84533a92e3950fa6df456289605abbf7d160d6673e3561b65",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/rpc-atoms",
+      "kind": "added",
+      "hash": "7f7ef2c877cbeabf6c6fd4ba70e0cc3f877cdf12633f45810f8d23236fc0c8c6",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "reactivity/subscribing-to-changes",
+      "kind": "added",
+      "hash": "fadabd5415d5a933a44d1ada8d0fe358cc435336399bd75512b16aa6d3c0c498",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/acquire-release",
+      "kind": "added",
+      "hash": "61acad4515ba4e824ac29428d9351b773a8a28fdf5d124394f3d958948f84ec4",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/caches",
+      "kind": "added",
+      "hash": "a9ed38b25835734a5d1ff7154138800b4052a9289ad32bfab366ff11380f16cd",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/pools",
+      "kind": "added",
+      "hash": "400dfd87351901e20d329cccc136e6e0c8d134d1f58e9954445630e5a6471dea",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/reference-counting",
+      "kind": "added",
+      "hash": "dfd39c228a69b1fcf6db68ff579a674978e74151977cc872c268c40769613c31",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/refreshable-resources",
+      "kind": "added",
+      "hash": "cf4f5eacbccce1d70460e16a317a33be36a66b51482d653190ff839f3be0a914",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/scoped-cache",
+      "kind": "added",
+      "hash": "4456287c9e641a7d7adb92098fb864b4e3098de2be189af16688a9aa91efed79",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/scoped-ref",
+      "kind": "added",
+      "hash": "83e80b1e5739f4f6c4253d4d850586873313e7a61e2b8c7803c62cd0cc5a6a4c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "resources/scopes",
+      "kind": "added",
+      "hash": "b47ba87eea53890ef6bc96db9837226202cf4c3d05e65beaca53e2e1394ba501",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/custom-transport",
+      "kind": "added",
+      "hash": "2182486ee99cbd9bc19b7513f8e0eed73b56e4116140bc0aaa4d2e246bba9d96",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/defining-rpcs",
+      "kind": "added",
+      "hash": "f9c1fa84b5dd0a12616412590309673d191dbcf92b0a52e6ccd979d66da4eef1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/middleware",
+      "kind": "added",
+      "hash": "b0ec8cce6f38af6a50b50c78f54d28b05049570b77c8131ba092b3915ff4ea13",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/over-http",
+      "kind": "added",
+      "hash": "149de6544ecb2c69b0fb16dd430aab85402d9f2f41556da6178af313e609478c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/serialization-formats",
+      "kind": "added",
+      "hash": "40cc16008cfeda16fb55582af7390bc5734259ff5d34030e8564ccd538f98ad5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/streaming",
+      "kind": "added",
+      "hash": "169bed6fde5517375ca8f60ebdad0b013947d6cf9b9e4db30be0f76c951a3a89",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/typed-errors",
+      "kind": "added",
+      "hash": "b4bf74f25f79061f117634c9d528505d516b0893b745ce31c35461d0852d5677",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "rpc/workers",
+      "kind": "added",
+      "hash": "e202d053f706edebca398f1a2f04156f748f21e4a31a7819e4f3ecc8bab0ee9e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/compiling-schemas",
+      "kind": "added",
+      "hash": "2c05780945a0d5c9fe857d9a730ac06a3d4bba92b417c6b4c7cd6f0ed7e62615",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/custom-getters",
+      "kind": "added",
+      "hash": "f956c21a57c3938d188fb2e155384d504a76c6a64b48485993a4bd0243f824ad",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/decoder-registry",
+      "kind": "added",
+      "hash": "13cd23ec17ad4692bebc8ec7d0d05a9a13d7ab630e0e87fc108bfb07bf43d92a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/formatting-issues",
+      "kind": "added",
+      "hash": "f4b9dc44d58b73a4505ecce24f4636084a3650e5ead47022a68cc8455f4c247f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/models",
+      "kind": "added",
+      "hash": "4b62d5fcd611de3a71be775890f7d18de7a3d27526d693c608606cf190bcdb52",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/optics",
+      "kind": "added",
+      "hash": "a60afd0184c89e6d3664696f567b49b74508ab126c17391c154694c1cd9ad120",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/parser-and-issues",
+      "kind": "added",
+      "hash": "f0ce2471d5929b0121e72df5954a5bd038813237cce799986e1b9a45bfb30135",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/representations",
+      "kind": "added",
+      "hash": "2207b291ba05e1975b172e337a162b5aaf5af0439f77b047c902a591b9dc225c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/standard-schema",
+      "kind": "added",
+      "hash": "a7582526f967de00fb19e41dbcc59ee8394aeb8657a448dafb86aa9a638f715c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/variant-schemas",
+      "kind": "added",
+      "hash": "58b30b09beecf66c02a129c2ed3492b5021627f8955cd9a74b621b2f5518d4c8",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema-in-depth/walking-the-ast",
+      "kind": "added",
+      "hash": "57afad5995f09d75568204c8661f55591e6f9b21e934019923ca48b2922dce42",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "schema/json-schema",
+      "kind": "modified",
+      "hash": "ba4d3b8cd9a333aa46ef160913f2ba4d9934e8018775ebb3f6b9f1bfe708593d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/composing-layers",
+      "kind": "added",
+      "hash": "1c8fb8825f312b7ed2c860dc2a522230ecc98ef38bdefd752970b13edcbe02cc",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/config",
+      "kind": "added",
+      "hash": "7f9d4d20e326369a02387bfa183af5de3250a9f3cd9d3adf9dc20ae91fdbec92",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/defining-a-service",
+      "kind": "added",
+      "hash": "8dc8b36f3519c2b46f2f8bb3b02d8a2dccdc1e3a43a16a94d3bcf26e8632d849",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/layer-map",
+      "kind": "added",
+      "hash": "c03ed38d9b580c0fe90dfcf3ea3aeef9e2fa2b1617501f1cc6c5ac51430ea5cb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/layer-ref",
+      "kind": "added",
+      "hash": "58e12b7fdbb8f737836578ed4596bbebcb8470e2623997dc77992cd4f5aa98b0",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/layers-from-config",
+      "kind": "added",
+      "hash": "5c293225db73f4daed174c684780f4c6f1dfbaf4e06e8a5831dc1fac866e99ad",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/managed-runtime",
+      "kind": "added",
+      "hash": "7bd398353bfc5513dcfe14b1bf01e7219d20827a3462efd7d38dcecc4217272a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/references",
+      "kind": "added",
+      "hash": "944f610702344a563821b435979f99396e5e9c25ddf07063e7b0e1b24ae762b9",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/runtime",
+      "kind": "added",
+      "hash": "085af81216b763b6fa792587279e2ef75a78157f6ddb17f1c69e14544a55549b",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/test-implementations",
+      "kind": "added",
+      "hash": "690d9753cf668cf52ec75d3894c3b2f82e4767f0e04ab23cd98bedcb0b5394a2",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/batched-lookups",
+      "kind": "added",
+      "hash": "84bc0ca22f65103aac8e664a1485321f99912c75db2eaa8093c7a59326d42ab7",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/decoding-rows",
+      "kind": "added",
+      "hash": "a203c2c9bb2c4010a9506b71161df37e08089c37dbc5c627be68c17a9b593f1f",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/driver-cursors",
+      "kind": "added",
+      "hash": "755f60ff1eaf31b8c10b5d5691ff7b47b828c79cd4a031c27f188ae6602a7ca5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/handling-sql-errors",
+      "kind": "added",
+      "hash": "0bc1848963a2a8d19f494c3a142cd508251cb93165f541680d911c26f7d5ea92",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/migrations",
+      "kind": "added",
+      "hash": "bd355903a30a29444aeeea4287673da97055328efa06d7156ef29e34267227eb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/models-and-repositories",
+      "kind": "added",
+      "hash": "a40676cd66fcb39cb7fe29dbd943803094a39dfdd573024baa6c632de3a93a2a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/queries",
+      "kind": "added",
+      "hash": "5a86095ae6b83d6d385cf3464ecff5c7e5d25b8d8dab51e6d9f07e629574c302",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/streaming-rows",
+      "kind": "added",
+      "hash": "833c6a8798524270a08c584674d4a61dafd00c2ec145c1d8857a9880fce316fd",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "sql/transactions",
+      "kind": "added",
+      "hash": "ee0a0dfda6c6a6f82376442cbbc3de3df9be4f6cb83c1b36c5f3802d5765a7ad",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/channel-schema",
+      "kind": "added",
+      "hash": "8046f8580420d0c2f05e3ef1bc2c5879aa51510f676cd92319e3c69f74052181",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/channels",
+      "kind": "added",
+      "hash": "f74aefbebc80d385c6e1aebead626e000b20d8f31364a12c8bd1c351a0ad26c5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/consuming-with-sinks",
+      "kind": "added",
+      "hash": "976c84ab5136e4862807162881cda895a2376d7f024f6c6850a43cbf4e792858",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/creating-streams",
+      "kind": "added",
+      "hash": "d56d2643a033d8c7a7c36c1bb2e8bd9813d84edab580f5b63b0b0b0a9553f7f5",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/errors-and-resources",
+      "kind": "added",
+      "hash": "59fa78e1fab18ecf7deb0be7e51c97041f45f3c44238482645f1b959bb3b67e7",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/pull-and-take",
+      "kind": "added",
+      "hash": "4223ab09b9328c6e104ae9f8ff7eace53e7c93680575d222f9182e41a40606e1",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/transforming-streams",
+      "kind": "added",
+      "hash": "bad001281d32e557b1b0ad23586b2a0a0123b81db5ccc9534d6ba2e62a9fe944",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "streams/what-is-a-stream",
+      "kind": "added",
+      "hash": "7a601185a1bc5363d7933a9d3a620470ae0c635a14696a4cc242ce8f03fda844",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/generating-test-data",
+      "kind": "added",
+      "hash": "7fe89f03fc3a48f44582581763ac25b8a93d6d8cd7aab8d5b3c9be7f19f3729a",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/property-checks",
+      "kind": "added",
+      "hash": "2eaad1639b95386f49c8da808e30d351628aa77504a42c838f429ba345e13f09",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/schema-assertions",
+      "kind": "added",
+      "hash": "8e8957bdff8dddfa54b5ad52494e46e1785ba56449d221495185978947aed5c2",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/test-clock",
+      "kind": "added",
+      "hash": "0f8de7dcd8d6f0003330c327a5cdec2451fb950b0d74bf5719220300f6174d03",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/test-console",
+      "kind": "added",
+      "hash": "98470403f1a76473f2f58548ff8f83f56fcefbc293db25f329b035caf4d83ae7",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/test-crypto",
+      "kind": "added",
+      "hash": "56b2b6f9fa5e161795c1d68eb4b25570b6221539e24be112d6c4581181e7f94d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "testing/timeouts-and-retries",
+      "kind": "added",
+      "hash": "bf336e145fce68e72e286ac25096900ce82aaeebccc3519f813af84a464bc258",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/clock-and-random",
+      "kind": "added",
+      "hash": "569a60419b05e1527d9b286ad57cf563cdac6e67319b03be1a20b72e98411251",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/cron-schedules",
+      "kind": "added",
+      "hash": "f2585c630ffd9145f1c33976f4669b80351c7d3bc602cf470167aa674d9557c2",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/date-time",
+      "kind": "added",
+      "hash": "6483806659dadcda58862a9c5bf7094e6d65d5b7223e991d78ef2657278e4d2c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/durations",
+      "kind": "added",
+      "hash": "9b974c250a764f8a5bc942738dcc177ba898e07ae22268275a20ddda8e4e4b0c",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/execution-plans",
+      "kind": "added",
+      "hash": "93bbd4758e1f208236429eebf1abea9be84fd3db0164b0ef74ee633fb856e9bb",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/repeat-and-poll",
+      "kind": "added",
+      "hash": "1ce1b487547da9cdf0402759560170a4e62607923a84555433a09858f80627be",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/retry-with-backoff",
+      "kind": "added",
+      "hash": "a58095ccaceef2a75e50218f16d02172a62fe1bf2f8115e417efe24873c3e623",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "time/time-zones",
+      "kind": "added",
+      "hash": "49a2405cfeb85320c4157f6bfe224f7467861983f7ca607db7fe79e54b5cd333",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/bank-transfer",
+      "kind": "added",
+      "hash": "a0528ac193a8fa0f85a3c762f656240e82e6be40d7e0c01415588e881c1fa181",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/broadcasting-changes",
+      "kind": "added",
+      "hash": "7bfb1bf249c373d094f798342a85a56c159153d19789fcad5dbcd6650a424790",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/limiting-with-txsemaphore",
+      "kind": "added",
+      "hash": "e177973ea69f54820a8c48f37fc25cdbb168cae96b1a61db6ee541687bea0511",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/one-time-signals",
+      "kind": "added",
+      "hash": "4312e9c4acf3c69b9d22619b8a8f83f0e570f97ff4f8ef9a1536e38a260e7607",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/read-write-locks",
+      "kind": "added",
+      "hash": "8178d2e60f9006ffd00c1d41594429952484f859ae3812b8b80081c30f9a0b7d",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/transactional-collections",
+      "kind": "added",
+      "hash": "bed397e9a36625c9032dce19f886f46e66bebd1f2779cd57cf3c4335f1f21f52",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/transactional-queues",
+      "kind": "added",
+      "hash": "4af3d9c2d0184934765231b509ee2c287b3a7e6706c61d51b1b34affeaa782a4",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "transactions/waiting-with-retry",
+      "kind": "added",
+      "hash": "7d572174da72c484414339ca62ae0c5402c01366d48c1094d061238a4e6f58a2",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/durable-queues",
+      "kind": "added",
+      "hash": "a64ff481119d5c6fd7a16d2b8dbd43e6780dee815044b2b163ea50e47b80af75",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/workflows-over-http",
+      "kind": "added",
+      "hash": "13e18656a797a4bb13beffa01e37d0bc8b474e902fb06c79ef6105e33985d42e",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "workflow/workflows-over-rpc",
+      "kind": "added",
+      "hash": "4132096cfc5cf8cfa1170f164fac63a065a4775d5934831daae80019cf919cf6",
+      "effect": "4.0.5",
+      "note": "All remaining Effect modules: 25 new categories"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "errors/error-reporting",
+      "kind": "modified",
+      "hash": "f3aea5cd66e076f9faedfb9054fc53ee788943d09ff53aad8b5014abdd25dfe0",
+      "effect": "4.0.5",
+      "note": "Best-practice fixes: tagged error, single provide"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "graphql/middleware",
+      "kind": "modified",
+      "hash": "854bab7e4a90acb9c8070b8cc89a6f80a4b972b9ff09f59a87bca9457dc2814c",
+      "effect": "4.0.5",
+      "note": "Best-practice fixes: tagged error, single provide"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "services/layers-from-config",
+      "kind": "modified",
+      "hash": "ede57cebd5f6360a2be7cd473a6101ffdb12691ec54b000eab0ce7a4db9861b0",
+      "effect": "4.0.5",
+      "note": "Best-practice fixes: tagged error, single provide"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/browser-journal",
+      "kind": "added",
+      "hash": "24cb64246d5fbe794757eec657cd2f958b01db543529e2e52ef898f081f0f10d",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/challenge-expiry",
+      "kind": "added",
+      "hash": "55b1db6f79bf9e3ba82e6acebe4b2c9e54185bf51de8b306a8a9315f71c241d4",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/compacting-sync",
+      "kind": "added",
+      "hash": "05ad67e618796f0b82fafa23e419b06b56229dd4277b92f30931d62a62adc8f8",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/compacting-the-backlog",
+      "kind": "added",
+      "hash": "51c928d0dd08e9788195cbd99b1b678eb1754efefe5fa4282a0dc69969f40bc5",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/connection-state",
+      "kind": "added",
+      "hash": "8c41e9e19b670289b89447dcd04a2b7d821a1b0326eaa9b9a599f7882d8ce6c7",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/custom-remote",
+      "kind": "added",
+      "hash": "04bf50e3f4142d40f3835d68539672319885ad4e1d1aa5b6e5da7ea9cb1369a5",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/encrypting-entries",
+      "kind": "added",
+      "hash": "27e4e02e5c8460e418413a240e3c409e43f91b2751f02f28643d99a0fcb5537d",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/entry-ids",
+      "kind": "added",
+      "hash": "f99044af92245c7d75698b9df71a715edf6ba5a0ee6e844bc8b183604e60e7da",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/event-definitions",
+      "kind": "modified",
+      "hash": "495b629c9efb23f41f19c2b90b251a9b8a051a7eb034874d907ae52c4b166336",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/journal-errors",
+      "kind": "added",
+      "hash": "0f70066139d1f2552ef2966f7401981d4256be16d7e63944b0816cc408191b30",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/live-queries",
+      "kind": "added",
+      "hash": "b17731f2ec24ce0b753c43d3751765b7bfbc2350bb24e1f9e9fb4b7793bc680f",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/moving-server-storage",
+      "kind": "added",
+      "hash": "7f647f139e15657f71bbcaac2787443113673f7703be10f11292f3bf22cc8b8c",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/persisting-identity",
+      "kind": "added",
+      "hash": "d067ab2b685f54402cbc17101f053fb7b621148ba8653afb074ae49f0bd582c9",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/rebuilding-state",
+      "kind": "added",
+      "hash": "8e36dfc456dab900bcda99d2493062a035511b89fa28f92d1ff2da491287f30e",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/remote-entries",
+      "kind": "added",
+      "hash": "a56ac2cc6cf41e6046d55de7a03bea78f93c4baca3eea5f030dc9a4a9f585f3a",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/server-authorization",
+      "kind": "added",
+      "hash": "9ca576ec0c0713a30eb1ea239116e23f33a24394915f36e892488748621ba5db",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/server-writes",
+      "kind": "added",
+      "hash": "a26fa102f33a54119d56c500ed0377847355b66590aceddd1c835184440fa4b7",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/serving-the-server",
+      "kind": "added",
+      "hash": "ef700fa7dfdff88a70654314deaea0a7c48ca0e1647e6286a60e7f6f54c5f053",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/session-auth",
+      "kind": "modified",
+      "hash": "63de997b3f82a53e0e9130e24168b1d73721cb405aab558befcd7bfc50715332",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/signing-a-challenge",
+      "kind": "added",
+      "hash": "d9ca4001fe2e4337617d077a5e3acf03cbfdf3bc164337200be9be7a93c50d15",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/store-mapping",
+      "kind": "added",
+      "hash": "9cd094d307d36bda58dea580d4d00c8b1410550999e80f064bbd97016e475449",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/watching-the-wire",
+      "kind": "added",
+      "hash": "84cd3c5a4a46c78039550271a26d3d5ed764179f97c59a6fecb2e9f49d98edfd",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "eventlog/wire-protocol",
+      "kind": "added",
+      "hash": "e10af8d459f05d5d872ff8c376aa701e08b2d11a6d35d8a4fb864461996b15d1",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "rpc/custom-transport",
+      "kind": "modified",
+      "hash": "5ad6cfd17809a61c1c7674438424b4e2f561b0161d0afa8402a09c92ce5ac978",
+      "effect": "4.0.5",
+      "note": "Cover every eventlog export: 21 new eventlog examples; session-auth binding prose; rpc/custom-transport replies to the client's real id"
+    }
+  ]
+}
